@@ -1,0 +1,410 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function telartes_menu() {
+  $items = array();
+  $items['home'] = array(
+    'page callback' => 'home_page',
+    'access callback' => TRUE
+  );
+  $items['mediateca'] = array(
+    'page callback' => 'telartes_mediateca',
+    'access callback' => TRUE
+  );
+  $items['user/%user/Editar-Formulario'] = array(
+    'title' => 'Editar Formulario de Registro',
+    'type' => MENU_LOCAL_TASK,
+    'access callback' => 'user_is_logged_in',  
+    'description' => 'Edit form user',
+    'page callback' => 'telartesusuario',
+  );
+  return $items;
+}
+
+/**
+ * Page callback
+ */
+function home_page() {
+  return '';
+}
+
+/**
+ * Page callback: 
+ */
+function telartes_mediateca() {
+  return '';
+}
+
+function telartesusuario(){
+  global $user;
+  $node = telartes_node_load_by_user($user->uid);
+  return drupal_goto("node/".$node->nid);
+}
+
+/**
+* Implements hook_block_info().
+*/
+function telartes_block_info() {
+  $blocks = array();
+  $blocks['noticias'] = array(
+   'info' => t('informacion  noticias'),
+   'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['convocatoria'] = array(
+   'info' => t('Informacion convocatoria'),
+   'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['mediateca'] = array(
+   'info' => t('Informacion mediateca'),
+   'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function telartes_block_view($delta = '') {
+  $block = array();
+    switch ($delta) {
+      case 'noticias':
+        $block['subject'] = t('Bloque Noticia');
+        $block['title'] = t('Noticias');
+        $block['content'] = body_noticia();
+      break;
+      case 'convocatoria':
+        $block['subject'] = t('Bloque convocatoria');
+        $block['title'] = t('Convocatorias');
+        $block['content'] = body_convocatoria();
+      break;
+      case 'mediateca':
+        $block['subject'] = t('Bloque mediateca');
+        $block['title'] = t('Mediateca');
+        $block['content'] = body_mediateca();
+      break;
+    }
+  return $block;
+}
+
+function body_noticia() {
+  $news = views_embed_view ( 'news' , 'block');
+  $output = t(''.$news.'
+  ');
+  return $output;
+}
+
+/**
+ * Display tabs.
+ */
+function body_convocatoria() {
+  $call = views_embed_view ( 'call' , 'block');
+  $output = t(''.$call.'');
+  return $output;
+}
+
+/**
+ * Display tabs.
+ */
+function body_mediateca() {
+  $multimedia = views_embed_view ( 'multimedia' , 'block');
+  $document = views_embed_view ('document' , 'block');
+  $photography = views_embed_view ('photography','block');
+  $audio = views_embed_view ('audio','block');
+  $audiotwo = views_embed_view ('audio','block_2');
+  $multimediatwo = views_embed_view ('multimedia', 'block_2');
+  $documenttwo = views_embed_view ('document' , 'block_2');
+  $photographytwo = views_embed_view ('photography' , 'block_2');
+  $output = t('<div class="tabb"><ul class="mediateca">
+  <li class="seleccion_multimedia">
+    <a href="#documentos">DOCUMENTOS</a>
+  </li>
+  <li>
+    <a href="#videos">VIDEOS</a>
+  </li>
+  <li>
+    <a href ="#fotos">FOTOS</a>
+  </li>
+  <li>
+    <a href ="#audios">AUDIOS</a>
+  </li>
+  </ul>
+  <div class = "row-tab">
+  <div class = "tabmultimedia" id = "">
+    '.$documenttwo.''.$multimediatwo.''.$photographytwo.''.$audiotwo.'
+  </div>
+  <div class ="tabmultimedia" id = "documentos">
+    '.$document.'
+  </div>
+  <div class = "tabmultimedia" id = "videos">
+    '.$multimedia.'
+  </div>
+  <div class = "tabmultimedia" id = "fotos">
+    '.$photography.'
+  </div>
+  <div class = "tabmultimedia" id = "audios">
+    '.$audio.'
+  </div>
+  </div>
+  </div>
+  ');
+  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'mediateca', array('html' => TRUE)).'</div>';
+  return $output;
+}
+
+/**
+  *Implements hook_form_alter();
+  */
+function telartes_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] == "views-exposed-form-culture-calendar-block") {
+    $form['tid']['#options']['All'] = t('-Todas-');
+    $form['tid_1']['#options']['All']= t('-Todos-');
+    $form['tid_2']['#options']['All'] = t('-Todas-');
+  }
+  else if ($form['#id'] == "views-exposed-form-news-block") {
+    $form['tid']['#options']['All']= t('-Todas-');
+    $form['tid_1']['#options']['All']= t('-Todas-');
+    $form['tid_2']['#options']['All']= t('-Todos-');
+  }
+  else if ($form['#id'] == "views-exposed-form-call-block") {
+    $form['tid']['#options']['All'] = t('-Todas-');
+    $form['tid_1']['#options']['All'] = t('-Todas-');
+    $form['tid_2']['#options']['All']= t('-Todas-');
+    $form['tid_3']['#options']['All'] = t('-Todos-');
+  }
+  else if ($form['#id'] == "views-exposed-form-culture-calendar-page-1") {
+    $form['tid']['#options']['All'] = t('-Todos-');
+    $form['tid_1']['#options']['All']= t('-Todas-');
+    $form['tid_2']['#options']['All'] = t('-Todas-');
+  }
+  else if ($form['#id'] == "views-exposed-form-news-page-1") {
+    $form['tid']['#options']['All']= t('-Todas-');
+    $form['tid_1']['#options']['All']= t('-Todas-');
+    $form['tid_2']['#options']['All']= t('-Todos-');
+  }
+  else if ($form['#id'] == "views-exposed-form-call-page-1") {
+    $form['tid']['#options']['All'] = t('-Todas-');
+    $form['tid_1']['#options']['All'] = t('-Todas-');
+    $form['tid_2']['#options']['All']= t('-Todas-');
+    $form['tid_3']['#options']['All']= t('-Todos-');
+  }
+  else if ($form['#id'] == "views-exposed-form-culturals-actors-page") {
+    $form['type']['#options']['All'] = t('-Todos-');
+    $form['type']['#options']['collective'] = t('Colectivo/Institución');
+    $form['type']['#options']['personal'] = t('Individual/Personal');
+    $form['type']['#options']['network'] = t('Red/Colectivo');
+    $form['tid_1']['#options']['All'] = t('-Todas-');
+    $form['tid_2']['#options']['All'] = t('-Todas-');
+  }
+  else if ($form['#id'] == "views-exposed-form-espacio-cultural-page") {
+    $form['tid']['#options']['All'] = t('-Todas-');
+  }
+}
+
+/** 
+ * Implements hook_form_FORM_ID_alter();
+ */
+function telartes_form_personal_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['#submit'][] = '_validate_form_personal';
+}
+
+function _validate_form_personal(&$form,&$form_state) {
+  if (isset($form_state['values']['uid'])) {
+  $uid = $form_state['values']['uid'];
+  $user = user_load($uid);
+  $user->roles[5] = 'Individual/Personal';
+  user_save($user);
+  }
+}
+
+function telartes_form_network_node_form_alter(&$form, &$form_state, $form_id){
+  $form['#submit'][] = '_validate_form_network';
+}
+
+function _validate_form_network(&$form, &$form_state) {
+  if(isset($form_state['values']['uid'])) {
+  $uid = $form_state['values']['uid'];
+  $user = user_load($uid);
+  $user->roles[6] = 'Red o articulación';
+  user_save($user);
+  }
+}
+
+function telartes_form_collective_node_form_alter(&$form, &$form_state, $form_id){
+    $form['#submit'][] = '_validate_form_collective';
+}
+
+function _validate_form_collective(&$form, &$form_state) {
+  if(isset($form_state['values']['uid'])) {
+  $uid = $form_state['values']['uid'];
+  $user = user_load($uid);
+  $user->roles[4] = 'Colectivo/Institucional';
+  user_save($user);
+  }
+}
+
+/**
+ * Implements hook_init();
+ */
+function telartes_init(){
+  drupal_add_js(drupal_get_path('module', 'telartes') . '/js/telartes.js');
+}
+
+/**
+ * Implements hook_menu_link().
+ */
+function telartes_menu_link__menu_menu_notifications($variables) {
+  $element = &$variables['element'];
+  global $user;
+  $node = telartes_node_load_by_user($user->uid);
+  if (isset($node->field_personal_picture['und'][0]['uri'])) {
+    $uri = $node->field_personal_picture['und'][0]['uri'];
+    $style = '64x64';
+    $image_path = image_style_url($style, $uri);
+    if ($element['#title'] == 'Usuario') {
+      $element['#title'] = '<span class="menu-user-picture" ><img alt="user" src="'.$image_path.'" /></span>';
+      $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$user->name.'</span></div>';
+    }
+  }
+  else {
+    if ($element['#title'] == 'Usuario') {
+      $element['#title'] = '<span class="menu-user-picture" ><i class="fa fa-user" aria-hidden="true"></i></span>';
+      if (isset($user->name)) {
+        $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$user->name.'</span></div>';
+      }
+    }
+  }
+  $element['#localized_options']['html'] = TRUE;
+  return theme_menu_link($variables);
+}
+
+/**
+ * Get node by type and user Id
+ *
+ * @param string $userID
+ *  Identifier unique of the user.
+ */
+function telartes_node_load_by_user($userID) {
+  $values = array();
+  $query = new EntityFieldQuery();
+  $entities = $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', array('personal', 'network', 'collective'))
+    ->propertyCondition('uid', $userID)
+    ->execute();
+  $node = '';
+  if (isset($entities['node'])) {
+    $nid = array_keys($entities['node']);
+    $node = node_load($nid[0]);
+  }
+  return $node;
+}
+
+/**
+ * Implements hook_views_query_alter.
+ */
+function telartes_views_query_alter(&$view, &$query) {
+  if ((($view->name == 'publicacion') && ('menu_badge_1' == $view->current_display))||
+    ($view->name == 'notificaciones' && 'page' == $view->current_display)) {
+    global $user;
+    $id = $user->uid;
+    $notifications = telartes_gets_taxonomy_campos_areas($id);
+    $conditions = db_or()
+      ->condition('field_data_field_audio_field_identification.field_audio_field_identification_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_audio_area_identification.field_audio_area_identification_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_call_fields.field_call_fields_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_call_areas.field_call_areas_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_document_fields.field_document_fields_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_document_areas.field_document_areas_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_event_field_identification.field_event_field_identification_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_event_area_identification.field_event_area_identification_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_photography_fields.field_photography_fields_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_photography_areas.field_photography_areas_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_multimedia_fields.field_multimedia_fields_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_multimedia_areas.field_multimedia_areas_tid',
+        $notifications['area'], 'IN')
+      ->condition('field_data_field_news_fields.field_news_fields_tid',
+        $notifications['campo'], 'IN')
+      ->condition('field_data_field_news_areas.field_news_areas_tid',
+        $notifications['area'], 'IN');
+
+    $query->add_where(0, $conditions);
+  }
+}
+
+  
+
+/**
+ * Gets tid of the specific content user(personal, collective or network).
+ *
+ * @param string $user_id
+ *  Unique identifier of the user for gets content user.
+ *
+ * @return array
+ *  Returns campos and areas tids.
+ */
+function telartes_gets_taxonomy_campos_areas($user_id) {
+  $campos = array();
+  $areas = array();
+  $node = telartes_node_load_by_user($user_id);
+  if (isset($node->type)) {
+    switch ($node->type) {
+      case 'collective':
+        if (isset($node->field_collective_f_notifications['und'])) {
+          $campos = telartes_gets_tid_user_interest($node->field_collective_f_notifications['und']);
+        }
+        if (isset($node->field_collective_a_notifications['und'])) {
+          $areas = telartes_gets_tid_user_interest($node->field_collective_a_notifications['und']);
+        }
+        break;
+      case 'network':
+        if (isset($node->field_network_field_notification['und'])) {
+          $campos = telartes_gets_tid_user_interest($node->field_network_field_notification['und']);
+        }
+        if (isset($node->field_network_area_notifications['und'])) {
+          $areas = telartes_gets_tid_user_interest($node->field_network_area_notifications['und']);
+        }
+        break;
+      case 'personal':
+        if (isset($node->field_personal_notifications['und'])) {
+          $campos = telartes_gets_tid_user_interest($node->field_personal_notifications['und']);
+        }
+        if (isset($node->field_personal_n_areas['und'])) {
+          $areas = telartes_gets_tid_user_interest($node->field_personal_n_areas['und']);
+        }
+        break;
+      default:
+        break;
+    }
+  }
+  $notifications = array('campo'=>$campos, 'area'=>$areas);
+  return $notifications;
+}
+
+/**
+ * Gets tid of the terms node.
+ *
+ * @param array $terms
+ *  Terms of the campos or areas.
+ *
+ * @return array
+ *  Returns tids of the user content
+ */
+function telartes_gets_tid_user_interest($terms) {
+  $tids = array();
+  foreach ($terms as $value) {
+    $tids[] = $value['tid'];
+  }
+  return $tids;
+}

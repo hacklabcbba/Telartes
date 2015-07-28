@@ -1,0 +1,6 @@
+name = "Bloque general"
+description = "Bloques"
+core = 7.x
+files[] = telartes.module
+package = Bloque General
+core = "7.x"

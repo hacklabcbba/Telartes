@@ -1,0 +1,261 @@
+// Non-modular or client styles for asides or sidebars.
+ $image_path: "../images";
+
+.profile {
+  padding: 35px;
+  .description {
+    display: none;
+  }
+  .grippie {
+    display: none;
+  }
+  .button {
+    color: #9532ad !important;
+    border: 1px solid #9532ad !important;
+    background: #eaeaea !important;
+  }
+}
+
+.form-item label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button {
+  background: #c1c1c1 !important;
+  border: 1px solid #111;
+  color: #111;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 8px !important;
+  text-transform: uppercase;
+}
+
+.form-submit {
+  background: #ecebe6 !important;
+  border: 2px solid #9530ac !important;
+  color: #9530ac !important;
+}
+
+.link-field-subrow {
+  float: left;
+  .link-field-url {
+  	overflow: hidden;
+      .form-item {
+        margin: 0;
+      .form-text {
+        float: left;
+        width: 100% !important;
+  	  }
+  	}
+  }
+} 
+
+/*----------------------------------------------------------------------------
+ *           User form
+ *---------------------------------------------------------------------------*/
+.node-personal-form,
+.node-collective-form,
+.node-network-form,
+.node-photography-form,
+.node-multimedia-form,
+.node-audio-form,
+.node-document-form,
+.node-news-form,
+.node-call-form,
+.node-event-form {
+  margin: 0 auto;
+  width: 100%;
+  .form-item-title {
+    height: 0;
+    overflow: hidden;
+    display: none;
+  }
+  .field-type-text,
+  .field-type-telephone,
+  .field-type-link-field {
+    float: left;
+    max-width: 388px !important;
+    margin: 0 10px;
+    .form-item {
+      label {
+        float: left;
+        margin: 8px;
+      }
+      input {
+        width: 238px;
+        float: right;
+      }
+    } 
+  }
+  .field-name-field-collective-name,
+  .field-name-field-network-network-name {
+    display: none;
+    height: 0;
+  }
+  .field-name-field-collective-f-notifications,
+  .field-name-field-network-field-notification,
+  .field-name-field-personal-notifications {
+    border-top: 1px solid #ccc;
+  }
+  .field-type-link-field {
+    .tabledrag-toggle-weight-wrapper {
+      display: none;
+      height: 0;
+    }
+  }
+  .field-name-field-personal-about-me,
+  .field-name-field-network-short-description,
+  .field-name-field-collective-description,
+  .field-name-field-network-review,
+  .field-name-field-collective-review,
+  .field-type-text-with-summary,
+  .field-name-field-call-convener,
+  .field-name-field-call-email,
+  .field-name-field-call-pdf {
+    clear: both;
+    float: left;
+    max-width: 60%;
+    margin-left: 0;
+    .text-format-wrapper .ckeditor_links {
+        display: none !important;
+      }
+    .form-type-textarea {
+      .form-textarea-wrapper {
+        border: 1px solid #000 !important; 
+        min-height: 200px;
+        textarea {
+          height: 100%;
+        }  
+      }
+    }
+    .filter-wrapper {
+      height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .field-name-field-personal-about-me {
+    width: 54%;
+  }
+  .field-type-text,
+  .field-type-telephone {
+    width: 384px;
+  }
+  .field-type-image,
+  .field-type-file,
+  .field-name-field-audio-upload {
+    float: left;
+    margin: 15px 0 0 3%;
+    width: 200px;
+  }
+  .field-type-image {
+    label {
+    }
+    .description {
+      display: none;
+    }
+  }
+  .field-type-taxonomy-term-reference {
+      clear: both;
+      margin: 9px 0;
+      overflow: hidden;
+      .form-type-checkbox {
+      float: left;
+      margin: 5px;
+      overflow: hidden;
+      width: 285px;
+      .form-checkbox {
+        margin: 7px 0;
+      }
+    }
+  }
+  .field-name-field-personal-others,
+  .field-name-field-collective-others,
+  .field-name-field-network-others {
+    .field-multiple-table thead {
+      background: none; 
+    }
+  }
+  .field-type-video-embed-field,
+  .field-name-field-audio-link,
+  .field-name-field-document-detail,
+  .field-name-field-document-link,
+  .field-name-field-call-fecha,
+  .field-name-field-call-web-address {
+    float: left;
+    clear: both;
+  }
+  .field-name-group-group {
+    display: none;  
+  }
+  .field-name-field-document-link {
+    max-width: 100% !important;
+  }
+  .field-name-field-network {
+  .form-type-textfield {
+    margin: 0;
+    label {
+    }
+    .form-text {
+      width: 100%;
+    }
+  }
+}
+}
+
+/*----------------------------------------------------------------------------
+ *           Upload content form
+ *---------------------------------------------------------------------------*/
+.node-photography-form,
+.node-multimedia-form,
+.node-audio-form,
+.node-document-form,
+.node-news-form,
+.node-call-form,
+.node-event-form {
+  .form-item-title {
+    display: block !important;
+    height: 55px !important;
+  }
+} 
+
+#edit-legal {
+  .option a,
+  .option strong {
+    text-transform: capitalize;
+    font-size: em-calc(18);
+  }
+  input {
+    float: left;
+    margin: 3px 10px 0 0;
+  }
+}
+
+.node-news-formm,
+.node-call-form {
+  .field-name-field-new-author-name,
+  .field-name-field-call-pdf {
+    .text-full {
+      width: 100% !important;
+    }
+  }
+  .field-type-image  {
+    float: left;
+    clear: both;
+    margin: 0;
+  }
+}
+
+.node-multimedia-form,
+.node-audio-form,
+.node-call-form {
+  .field-type-video-embed-field,
+  .field-type-link-field ,
+  .field-name-field-call-image,
+  .field-name-field-call-pdf {
+    width: 60%;
+    margin: 0px;
+  }
+}

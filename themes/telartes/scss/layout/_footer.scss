@@ -1,0 +1,46 @@
+// Non-modular or client styles for .l-footer region.
+
+
+.l-footer {
+  background: #222 !important;
+  margin: 0;
+  min-height: 170px !important;
+  .block-block {
+    margin-top: 80px;
+    max-width: 365px;
+    .content {
+  	  a {
+  	    font-size: 11px !important;
+  	    float: left;
+  	    line-height: 20px;
+  	    i {
+  	    	font-size: 37px;
+  	    }
+  	    .fa {
+          float: left;
+          margin-right: 11px;
+        }
+        .fa-drupal {
+          float: left;
+          margin-right: 11px;
+        }
+  	  }
+    }
+  }
+  .block-block-2 {
+    float: left;
+  }
+  .block-block-1 {
+    float: right;
+    max-width: 223px;
+  }
+}
+
+footer a {
+  color: #fff !important;
+  i {
+  	font-size: 37px;
+  }
+}
+
+.l-footer-columns {}
