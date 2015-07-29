@@ -12529,3 +12529,11 @@ button {
   font-weight: normal;
   src: local("Myriad Pro Bold"), url("MYRIADPRO-BOLD.woff") format("woff");
 }
+
+.not-front .sidebar {
+  width: 60px;
+  /* float: right !important; */
+  padding: 0 !important;
+  left: 0;
+  position: absolute;
+}
