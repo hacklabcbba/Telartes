@@ -1061,10 +1061,15 @@ select {
   }
 
   /* line 167, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
+  /*cesar*/
   .pull-6 {
-    position: relative;
-    right: 50%;
-    left: auto;
+    position: absolute;
+    
+    left: 0px;
+  }
+  .large-3.pull-6.sidebar-first.columns.sidebar{
+    width: 76px;
+    padding-left:0px;
   }
 
   /* line 166, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
@@ -10916,11 +10921,11 @@ li:hover > .menu {
   font-size: 0.75em;
 }
 /* line 1412, ../scss/layout/_main.scss */
-.not-front .sidebar {
+/* cesar.not-front .sidebar {
   width: 60px;
   float: left !important;
   padding: 0 !important;
-}
+}*/
 /* line 1416, ../scss/layout/_main.scss */
 .not-front .sidebar .menu .item-sidebar {
   background: #555;
@@ -11002,12 +11007,14 @@ li:hover > .menu {
 .not-front .sidebar .menu .item-sidebar .c-12 i:hover {
   color: #df2d28;
 }
+/**********************************************************/
+
 /* line 1480, ../scss/layout/_main.scss */
 .not-front .push-3 {
   left: 15%;
   position: relative;
   right: auto;
-  width: 60% !important;
+  width: 57% !important;
 }
 /* line 1486, ../scss/layout/_main.scss */
 .not-front .pull-9 {
@@ -12530,10 +12537,10 @@ button {
   src: local("Myriad Pro Bold"), url("MYRIADPRO-BOLD.woff") format("woff");
 }
 
-.not-front .sidebar {
+/*.not-front .sidebar {
   width: 60px;
-  /* float: right !important; */
+  float: right !important; 
   padding: 0 !important;
   left: 0;
   position: absolute;
-}
+}*/
