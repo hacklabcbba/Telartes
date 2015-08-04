@@ -11007,51 +11007,92 @@ li:hover > .menu {
 	box-shadow:0 0 5px #9ddff5;
 }
 
-/* Green Button */
 
-#block-menu-menu-menu-left .content .menu .home {	background-position:0 0;}
-#block-menu-menu-menu-left .content .menu .home:hover {	background-position:0 -39px;}
-#block-menu-menu-menu-left .content .menu .home span{
+#block-menu-menu-menu-left .content .menu .manifiesto {	background-position:0 0;}
+#block-menu-menu-menu-left .content .menu .manifiesto:hover {	background-position:0 -39px;}
+#block-menu-menu-menu-left .content .menu .manifiesto span{
 	background-color:#7da315;
 	color:#3d4f0c;
 	text-shadow:1px 1px 0 #99bf31;
 }
 
-/* Blue Button */
-
-#block-menu-menu-menu-left .content .menu .about { background-position:-38px 0;}
-#block-menu-menu-menu-left .content .menu .about:hover { background-position:-38px -39px;}
-#block-menu-menu-menu-left .content .menu .about span{
+#block-menu-menu-menu-left .content .menu .cultura-viva { background-position:-38px 0;}
+#block-menu-menu-menu-left .content .menu .cultura-viva:hover { background-position:-38px -39px;}
+#block-menu-menu-menu-left .content .menu .cultura-viva span{
 	background-color:#1e8bb4;
 	color:#223a44;
 	text-shadow:1px 1px 0 #44a8d0;
 }
 
-/* Orange Button */
-
-#block-menu-menu-menu-left .content .menu .services { background-position:-76px 0;}
-#block-menu-menu-menu-left .content .menu .services:hover { background-position:-76px -39px;}
-#block-menu-menu-menu-left .content .menu .services span{
+#block-menu-menu-menu-left .content .menu .cultura-red { background-position:-76px 0;}
+#block-menu-menu-menu-left .content .menu .cultura-red:hover { background-position:-76px -39px;}
+#block-menu-menu-menu-left .content .menu .cultura-red span{
 	background-color:#c86c1f;
 	color:#5a3517;
 	text-shadow:1px 1px 0 #d28344;
 }
 
-/* Yellow Button */
-
-#block-menu-menu-menu-left .content .menu .portfolio { background-position:-114px 0;}
-#block-menu-menu-menu-left .content .menu .portfolio:hover{ background-position:-114px -39px;}
-#block-menu-menu-menu-left .content .menu .portfolio span{
+#block-menu-menu-menu-left .content .menu .incidencia { background-position:-114px 0;}
+#block-menu-menu-menu-left .content .menu .incidencia:hover{ background-position:-114px -39px;}
+#block-menu-menu-menu-left .content .menu .incidencia span{
 	background-color:#d0a525;
 	color:#604e18;
 	text-shadow:1px 1px 0 #d8b54b;
 }
 
-/* Purple Button */
+#block-menu-menu-menu-left .content .menu .comunicacion { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .comunicacion:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .comunicacion span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
 
-#block-menu-menu-menu-left .content .menu .contact { background-position:-152px 0;}
-#block-menu-menu-menu-left .content .menu .contact:hover { background-position:-152px -39px;}
-#block-menu-menu-menu-left .content .menu .contact span{
+#block-menu-menu-menu-left .content .menu .formacion { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .formacion:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .formacion span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .economia { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .economia:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .economia span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .boletin { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .boletin:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .boletin span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .foro { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .foro:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .foro span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .twitter { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .twitter:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .twitter span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .facebook { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .facebook:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .facebook span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+#block-menu-menu-menu-left .content .menu .YOUTUBE { background-position:-152px 0;}
+#block-menu-menu-menu-left .content .menu .YOUTUBE:hover { background-position:-152px -39px;}
+#block-menu-menu-menu-left .content .menu .YOUTUBE span{
 	background-color:#af1e83;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
