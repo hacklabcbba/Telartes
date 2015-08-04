@@ -211,6 +211,28 @@ function telartes_theme($existing, $type, $theme, $path){
     ),
   );
 } 
+/* Adiciona etiqueta span al menu izquierdo */
+function telartes_menu_link(array $variables) {
+	$element = $variables['element'];
+	$sub_menu = '';
+
+	if ($element['#below']) {
+		$sub_menu = drupal_render($element['#below']);
+	}
+    //dpm($element['#original_link']['menu_name']);
+	if ($element['#original_link']['menu_name'] == 'menu-menu-left') {
+		$linkText = '<span>' . $element['#title'] . '</span>';
+		$element['#localized_options']['html'] = true;
+	} else {
+		$linkText = $element['#title'];
+	}
+
+
+	$output = l($linkText, $element['#href'], $options = $element['#localized_options']);
+
+
+	return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
 
 /**
  * Implements hook_form_FORM_ID_alter().
