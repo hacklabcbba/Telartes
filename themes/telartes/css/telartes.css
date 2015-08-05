@@ -11047,7 +11047,6 @@ li:hover > .menu {
 	color:#460f35;
 	text-shadow:1px 1px 0 #a21152;
 }
-
 #block-menu-menu-menu-left .content .menu .formacion { background-position:-179px 0;}
 #block-menu-menu-menu-left .content .menu .formacion:hover { background-position:-179px -35px;}
 #block-menu-menu-menu-left .content .menu .formacion span{
@@ -11055,43 +11054,51 @@ li:hover > .menu {
 	color:#460f35;
 	text-shadow:1px 1px 0 #eb4b22;
 }
-#block-menu-menu-menu-left .content .menu .economia { background-position:-215px 0;}
-#block-menu-menu-menu-left .content .menu .economia:hover { background-position:-215px -35px;}
+
+#block-menu-menu-menu-left .content .menu .circulacion { background-position:-215px 0;}
+#block-menu-menu-menu-left .content .menu .circulacion:hover { background-position:-215px -35px;}
+#block-menu-menu-menu-left .content .menu .circulacion span{
+	background-color:#eb4b22;
+	color:#460f35;
+	text-shadow:1px 1px 0 #eb4b22;
+}
+#block-menu-menu-menu-left .content .menu .economia { background-position:-251px 0;}
+#block-menu-menu-menu-left .content .menu .economia:hover { background-position:-251px -35px;}
 #block-menu-menu-menu-left .content .menu .economia span{
 	background-color:#e31d2c;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
 }
-#block-menu-menu-menu-left .content .menu .boletin { background-position:-251px 0;}
-#block-menu-menu-menu-left .content .menu .boletin:hover { background-position:-251px -35px;}
+#block-menu-menu-menu-left .content .menu .boletin { background-position:-287px 0;}
+#block-menu-menu-menu-left .content .menu .boletin:hover { background-position:-287px -35px;}
 #block-menu-menu-menu-left .content .menu .boletin span{
 	background-color:#bea229;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
 }
-#block-menu-menu-menu-left .content .menu .foro { background-position:-287px 0;}
-#block-menu-menu-menu-left .content .menu .foro:hover { background-position:-287px -35px;}
+#block-menu-menu-menu-left .content .menu .foro { background-position:-323px 0;}
+#block-menu-menu-menu-left .content .menu .foro:hover { background-position:-323px -35px;}
 #block-menu-menu-menu-left .content .menu .foro span{
 	background-color:#af1e83;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
 }
-#block-menu-menu-menu-left .content .menu .twitter { background-position:-323px 0;}
-#block-menu-menu-menu-left .content .menu .twitter:hover { background-position:-323px -35px;}
+#block-menu-menu-menu-left .content .menu .twitter { background-position:-359px 0;}
+#block-menu-menu-menu-left .content .menu .twitter:hover { background-position:-359px -35px;}
 #block-menu-menu-menu-left .content .menu .twitter span{
 	background-color:#af1e83;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
 }
-#block-menu-menu-menu-left .content .menu .facebook { background-position:-359px 0;}
-#block-menu-menu-menu-left .content .menu .facebook:hover { background-position:-359px -35px;}
+#block-menu-menu-menu-left .content .menu .facebook { background-position:-395px 0;}
+#block-menu-menu-menu-left .content .menu .facebook:hover { background-position:-395px -35px;}
 #block-menu-menu-menu-left .content .menu .facebook span{
 	background-color:#af1e83;
 	color:#460f35;
 	text-shadow:1px 1px 0 #d244a6;
 }
-#block-menu-menu-menu-left .content .menu .youtube { background-position:-395px 0;}
-#block-menu-menu-menu-left .content .menu .youtube:hover { background-position:-395px -35px;}
+#block-menu-menu-menu-left .content .menu .youtube { background-position:-431px 0;}
+#block-menu-menu-menu-left .content .menu .youtube:hover { background-position:-431px -35px;}
 #block-menu-menu-menu-left .content .menu .youtube span{
 	background-color:#af1e83;
 	color:#460f35;
