@@ -10938,7 +10938,7 @@ li:hover > .menu {
 /* line 1416, ../scss/layout/_main.scss */
 /* cesar Menu */
 .not-front .sidebar .menu .item-sidebar {
-  background: #555;
+  background: #CCC;
   list-style: none;
 }
 /* line 1419, ../scss/layout/_main.scss */
@@ -10957,26 +10957,28 @@ li:hover > .menu {
 /* nuevo menu Cesar */
 #block-menu-menu-menu-left .content .menu li{
 	list-style:none;
-	height:39px;
-	padding:2px;
-	width:40px;
+	height:3.3em;
+	padding:10px;
+	width:60px;
 }
 
 #block-menu-menu-menu-left .content .menu span{
 	/* Container properties */
 	width:0;
-	left:38px;
+	left:50px;
+	max-width:145px;
 	padding:0;
+	margin-top: -10px;
 	position:absolute;
 	overflow:hidden;
 
-	/* Text properties */
-	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
-	font-size:13px;
+	/* Text properties 
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;*/
+	font-size:9pt;
 	font-weight:bold;
-	letter-spacing:0.6px;
+	letter-spacing:0.8px;
 	white-space:nowrap;
-	line-height:39px;
+	line-height:37pt;
 	
 	/* CSS3 Transition: */
 	-webkit-transition: 0.25s;
@@ -11011,98 +11013,106 @@ li:hover > .menu {
 #block-menu-menu-menu-left .content .menu .manifiesto {	background-position:0 0;}
 #block-menu-menu-menu-left .content .menu .manifiesto:hover {	background-position:0 -35px;}
 #block-menu-menu-menu-left .content .menu .manifiesto span{
-	background-color:#7da315;
-	color:#3d4f0c;
-	text-shadow:1px 1px 0 #99bf31;
+	background-color:#e16666;
+	color:#FFF;
+	/*text-shadow:1px 1px 1px #FFF;*/
 }
 
 #block-menu-menu-menu-left .content .menu .cultura-viva { background-position:-36px 0;}
 #block-menu-menu-menu-left .content .menu .cultura-viva:hover { background-position:-36px -35px;}
 #block-menu-menu-menu-left .content .menu .cultura-viva span{
-	background-color:#17acab;
-	color:#223a44;
-	text-shadow:1px 1px 0 #17acab;
+	 background-color: #17acab;
+	color:#FFF;
+    white-space: initial;
+    line-height: 17px;
+	text-align:center;
+	/*text-shadow:1px 1px 0 #17acab;*/
 }
 
 #block-menu-menu-menu-left .content .menu .cultura-red { background-position:-71px 0;}
 #block-menu-menu-menu-left .content .menu .cultura-red:hover { background-position:-71px -35px;}
 #block-menu-menu-menu-left .content .menu .cultura-red span{
-	background-color:#377083;
-	color:#5a3517;
-	text-shadow:1px 1px 0 #377083;
+	background-color:#1089b1;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #377083;*/
 }
 
 #block-menu-menu-menu-left .content .menu .incidencia { background-position:-107px 0;}
 #block-menu-menu-menu-left .content .menu .incidencia:hover{ background-position:-107px -35px;}
 #block-menu-menu-menu-left .content .menu .incidencia span{
-	background-color:#377083;
-	color:#604e18;
-	text-shadow:1px 1px 0 #377083;
+	background-color:#ee2c42;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #377083;*/
 }
 
 #block-menu-menu-menu-left .content .menu .comunicacion { background-position:-144px 0;}
 #block-menu-menu-menu-left .content .menu .comunicacion:hover { background-position:-144px -35px;}
 #block-menu-menu-menu-left .content .menu .comunicacion span{
-	background-color:#a21152;
-	color:#460f35;
-	text-shadow:1px 1px 0 #a21152;
+	background-color:#d9176e;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #a21152;*/
 }
+
 #block-menu-menu-menu-left .content .menu .formacion { background-position:-179px 0;}
 #block-menu-menu-menu-left .content .menu .formacion:hover { background-position:-179px -35px;}
 #block-menu-menu-menu-left .content .menu .formacion span{
-	background-color:#eb4b22;
-	color:#460f35;
-	text-shadow:1px 1px 0 #eb4b22;
+	background-color:#f04d23;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #eb4b22;*/
 }
-
 #block-menu-menu-menu-left .content .menu .circulacion { background-position:-215px 0;}
 #block-menu-menu-menu-left .content .menu .circulacion:hover { background-position:-215px -35px;}
 #block-menu-menu-menu-left .content .menu .circulacion span{
-	background-color:#eb4b22;
-	color:#460f35;
-	text-shadow:1px 1px 0 #eb4b22;
+	background-color:#ec1e2e;
+	color:#FFF;
+
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
-#block-menu-menu-menu-left .content .menu .economia { background-position:-251px 0;}
-#block-menu-menu-menu-left .content .menu .economia:hover { background-position:-251px -35px;}
+
+#block-menu-menu-menu-left .content .menu .economia { background-position:-252px 0;}
+#block-menu-menu-menu-left .content .menu .economia:hover { background-position:-252px -35px;}
 #block-menu-menu-menu-left .content .menu .economia span{
-	background-color:#e31d2c;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#fcce01;
+	color:#FFF;
+	text-align:center;
+    white-space: initial;
+    line-height: 25px;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
 #block-menu-menu-menu-left .content .menu .boletin { background-position:-287px 0;}
 #block-menu-menu-menu-left .content .menu .boletin:hover { background-position:-287px -35px;}
 #block-menu-menu-menu-left .content .menu .boletin span{
-	background-color:#bea229;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#722a79;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
-#block-menu-menu-menu-left .content .menu .foro { background-position:-323px 0;}
-#block-menu-menu-menu-left .content .menu .foro:hover { background-position:-323px -35px;}
+#block-menu-menu-menu-left .content .menu .foro { background-position:-324px 0;}
+#block-menu-menu-menu-left .content .menu .foro:hover { background-position:-324px -35px;}
 #block-menu-menu-menu-left .content .menu .foro span{
-	background-color:#af1e83;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#96c93f;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
-#block-menu-menu-menu-left .content .menu .twitter { background-position:-359px 0;}
-#block-menu-menu-menu-left .content .menu .twitter:hover { background-position:-359px -35px;}
+#block-menu-menu-menu-left .content .menu .twitter { background-position:-395px 0;}
+#block-menu-menu-menu-left .content .menu .twitter:hover { background-position:-395px -35px;}
 #block-menu-menu-menu-left .content .menu .twitter span{
-	background-color:#af1e83;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#6da6d9;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
-#block-menu-menu-menu-left .content .menu .facebook { background-position:-395px 0;}
-#block-menu-menu-menu-left .content .menu .facebook:hover { background-position:-395px -35px;}
+#block-menu-menu-menu-left .content .menu .facebook { background-position:-361px 0;}
+#block-menu-menu-menu-left .content .menu .facebook:hover { background-position:-361px -35px;}
 #block-menu-menu-menu-left .content .menu .facebook span{
-	background-color:#af1e83;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#3959a1;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
-#block-menu-menu-menu-left .content .menu .youtube { background-position:-431px 0;}
-#block-menu-menu-menu-left .content .menu .youtube:hover { background-position:-431px -35px;}
+#block-menu-menu-menu-left .content .menu .youtube { background-position:-432px 0;}
+#block-menu-menu-menu-left .content .menu .youtube:hover { background-position:-432px -35px;}
 #block-menu-menu-menu-left .content .menu .youtube span{
-	background-color:#af1e83;
-	color:#460f35;
-	text-shadow:1px 1px 0 #d244a6;
+	background-color:#e54e42;
+	color:#FFF;
+	/*text-shadow:1px 1px 0 #d244a6;*/
 }
 
 /* fin nuevo menu cesar */
