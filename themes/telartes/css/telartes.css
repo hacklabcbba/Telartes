@@ -11015,6 +11015,10 @@ li:hover > .menu {
 #block-menu-menu-menu-left .content .menu .manifiesto span{
 	background-color:#e16666;
 	color:#FFF;
+    white-space: initial;
+    line-height: 17px;
+	text-align:center;
+    line-height: 25px;
 	/*text-shadow:1px 1px 1px #FFF;*/
 }
 
@@ -11060,12 +11064,16 @@ li:hover > .menu {
 	color:#FFF;
 	/*text-shadow:1px 1px 0 #eb4b22;*/
 }
+
 #block-menu-menu-menu-left .content .menu .circulacion { background-position:-215px 0;}
 #block-menu-menu-menu-left .content .menu .circulacion:hover { background-position:-215px -35px;}
 #block-menu-menu-menu-left .content .menu .circulacion span{
 	background-color:#ec1e2e;
 	color:#FFF;
-
+    white-space: initial;
+    line-height: 17px;
+	text-align:center;
+    line-height: 25px;
 	/*text-shadow:1px 1px 0 #d244a6;*/
 }
 
