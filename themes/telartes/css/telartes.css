@@ -855,6 +855,7 @@ select {
   .large-3 {
     position: relative;
     width: 25%;
+    float: right;
   }
 
   /* line 158, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
