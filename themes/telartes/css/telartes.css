@@ -12748,3 +12748,70 @@ button {
   left: 0;
   position: absolute;
 }*/
+
+
+/*----*/
+
+/*----* $HOME */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.front .custom-menu-wrapper .main-nav li ul li a {
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+}
+
+.custom-menu-wrapper .menu-manifiesto {
+  left: 85px;
+}
+
+.custom-menu-wrapper .comunicacion {
+  top: 30px;
+  left: 570px;
+}
+
+.custom-menu-wrapper .formacion {
+  top: 174px;
+  left: 980px;
+}
+
+.custom-menu-wrapper .cultura-red {
+  top: 24px;
+  left: 870px;
+}
+
+.custom-menu-wrapper .cultura-viva-comunitaria {
+  top: 337px;
+  left: 830px;
+}
+
+.custom-menu-wrapper .boletin {
+  left: 90px;
+  top: 310px;
+}
+
+.custom-menu-wrapper .menu-inciedncias {
+  left: 578px;
+  top: 187px;
+}
+
+.custom-menu-wrapper .foro {
+  left: 356px;
+  top: 320px;
+}
+
+.custom-menu-wrapper .menu-economia {
+  left: 337px;
+  top: 120px;
+}
+
+/*----* $CIRCULACIÓN CULTURAL */
+
+.block-views table.views-view-grid {
+  border: none;
+}
+
+/*----* $BOLETIN */
+.section-boletin .flexslider .slides li {
+  height: 257px;
+  overflow:hidden;
+}
