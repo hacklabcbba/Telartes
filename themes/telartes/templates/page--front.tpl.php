@@ -135,7 +135,7 @@
                   <a class="plus-icon" href="content/incidencia">incidencia</a>
                   <ul class="dropdown child-menu">
                     <li>
-                      
+                      <a href="http://abrecultura.org/" title="abre cultura">abre cultura</a>
                     </li>
                     <li>
                       <!--<a href="#" title="leyes optales">legislación Cultural</a>-->
@@ -156,11 +156,26 @@
 
                     </li>
                     <li>
-                      <a href="http://faccionlatina.org" title="leyes optales">facción</a>
+                      <a href="http://faccionlatina.org" title="Facción">facción</a>
                     </li>
                   </ul>
                 </li>
               </ul><!--/.comunicacion -->
+              
+              <ul class="circulacion">
+                <li>
+                  <a class="plus-icon" href="content/circulacion" title="circulación">circulación</a>
+                  <ul class="dropdown child-menu">
+                    <li>
+
+                    </li>
+                    <li>
+                      <a href="https://docs.google.com/a/telartes.org.bo/forms/d/1Il8KOf-xWcaR0thqhWHF0YzAq3KUuo7pH4Y5gKyUeNI/viewform" title="hospeda cultura">hospeda cultura</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul><!--/.circulacion -->
+              
               <ul class="formacion">
                 <li>
                   <a class="plus-icon" href="content/formación" title="formacion">formación</a>
@@ -188,10 +203,10 @@
               </ul><!--/.foro -->
               <ul class="menu-economia">
                 <li class="expanded">
-                  <a class="plus-icon" href="content/economia-colaborativa"  title="economia colaborativa">economia colaborativa</a>
+                  <a class="plus-icon" href="content/economia-colaborativa"  title="sostenibilidad">sostenibilidad</a>
                   <ul class="dropdown child-menu">
                     <li>
-                      <a href="https://docs.google.com/forms/d/1Il8KOf-xWcaR0thqhWHF0YzAq3KUuo7pH4Y5gKyUeNI/viewform" title="minka">hospeda cultura</a>
+                      <a href="http://minka.me/" title="minka">Minka</a>
                     </li>
                     <li>
                      <!--/ <a href="#" title="talleres">Banco de Recursos 4D</a>-->
