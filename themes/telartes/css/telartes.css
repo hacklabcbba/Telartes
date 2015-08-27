@@ -7670,10 +7670,10 @@ li:hover > .menu {
   line-height: 1;
 }
 /* line 34, ../scss/layout/_main.scss */
-/*.row a {*/
-  /*font-size: 16px;*/
-  /*color: #1a1a1a;*/
-/*}*/
+.row a {
+  font-size: 16px;
+  color: #1a1a1a;
+}
 
 /*----------------------------------------------------------------------------
  *           view-news
@@ -8094,7 +8094,7 @@ li:hover > .menu {
 .block-views .content,
 .block-telartes .content {
   overflow: hidden;
-  /*text-align: center;*/
+  text-align: center;
 }
 /* line 370, ../scss/layout/_main.scss */
 .block-views .content .more-link,
@@ -8131,7 +8131,7 @@ li:hover > .menu {
 .collapsiblock-processed .content .view {
   margin: 0 auto;
   max-width: 1000px;
-  /*text-align: center !important;*/
+  text-align: center !important;
 }
 /* line 401, ../scss/layout/_main.scss */
 .collapsiblock-processed .item-list > ul {
@@ -8895,10 +8895,10 @@ li:hover > .menu {
   border: none;
 }
 /* line 1039, ../scss/layout/_main.scss */
-/*.not-front .main .breadcrumbs li a {*/
-  /*color: #c2c2c2;*/
-  /*text-transform: none;*/
-/*}*/
+.not-front .main .breadcrumbs li a {
+  color: #c2c2c2;
+  text-transform: none;
+}
 /* line 1044, ../scss/layout/_main.scss */
 .not-front .main .block-menu {
   float: left;
@@ -11543,7 +11543,7 @@ footer a i {
 .block-views .view {
   margin: 0 auto;
   max-width: 1000px;
-  /*text-align: center !important;*/
+  text-align: center !important;
 }
 
 /* line 240, ../scss/layout/_custom-menu.scss */
@@ -12757,42 +12757,42 @@ button {
 
 /*----/----/ $TAGS */
 body {
-  color:#404041;
-  font-family: "Garamond Pro";
-  text-align: justify;
+  /*color:#404041;*/
+  /*font-family: "Garamond Pro";*/
+  /*text-align: justify;*/
 }
 
 h1, h2, h3, h4, h5, h6,
 .views-field-title {
-  font-family: "Open Sans",sans-serif;
-  color: #6d6e70;
-  font-weight: normal;
+  /*font-family: "Open Sans",sans-serif;*/
+  /*color: #6d6e70;*/
+  /*font-weight: normal;*/
 }
 
-h1 a {
-  color: #404041;
-}
-h2 a, h3 a, h4 a, h5 a, h6 a, .views-field-title a {
-  color: #6d6e70;
-}
+/*h1 a {*/
+  /*color: #404041;*/
+/*}*/
+/*h2 a, h3 a, h4 a, h5 a, h6 a, .views-field-title a {*/
+  /*color: #6d6e70;*/
+/*}*/
 
-h1 {
-  font-size:25px;
-  color: #404041;
-  font-weight: bold;
-}
+/*h1 {*/
+  /*font-size:25px;*/
+  /*color: #404041;*/
+  /*font-weight: bold;*/
+/*}*/
 
-h2 {
-  font-size:20px;
-}
+/*h2 {*/
+  /*font-size:20px;*/
+/*}*/
 
-h3 {
-  font-size:18px;
-  color: #6d6e70;
-}
-h4 {
-  font-size:16px;
-}
+/*h3 {*/
+  /*font-size:18px;*/
+  /*color: #6d6e70;*/
+/*}*/
+/*h4 {*/
+  /*font-size:16px;*/
+/*}*/
 
 /*----/----/ $CLASSES */
 .breadcrumbs {
