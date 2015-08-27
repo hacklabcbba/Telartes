@@ -7616,13 +7616,13 @@ li:hover > .menu {
   margin-bottom: 11px;
 }
 /* line 252, ../scss/layout/_header.scss */
-.not-logged-in .menu .first-icon-user .menu .menu-usuario .icono-usuario {
-  background: #555;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
-  padding: 6px 52px;
-  width: 100%;
-}
+/*.not-logged-in .menu .first-icon-user .menu .menu-usuario .icono-usuario {*/
+  /*background: #555;*/
+  /*border-bottom: 1px solid #fff;*/
+  /*border-top: 1px solid #fff;*/
+  /*padding: 6px 52px;*/
+  /*width: 100%;*/
+/*}*/
 /* line 260, ../scss/layout/_header.scss */
 .not-logged-in .menu .first-icon-user .menu li {
   text-align: center;
@@ -7670,10 +7670,10 @@ li:hover > .menu {
   line-height: 1;
 }
 /* line 34, ../scss/layout/_main.scss */
-.row a {
-  font-size: 16px;
-  color: #1a1a1a;
-}
+/*.row a {*/
+  /*font-size: 16px;*/
+  /*color: #1a1a1a;*/
+/*}*/
 
 /*----------------------------------------------------------------------------
  *           view-news
@@ -8094,7 +8094,7 @@ li:hover > .menu {
 .block-views .content,
 .block-telartes .content {
   overflow: hidden;
-  text-align: center;
+  /*text-align: center;*/
 }
 /* line 370, ../scss/layout/_main.scss */
 .block-views .content .more-link,
@@ -8131,7 +8131,7 @@ li:hover > .menu {
 .collapsiblock-processed .content .view {
   margin: 0 auto;
   max-width: 1000px;
-  text-align: center !important;
+  /*text-align: center !important;*/
 }
 /* line 401, ../scss/layout/_main.scss */
 .collapsiblock-processed .item-list > ul {
@@ -8895,10 +8895,10 @@ li:hover > .menu {
   border: none;
 }
 /* line 1039, ../scss/layout/_main.scss */
-.not-front .main .breadcrumbs li a {
-  color: #c2c2c2;
-  text-transform: none;
-}
+/*.not-front .main .breadcrumbs li a {*/
+  /*color: #c2c2c2;*/
+  /*text-transform: none;*/
+/*}*/
 /* line 1044, ../scss/layout/_main.scss */
 .not-front .main .block-menu {
   float: left;
@@ -11543,7 +11543,7 @@ footer a i {
 .block-views .view {
   margin: 0 auto;
   max-width: 1000px;
-  text-align: center !important;
+  /*text-align: center !important;*/
 }
 
 /* line 240, ../scss/layout/_custom-menu.scss */
@@ -12752,11 +12752,114 @@ button {
 
 /*----*/
 
-/*----* $HOME */
+/*----/ $GENERAL */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
 
+/*----/----/ $TAGS */
+body {
+  color:#404041;
+  font-family: "Garamond Pro";
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6,
+.views-field-title {
+  font-family: "Open Sans",sans-serif;
+  color: #6d6e70;
+  font-weight: normal;
+}
+
+h1 a {
+  color: #404041;
+}
+h2 a, h3 a, h4 a, h5 a, h6 a, .views-field-title a {
+  color: #6d6e70;
+}
+
+h1 {
+  font-size:25px;
+  color: #404041;
+  font-weight: bold;
+}
+
+h2 {
+  font-size:20px;
+}
+
+h3 {
+  font-size:18px;
+  color: #6d6e70;
+}
+h4 {
+  font-size:16px;
+}
+
+/*----/----/ $CLASSES */
+.breadcrumbs {
+  margin-top: 11px;
+}
+
+.breadcrumbs a {
+  color:#CFCFD1;
+  font-size: 12px;
+  font-family: "Open Sans",sans-serif;
+}
+
+.breadcrumbs > *:before {
+  content: "/";
+  color: #aaa;
+  font-size: 13px;
+}
+
+.views-field-field-event-date {
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+/*----/ $HEADER */
+.l-header,
+.l-header .contain-to-grid {
+  background: #d2d2d4;
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user{
+  background: #A7A7AA;
+}
+
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
+  background:#555556 ;
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
+  color: #A7A7AA;
+}
+.top-bar-section .main-nav li a {
+  font-family: "Open Sans",sans-serif;
+  font-size:13px;
+  color: #555556 !important;
+}
+
+.top-bar-section .main-nav li a.contacto {
+  color:transparent !important;
+  visibility: hidden;
+}
+
+.top-bar-section .main-nav li a.contacto i.fa.fa-envelope-o {
+  color: #555556 !important;
+  visibility: visible;
+}
+
+.top-bar-section .main-nav li a:hover:not(.button),
+.top-bar-section .main-nav li a:focus:not(.button),
+.top-bar-section .main-nav li a.active {
+  border-bottom: 2px solid #555556
+}
+
+
+
+/*----/ $HOME */
 .front .custom-menu-wrapper .main-nav li ul li a {
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Open Sans",sans-serif;
 }
 
@@ -12776,7 +12879,7 @@ button {
 
 .custom-menu-wrapper .cultura-red {
   top: 24px;
-  left: 870px;
+  left: 850px;
 }
 
 .custom-menu-wrapper .cultura-viva-comunitaria {
@@ -12785,7 +12888,7 @@ button {
 }
 
 .custom-menu-wrapper .boletin {
-  left: 90px;
+  left: 90px;t
   top: 310px;
 }
 
@@ -12800,6 +12903,10 @@ button {
 }
 
 .custom-menu-wrapper .menu-economia {
+  left: 415px;
+  top: 240px;
+}
+.custom-menu-wrapper .circulacion {
   left: 337px;
   top: 120px;
 }
