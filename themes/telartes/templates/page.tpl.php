@@ -131,7 +131,7 @@
 
       <a id="main-content"></a>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+      <?php if ($breadcrumb): print   $breadcrumb; endif; ?>
 
       <?php if ($title && !$is_front): ?>
         <?php print render($title_prefix); ?>
