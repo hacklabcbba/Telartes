@@ -11238,14 +11238,23 @@ li:hover > .menu {
     margin-left: 5%;
 }
 
-#hivos {
-    float: right;
-}
 #cc {
     padding-top: 10px;
     float: left;
 }
-
+#hivos {
+   float: left;
+   padding-left: 10%;
+}
+#hacklab{
+    float: left;
+    padding-top: 7px;
+    padding-left: 160px;
+}
+#drupal{
+    float: left;
+    padding-left: 160px;
+}
 /* line 12, ../scss/layout/_footer.scss */
 .l-footer .block-block .content a {
   font-size: 11px !important;
