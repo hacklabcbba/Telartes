@@ -11229,13 +11229,22 @@ li:hover > .menu {
 .l-footer {
   background: #222 !important;
   margin: 0;
-  min-height: 170px !important;
+  min-height: 140px !important;
 }
 /* line 8, ../scss/layout/_footer.scss */
 .l-footer .block-block {
-  margin-top: 80px;
-  max-width: 365px;
+  margin-top: 5px;
+  max-width: 90%;
 }
+
+#hivos {
+    float: right;
+}
+#cc {
+    padding-top: 10px;
+    float: left;
+}
+
 /* line 12, ../scss/layout/_footer.scss */
 .l-footer .block-block .content a {
   font-size: 11px !important;
