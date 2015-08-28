@@ -11234,7 +11234,8 @@ li:hover > .menu {
 /* line 8, ../scss/layout/_footer.scss */
 .l-footer .block-block {
   margin-top: 5px;
-  max-width: 90%;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 #hivos {
