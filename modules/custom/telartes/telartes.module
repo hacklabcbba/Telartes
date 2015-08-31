@@ -14,7 +14,7 @@ function telartes_menu() {
     'access callback' => TRUE
   );
   $items['page/mediateca'] = array(
-    'page callback' => 'body_mediateca',
+    'page callback' => 'page_mediateca',
     'access callback' => TRUE
   );
   
@@ -159,9 +159,56 @@ function body_mediateca() {
   return $output;
 }
 
+function page_mediateca() {
+  $multimedia = views_embed_view ( 'multimedia' , 'block');
+  $document = views_embed_view ('document' , 'block');
+  $photography = views_embed_view ('photography','block');
+  $audio = views_embed_view ('audio','block');
+  $audiotwo = views_embed_view ('audio','block_2');
+  $multimediatwo = views_embed_view ('multimedia', 'block_2');
+  $documenttwo = views_embed_view ('document' , 'block_2');
+  $photographytwo = views_embed_view ('photography' , 'block_2');
+  $output = t('<div class="tabb"><ul class="mediateca">
+  <li class="seleccion_multimedia">
+    <a href="#documentos">DOCUMENTOS</a>
+  </li>
+  <li>
+    <a href="#videos">VIDEOS</a>
+  </li>
+  <li>
+    <a href ="#fotos">FOTOS</a>
+  </li>
+  <li>
+    <a href ="#audios">AUDIOS</a>
+  </li>
+  </ul>
+  <div class = "row-tab">
+  <div class = "tabmultimedia" id = "">
+    '.$documenttwo.''.$multimediatwo.''.$photographytwo.''.$audiotwo.'
+  </div>
+  <div class ="tabmultimedia" id = "documentos">
+    '.$document.'
+  </div>
+  <div class = "tabmultimedia" id = "videos">
+    '.$multimedia.'
+  </div>
+  <div class = "tabmultimedia" id = "fotos">
+    '.$photography.'
+  </div>
+  <div class = "tabmultimedia" id = "audios">
+    '.$audio.'
+  </div>
+  </div>
+  </div>
+  ');
+  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'page/mediateca', array('html' => TRUE)).'</div>';
+  return $output;
+}
+
 /**
   *Implements hook_form_alter();
   */
+
 function telartes_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
   if ($form['#id'] == "views-exposed-form-culture-calendar-block") {
     $form['tid']['#options']['All'] = t('-Todas-');
@@ -197,9 +244,9 @@ function telartes_form_views_exposed_form_alter(&$form, &$form_state, $form_id) 
   }
   else if ($form['#id'] == "views-exposed-form-culturals-actors-page") {
     $form['type']['#options']['All'] = t('-Todos-');
-    $form['type']['#options']['collective'] = t('Colectivo/Institución');
+    $form['type']['#options']['colectivo'] = t('Colectivo/Institución');
     $form['type']['#options']['personal'] = t('Individual/Personal');
-    $form['type']['#options']['network'] = t('Red/Colectivo');
+    $form['type']['#options']['red'] = t('Red/Colectivo');
     $form['tid_1']['#options']['All'] = t('-Todas-');
     $form['tid_2']['#options']['All'] = t('-Todas-');
   }
@@ -295,7 +342,7 @@ function telartes_node_load_by_user($userID) {
   $values = array();
   $query = new EntityFieldQuery();
   $entities = $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', array('personal', 'network', 'collective'))
+    ->entityCondition('bundle', array('personal', 'red', 'colectivo'))
     ->propertyCondition('uid', $userID)
     ->execute();
   $node = '';
@@ -366,7 +413,7 @@ function telartes_gets_taxonomy_campos_areas($user_id) {
   $node = telartes_node_load_by_user($user_id);
   if (isset($node->type)) {
     switch ($node->type) {
-      case 'collective':
+      case 'colectivo':
         if (isset($node->field_collective_f_notifications['und'])) {
           $campos = telartes_gets_tid_user_interest($node->field_collective_f_notifications['und']);
         }
@@ -374,7 +421,7 @@ function telartes_gets_taxonomy_campos_areas($user_id) {
           $areas = telartes_gets_tid_user_interest($node->field_collective_a_notifications['und']);
         }
         break;
-      case 'network':
+      case 'red':
         if (isset($node->field_network_field_notification['und'])) {
           $campos = telartes_gets_tid_user_interest($node->field_network_field_notification['und']);
         }
