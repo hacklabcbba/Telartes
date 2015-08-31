@@ -13,6 +13,12 @@ function telartes_menu() {
     'page callback' => 'telartes_mediateca',
     'access callback' => TRUE
   );
+  $items['page/mediateca'] = array(
+    'page callback' => 'body_mediateca',
+    'access callback' => TRUE
+  );
+  
+  
   $items['user/%user/Editar-Formulario'] = array(
     'title' => 'Editar Formulario de Registro',
     'type' => MENU_LOCAL_TASK,
@@ -149,7 +155,7 @@ function body_mediateca() {
   </div>
   </div>
   ');
-  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'mediateca', array('html' => TRUE)).'</div>';
+  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'page/mediateca', array('html' => TRUE)).'</div>';
   return $output;
 }
 
