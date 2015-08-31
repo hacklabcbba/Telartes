@@ -836,6 +836,9 @@ select {
     margin-right: auto;
     float: none !important;
   }
+
+
+
 }
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 768px) {
@@ -1064,16 +1067,27 @@ select {
   /* line 167, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
   /*cesar*/
   .pull-6 {
-    position: fixed;
-    top:70px;
-    left: 0px;
+    position: fixed !important;
+    top:70px !important;
+    left: 0px !important;
+  }
+  .pull-9 {
+    position: fixed !important;
+    top:70px !important;
+    left: 0px !important;
   }
   .large-3.pull-6.sidebar-first.columns.sidebar{
     width: 76px;
     padding-left:0px;
     padding-top:0px;
+    
   }
-  
+  .large-3.pull-9.sidebar-first.columns.sidebar{
+    width: 76px;
+    padding-left:0px;
+    padding-top:0px;
+    
+  }
 
   /* line 166, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
   .push-7 {
@@ -8971,7 +8985,7 @@ li:hover > .menu {
 }
 /* line 1102, ../scss/layout/_main.scss */
 .not-front .main .view-content {
-  max-width: 1000px;
+  max-width: 1040px;
 }
 /* line 1105, ../scss/layout/_main.scss */
 .not-front .main .view-content .views-row .views-field-title {
@@ -11220,6 +11234,12 @@ li:hover > .menu {
   right: auto;
   width: 57% !important;
 }
+
+.not-front .push-3 .content .view-calendar-to-telartes{
+
+  width: 140% !important;
+}
+
 /* line 1486, ../scss/layout/_main.scss */
 .not-front .pull-9 {
   right: 92%;
@@ -11229,7 +11249,7 @@ li:hover > .menu {
 .l-footer {
   background: #222 !important;
   margin: 0;
-  min-height: 140px !important;
+  min-height: 125px !important;
 }
 /* line 8, ../scss/layout/_footer.scss */
 .l-footer .block-block {
@@ -11239,8 +11259,9 @@ li:hover > .menu {
 }
 
 #cc {
-    padding-top: 10px;
+    padding-top: 0px;
     float: left;
+    max-width: 230px;
 }
 #hivos {
    float: left;
