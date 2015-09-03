@@ -164,7 +164,7 @@
               
               <ul class="circulacion">
                 <li>
-                  <a class="plus-icon" href="content/circulacion" title="circulación cultural">circulación cultural</a>
+                  <a class="plus-icon" href="content/circulacion" title="circulación">circulación</a>
                   <ul class="dropdown child-menu">
                     <li>
 
@@ -244,7 +244,7 @@
       <?php endif; ?>
 
       <a id="main-content"></a>
-
+     <div class="colapsible">
       <?php if ($breadcrumb): print $breadcrumb; endif; ?>
 
       <?php if ($title && !$is_front): ?>
@@ -265,6 +265,7 @@
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
+     </div>
     </div>
     <!--/.main region -->
 
