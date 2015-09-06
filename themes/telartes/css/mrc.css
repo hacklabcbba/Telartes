@@ -1,0 +1,335 @@
+
+/*----/ $RESET */
+
+/*----/ $GENERAL */
+
+.mrc-unformmatted-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.mrc-unformmatted-list > * {
+    display:inline-block;
+}
+
+.mrc-unformmatted-list.block > * {
+    display: block;
+}
+
+/*----/----/ $CLASSES */
+/*----/----/----/ $BOX PUBLISH */
+
+.view-library .views-row,
+.view-editorial .views-row,
+.view-call .views-row {
+    display: inline-block;
+    margin: 1px 1px 1px 0px;
+    max-width: 225px;
+    padding: 12px;
+    position: relative;
+    vertical-align: top;
+}
+.front .view-library .views-row,
+.front .view-editorial .views-row,
+.front .view-call .view-row  {
+    border-right: 1px solid #ccc;
+}
+
+/*----/ $BODY */
+
+.breadcrumbs li:first-child a {
+    color: transparent !important;
+    display: inline-block;
+    width: 15px;
+    height: 19px;
+    overflow: hidden;
+    font-size: 16px;
+}
+.breadcrumbs li:first-child a:before {
+    font-family: "FontAwesome";
+    color: #C2C2C2 !important;;
+    display: inline-block;
+    content:"\f015"
+}
+
+.block.collapsiblock-processed > h2 {
+    color: #747474;
+    font-weight: normal;
+    font-size: 20px;
+}
+.not-front .main .block.collapsiblock-processed  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*----/----/ $HOME */
+.front .custom-menu-wrapper .main-nav li ul li a {
+    font-size: 12px;
+    font-family: "Open Sans",sans-serif;
+}
+
+.custom-menu-wrapper .menu-manifiesto {
+    left: 85px;
+}
+
+.custom-menu-wrapper .comunicacion {
+    top: 30px;
+    left: 570px;
+}
+
+.custom-menu-wrapper .formacion {
+    top: 174px;
+    left: 980px;
+}
+
+.custom-menu-wrapper .cultura-red {
+    top: 24px;
+    left: 850px;
+}
+
+.custom-menu-wrapper .cultura-viva-comunitaria {
+    top: 337px;
+    left: 830px;
+}
+
+.custom-menu-wrapper .boletin {
+    left: 90px;
+    top: 310px;
+}
+
+.custom-menu-wrapper .menu-inciedncias {
+    left: 578px;
+    top: 187px;
+}
+
+.custom-menu-wrapper .foro {
+    left: 356px;
+    top: 320px;
+}
+
+.custom-menu-wrapper .menu-economia {
+    left: 415px;
+    top: 240px;
+}
+.custom-menu-wrapper .circulacion {
+    left: 337px;
+    top: 120px;
+}
+
+/*----/----/----/ $NOTICIAS */
+.nothing {
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.nothing > * {
+    display: none;
+}
+
+.nothing:hover {
+    background-color: rgba(15, 14, 10, 0.5);
+    opacity: 1;
+    padding: 15px;
+    transition: opacity 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.nothing:hover > * {
+    display: block;
+}
+
+.nothing a {
+    color:#fff;
+    text-align: left;
+}
+
+.nothing .title-news {
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: 700;
+}
+
+.nothing .field-created-date {
+    font-size: 0.65em;
+    font-weight: 700;
+    margin: 1px 0px 18px;
+    width: 100%;
+}
+
+.nothing .field-created-date:before {
+    background: transparent url("../images/calendario.png") no-repeat scroll left calc(0px);
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 9%;
+}
+
+/*----/----/----/ $CONVOCATORIAS */
+.view-call .views-row {
+    height: 250px;
+}
+
+.view-call .views-row .views-field-body {
+    height: 70px;
+}
+
+/*----/----/----/ $EDITORIAL */
+.view-library .views-row,
+.view-editorial .views-row {
+    height: 290px;
+}
+
+
+.view-library .title a,
+.view-editorial .title a {
+    text-align: center !important;
+    display: block;
+}
+
+.front .view-library .title a:before,
+.front .view-editorial .title a:before {
+    background: transparent url("../images/libronegro.png") no-repeat scroll 0% 0%;
+    content: "";
+    display: block;
+    height: 59px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59px;
+
+}
+
+.view-editorial .views-row .content,
+.view-library .views-row .content, {
+    min-height: 104px;
+    max-height: 104px;
+    font-weight: normal;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.view-editorial .link,
+.view-library .link {
+    text-align: center !important;
+}
+
+.view-library .link span a,
+.view-editorial .link span a {
+    padding: 5px;
+    border: 1px solid #222;
+    display: inline-block;
+}
+
+
+/*----/----/ $ACOTORXS CULTURALES */
+
+#views-exposed-form-culturals-actors-page .views-exposed-widgets #edit-tid-1-wrapper  {
+    width: 230px;
+}
+
+#views-exposed-form-culturals-actors-page .views-exposed-widgets #edit-tid-1-wrapper .views-widget {
+    width: 170px;
+}
+
+.view-culturals-actors .box-list .photos {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.view-culturals-actors .box-list .info {
+    width: 77%;
+    height: 100px;
+    overflow: hidden;
+}
+.view-culturals-actors .box-list .info .name {
+    margin-bottom:10px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+}
+.view-culturals-actors .box-list .info .name h3  {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+.view-culturals-actors .box-list .info .name h3 a {
+    color:#9530AC;
+}
+.view-culturals-actors .box-list .info .name .names div {
+    display: inline-block;
+    font-size: 13px;
+    color: #404041;
+}
+
+.view-culturals-actors .box-list .info .infos,
+.view-culturals-actors .box-list .info .infos a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    color:#58585b;
+}
+
+/*----/----/ $NOTIFICACIONES */
+
+.box-list .photos {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.box-list .info {
+    width: 77%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.box-list .info .name {
+    margin-bottom:10px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+}
+.box-list .info .name h3  {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+.box-list .info .name h3 a {
+    color:#9530AC;
+}
+.box-list .info .name .names div {
+    display: inline-block;
+    font-size: 13px;
+    color: #404041;
+}
+
+.box-list .info .infos,
+.box-list .info .infos a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    color:#58585b;
+}
+
+.view-notificaciones .mrc-unformmatted-list li,
+.view-culturals-actors .mrc-unformmatted-list li {
+    width: 49%;
+}
+
+.view-notificaciones .mrc-unformmatted-list li.views-row-odd,
+.view-culturals-actors .mrc-unformmatted-list li.views-row-odd {
+    margin-right: 1%;
+}
+
+/*----/----/ $CIRCULACIÓN CULTURAL */
+
+
+.block-views table.views-view-grid {
+    border: none;
+}
+
+/*----* $BOLETIN */
+.section-boletin .flexslider .slides li {
+    height: 257px;
+    overflow:hidden;
+}

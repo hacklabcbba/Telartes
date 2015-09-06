@@ -1,16 +1,28 @@
 <div class="box-list">
     <div class="float-left photos">
-        <?php print $fields['field_collective_picture']->content; ?>
-        <?php print $fields['field_personal_picture']->content; ?>
-        <?php print $fields['field_network_picture']->content; ?>
+        <?php if(isset($fields['field_collective_picture'])): ?>
+            <?php print $fields['field_collective_picture']->content; ?>
+        <?php endif; ?>
+        <?php if(isset($fields['field_personal_picture'])): ?>
+            <?php print $fields['field_personal_picture']->content; ?>
+        <?php endif; ?>
+        <?php if(isset($fields['field_network_picture'])): ?>
+            <?php print $fields['field_network_picture']->content; ?>
+        <?php endif; ?>
     </div>
     <div class="float-left info">
         <div class="name">
-            <h3><?php print $fields['title']->content; ?></h3>
-            <div class="names">
-                <?php print $fields['field_personal_name']->content; ?>
-                <?php print $fields['field_personal_lastname']->content; ?>
-            </div>
+            <?php if(isset($fields['title'])): ?>
+                <h3><?php print $fields['title']->content; ?></h3>
+            <?php endif; ?>
+            <?php if(isset($fields['field_personal_name']) || isset($fields['field_personal_lastname']) ): ?>
+                <?php if(!empty($fields['field_personal_name']) || !empty($fields['field_personal_lastname']) ): ?>
+                    <div class="names">
+                        <?php print $fields['field_personal_name']->content; ?>
+                        <?php print $fields['field_personal_lastname']->content; ?>
+                    </div>
+                <?php endif; ?>
+            <?php endif; ?>
         </div>
         <div class="infos">
             <?php print $fields['type']->content; ?>

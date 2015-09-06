@@ -7698,13 +7698,16 @@ li:hover > .menu {
 .view-training .views-row,
 .view-collaborative-economy .views-row {
   display: inline-block;
-  font-size: 16px;
-  line-height: 1em;
-  margin: 9px;
   max-width: 228px;
-  position: relative;
   vertical-align: top;
+  position: relative;
 }
+
+.view-news .views-row-even {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 /* line 55, ../scss/layout/_main.scss */
 .view-news .views-row .views-field-nothing,
 .view-collaborative-economy .views-row .views-field-nothing,
@@ -7804,16 +7807,16 @@ li:hover > .menu {
   border-right: transparent !important;
 }
 /* line 122, ../scss/layout/_main.scss */
-.view-call .views-row {
-  border-right: 1px solid #eaeaea;
-  display: inline-block;
-  height: 245px;
-  margin: 0 0 3px 0;
-  max-width: 245px;
-  padding: 25px;
-  position: relative;
-  vertical-align: top;
-}
+/*.view-call .views-row {*/
+  /*border-right: 1px solid #eaeaea;*/
+  /*display: inline-block;*/
+  /*height: 245px;*/
+  /*margin: 0 0 3px 0;*/
+  /*max-width: 245px;*/
+  /*padding: 25px;*/
+  /*position: relative;*/
+  /*vertical-align: top;*/
+/*}*/
 /* line 131, ../scss/layout/_main.scss */
 .view-call .views-row .views-field-field-call-date-1,
 .view-call .views-row .views-field-field-call-fecha {
@@ -7855,12 +7858,12 @@ li:hover > .menu {
   color: #7d7e80;
 }
 /* line 164, ../scss/layout/_main.scss */
-.view-call .views-row .views-field-view-node {
-  position: absolute;
-  bottom: 28px;
-  left: 33%;
-  right: 33%;
-}
+/*.view-call .views-row .views-field-view-node {*/
+  /*position: absolute;*/
+  /*bottom: 28px;*/
+  /*left: 33%;*/
+  /*right: 33%;*/
+/*}*/
 /* line 169, ../scss/layout/_main.scss */
 .view-call .views-row .views-field-view-node .field-content a {
   border: 2px solid #1a1a1a;
@@ -8030,17 +8033,8 @@ li:hover > .menu {
   margin: 10px 0;
 }
 /* line 311, ../scss/layout/_main.scss */
-.view-library .views-row,
-.view-editorial .views-row {
-  border-right: 1px solid #ccc;
-  display: inline-block;
-  margin: 1px 1px 1px 0px;
-  max-width: 225px;
-  height: 300px;
-  padding: 12px;
-  position: relative;
-  vertical-align: top;
-}
+
+
 /* line 320, ../scss/layout/_main.scss */
 .view-library .views-row .views-field-field-library-image,
 .view-library .views-row .views-field-field-editorial-image,
@@ -8113,9 +8107,7 @@ li:hover > .menu {
 /* line 370, ../scss/layout/_main.scss */
 .block-views .content .more-link,
 .block-telartes .content .more-link {
-  float: left;
   margin: 9px;
-  overflow: hidden;
   text-align: center;
   width: 100%;
   height: 40px;
@@ -8671,8 +8663,8 @@ li:hover > .menu {
   margin: 10px;
 }
 /* line 845, ../scss/layout/_main.scss */
-.content .tabb li a,
-.content .tabulador li a {
+.content .tabb > ul li a,
+.content .tabulador > ul li a {
   border: 1px solid #a5a5a5;
   color: #a5a5a5;
   font-size: 11px;
@@ -8680,7 +8672,9 @@ li:hover > .menu {
   text-transform: uppercase;
 }
 /* line 851, ../scss/layout/_main.scss */
-.content .tabb li a:hover, .content .tabb li a:active, .content .tabb li a:focus,
+.content .tabb > ul li a:hover,
+.content .tabb > ul li a:active,
+.content .tabb > ul li a:focus,
 .content .tabulador li a:hover,
 .content .tabulador li a:active,
 .content .tabulador li a:focus {
@@ -8816,22 +8810,21 @@ li:hover > .menu {
  *           Not front page
  *---------------------------------------------------------------------------*/
 /* line 983, ../scss/layout/_main.scss */
-.not-front .block-views-collaborative-economy-block-1,
-.not-front .block-views-communication-block-1,
-.not-front .block-views-communication-block-2,
-.not-front .block-views,
-.not-front .block-fieldblock-node-incidence-default-field-incidence-links,
-.not-front .block-fieldblock-node-network-culture-default-field-network-culture-link,
-.not-front .block-fieldblock-node-network-culture-default-field-network-culture-joints,
-.not-front .block-fieldblock-node-community-living-culture-default-field-community-living-culture-e,
-.not-front .block-fieldblock-node-community-living-culture-default-field-community-living-culture-a,
-.not-front .block-fieldblock-node-communication-default-field-communication-community-r,
-.not-front .block-fieldblock-node-communication-default-field-communication-joints {
-  margin-top: 45px;
-  float: left;
-  clear: both;
-  width: 100%;
-}
+/*.not-front .block-views-collaborative-economy-block-1,*/
+/*.not-front .block-views-communication-block-1,*/
+/*.not-front .block-views-communication-block-2,*/
+/*.not-front .block-views,*/
+/*.not-front .block-fieldblock-node-incidence-default-field-incidence-links,*/
+/*.not-front .block-fieldblock-node-network-culture-default-field-network-culture-link,*/
+/*.not-front .block-fieldblock-node-network-culture-default-field-network-culture-joints,*/
+/*.not-front .block-fieldblock-node-community-living-culture-default-field-community-living-culture-e,*/
+/*.not-front .block-fieldblock-node-community-living-culture-default-field-community-living-culture-a,*/
+/*.not-front .block-fieldblock-node-communication-default-field-communication-community-r,*/
+/*.not-front .block-fieldblock-node-communication-default-field-communication-joints {*/
+  /*margin-top: 45px;*/
+  /*float: left;*/
+  /*clear: both;*/
+/*}*/
 /* line 998, ../scss/layout/_main.scss */
 .not-front .block-fieldblock-node-incidence-default-field-incidence-links,
 .not-front .block-fieldblock-node-community-living-culture-default-field-community-living-culture-e,
@@ -8900,11 +8893,10 @@ li:hover > .menu {
   text-align: justify;
 }
 /* line 1032, ../scss/layout/_main.scss */
-.not-front .main .title,
-.not-front .main section .block-title {
-  padding-left: 5px;
-  color: #D2D2D4;
-}
+/*.not-front .main .title,*/
+/*.not-front .main section .block-title {*/
+  /*padding-left: 5px;*/
+/*}*/
 /* line 1036, ../scss/layout/_main.scss */
 .not-front .main .breadcrumbs {
   background: none;
@@ -8961,12 +8953,12 @@ li:hover > .menu {
   margin: 0px 0px 4px 1px;
 }
 /* line 1082, ../scss/layout/_main.scss */
-.not-front .main .node {
-  float: left;
-  margin: 0 15px 15px 15px;
-  width: 100%;
-  
-}
+/*.not-front .main .node {*/
+  /*float: left;*/
+  /*margin: 0 15px 15px 15px;*/
+  /*width: 100%;*/
+  /**/
+/*}*/
 /* line 1085, ../scss/layout/_main.scss */
 .not-front .main .node img {
   margin: 10px;
@@ -9011,31 +9003,31 @@ li:hover > .menu {
   line-height:	14pt;
 }
 /* line 1123, ../scss/layout/_main.scss */
-.not-front .main .title,
-.not-front .main .button-group,
-.not-front .main section .block-title {
-  padding-left: 15px;
-}
+/*.not-front .main .title,*/
+/*.not-front .main .button-group,*/
+/*.not-front .main section .block-title {*/
+  /*padding-left: 15px;*/
+/*}*/
 /* line 1128, ../scss/layout/_main.scss */
-.not-front .main .node-event,
-.not-front .main .node-news,
-.not-front .main .node-call,
-.not-front .main .node-editorial,
-.not-front .main .node-document,
-.not-front .main .node-multimedia,
-.not-front .main .node-photography,
-.not-front .main .node-venue,
-.not-front .main .node-incidence,
-.not-front .main .node-community-living-culture,
-.not-front .main .node-network-culture,
-.not-front .main .node-training,
-.not-front .main .node-communication,
-.not-front .main .node-collaborative-economy {
-  height: auto;
-  max-width: 100%;
-  float: left;
-  clear: both;
-}
+/*.not-front .main .node-event,*/
+/*.not-front .main .node-news,*/
+/*.not-front .main .node-call,*/
+/*.not-front .main .node-editorial,*/
+/*.not-front .main .node-document,*/
+/*.not-front .main .node-multimedia,*/
+/*.not-front .main .node-photography,*/
+/*.not-front .main .node-venue,*/
+/*.not-front .main .node-incidence,*/
+/*.not-front .main .node-community-living-culture,*/
+/*.not-front .main .node-network-culture,*/
+/*.not-front .main .node-training,*/
+/*.not-front .main .node-communication,*/
+/*.not-front .main .node-collaborative-economy {*/
+  /*height: auto;*/
+  /*max-width: 100%;*/
+  /*float: left;*/
+  /*clear: both;*/
+/*}*/
 /* line 1146, ../scss/layout/_main.scss */
 .not-front .main .node-event .links,
 .not-front .main .node-news .links,
@@ -10929,14 +10921,13 @@ li:hover > .menu {
 }
 
 /* line 1390, ../scss/layout/_main.scss */
-.not-front .block-title {
-  background-color: #D2D2D4;
-  color: #555556 !important;
-  text-align: center;
-  padding: 10px;
+.page-node-956 .block-title {
+  background: none;
+  text-align: left;
+  padding: 0;
 }
 /* line 1394, ../scss/layout/_main.scss */
-.not-front .block-title a {
+.page-node-956 .block-title a {
   padding: 0 !important;
 }
 
@@ -12784,58 +12775,10 @@ button {
   src: local("Myriad Pro Bold"), url("MYRIADPRO-BOLD.woff") format("woff");
 }
 
-/*.not-front .sidebar {
-  width: 60px;
-  float: right !important; 
-  padding: 0 !important;
-  left: 0;
-  position: absolute;
-}*/
-
-
-/*----*/
-
 /*----/ $GENERAL */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
 
 /*----/----/ $TAGS */
-body {
-  /*color:#404041;*/
-  /*font-family: "Garamond Pro";*/
-  /*text-align: justify;*/
-}
-
-h1, h2, h3, h4, h5, h6,
-.views-field-title {
-  /*font-family: "Open Sans",sans-serif;*/
-  /*color: #6d6e70;*/
-  /*font-weight: normal;*/
-}
-
-/*h1 a {*/
-  /*color: #404041;*/
-/*}*/
-/*h2 a, h3 a, h4 a, h5 a, h6 a, .views-field-title a {*/
-  /*color: #6d6e70;*/
-/*}*/
-
-/*h1 {*/
-  /*font-size:25px;*/
-  /*color: #404041;*/
-  /*font-weight: bold;*/
-/*}*/
-
-/*h2 {*/
-  /*font-size:20px;*/
-/*}*/
-
-/*h3 {*/
-  /*font-size:18px;*/
-  /*color: #6d6e70;*/
-/*}*/
-/*h4 {*/
-  /*font-size:16px;*/
-/*}*/
 
 /*----/----/ $CLASSES */
 .breadcrumbs {
@@ -12847,6 +12790,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 12px;
   font-family: "Open Sans",sans-serif;
 }
+
 
 .breadcrumbs > *:before {
   content: "/";
@@ -12929,155 +12873,3 @@ h1, h2, h3, h4, h5, h6,
   border-bottom: 2px solid #555556
 }
 
-
-/*----/ $BODY */
-/*----/----/ $HOME */
-.front .custom-menu-wrapper .main-nav li ul li a {
-  font-size: 12px;
-  font-family: "Open Sans",sans-serif;
-}
-
-.custom-menu-wrapper .menu-manifiesto {
-  left: 85px;
-}
-
-.custom-menu-wrapper .comunicacion {
-  top: 30px;
-  left: 570px;
-}
-
-.custom-menu-wrapper .formacion {
-  top: 174px;
-  left: 980px;
-}
-
-.custom-menu-wrapper .cultura-red {
-  top: 24px;
-  left: 850px;
-}
-
-.custom-menu-wrapper .cultura-viva-comunitaria {
-  top: 337px;
-  left: 830px;
-}
-
-.custom-menu-wrapper .boletin {
-  left: 90px;t
-  top: 310px;
-}
-
-.custom-menu-wrapper .menu-inciedncias {
-  left: 578px;
-  top: 187px;
-}
-
-.custom-menu-wrapper .foro {
-  left: 356px;
-  top: 320px;
-}
-
-.custom-menu-wrapper .menu-economia {
-  left: 415px;
-  top: 240px;
-}
-.custom-menu-wrapper .circulacion {
-  left: 337px;
-  top: 120px;
-}
-/*----/----/ $ACOTORXS CULTURALES */
-
-#views-exposed-form-culturals-actors-page .views-exposed-widgets #edit-tid-1-wrapper  {
-  width: 230px;
-}
-
-#views-exposed-form-culturals-actors-page .views-exposed-widgets #edit-tid-1-wrapper .views-widget {
-  width: 170px;
-}
-
-.view-culturals-actors .box-list .photos {
-  width: 20%;
-  margin-right: 3%;
-}
-
-.view-culturals-actors .box-list .info {
-  width: 77%;
-  height: 100px;
-  overflow: hidden;
-}
-.view-culturals-actors .box-list .info .name {
-  margin-bottom:10px;
-  font-family: "Open Sans",sans-serif;
-  font-weight: normal;
-}
-.view-culturals-actors .box-list .info .name h3  {
-  margin-bottom: 0;
-  font-size: 17px;
-  font-weight: normal;
-}
-.view-culturals-actors .box-list .info .name h3 a {
-  color:#9530AC;
-}
-.view-culturals-actors .box-list .info .name .names div {
-  display: inline-block;
-  font-size: 13px;
-  color: #404041;
-}
-
-.view-culturals-actors .box-list .info .infos,
-.view-culturals-actors .box-list .info .infos a {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  color:#58585b;
-}
-
-/*----/----/ $NOTIFICACIONES */
-
-.box-list .photos {
-  width: 20%;
-  margin-right: 3%;
-}
-
-.box-list .info {
-  width: 77%;
-  height: 100px;
-  overflow: hidden;
-}
-
-.box-list .info .name {
-  margin-bottom:10px;
-  font-family: "Open Sans",sans-serif;
-  font-weight: normal;
-}
-.box-list .info .name h3  {
-  margin-bottom: 0;
-  font-size: 17px;
-  font-weight: normal;
-}
-.box-list .info .name h3 a {
-  color:#9530AC;
-}
-.box-list .info .name .names div {
-  display: inline-block;
-  font-size: 13px;
-  color: #404041;
-}
-
-.box-list .info .infos,
-.box-list .info .infos a {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  color:#58585b;
-}
-
-/*----/----/ $CIRCULACIÓN CULTURAL */
-
-
-.block-views table.views-view-grid {
-  border: none;
-}
-
-/*----* $BOLETIN */
-.section-boletin .flexslider .slides li {
-  height: 257px;
-  overflow:hidden;
-}
