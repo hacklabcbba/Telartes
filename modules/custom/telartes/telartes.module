@@ -201,7 +201,7 @@ function page_mediateca() {
   </div>
   </div>
   ');
-  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'page/mediateca', array('html' => TRUE)).'</div>';
+  $output .= '<div class = "mediateca-ver-todos">'.l('VER TODAS', 'mediateca', array('html' => TRUE)).'</div>';
   return $output;
 }
 
