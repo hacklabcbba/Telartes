@@ -52,8 +52,8 @@ h2 {
 }
 
 /*----/----/ $CLASSES */
-.main p,
-.main p > * {
+.not-front .main p,
+.not-front .main p > * {
     font-family: "GaramondRegular", serif !important;
     font-size: 16px !important;
     line-height: 1.2 !important;
@@ -63,12 +63,12 @@ h2 {
     overflow: hidden;
 }
 
-.main > .content p,
-.main > .content p > * {
+.not-front .main > .content p,
+.not-front .main > .content p > * {
     font-size: 22px !important;
 }
-.main .created,
-.main .views-field-field-call-fecha {
+.not-front .not-front .main .created,
+.not-front .main .views-field-field-call-fecha {
     font-family: "OpenSansRegular",sans-serif;
     font-size: 13px;
     color: #58585b;
@@ -94,7 +94,7 @@ h2 {
 .view-call .views-field-view-node a {
     font-size: 12px;
 }
-
+.view-mediateca .views-row,
 .view-news .views-row,
 .view-collaborative-economy .views-row,
 .view-training .views-row,
@@ -322,9 +322,14 @@ h2 {
     width: 9%;
 }
 
-.view-news .views-row-even {
-    margin-left: 10px;
+
+
+.view-news .views-row {
     margin-right: 10px;
+}
+
+.view-news .views-row:nth-child(3n+0) {
+    margin-right: 0;
 }
 
 /*----/----/----/ $CONVOCATORIAS */
@@ -517,6 +522,17 @@ h2 {
     line-height: 1.5;
     font-family: "GaramondRegular";
     font-size: 16px;
+}
+
+/*----/----/ $MEDIATECA */
+
+
+.view-mediateca .views-row {
+    margin-right: 10px;
+}
+
+.view-mediateca .views-row:nth-child(3n+0) {
+    margin-right: 0;
 }
 
 
