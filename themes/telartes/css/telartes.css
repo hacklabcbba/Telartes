@@ -11513,6 +11513,10 @@ footer a i {
   max-width: 1000px;
   text-align: center !important;
 }
+.view-noticia-destacada{
+    max-width: 100% !important;
+}
+
 
 /* line 240, ../scss/layout/_custom-menu.scss */
 .buscador {
