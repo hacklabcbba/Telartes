@@ -7692,21 +7692,6 @@ li:hover > .menu {
 /*----------------------------------------------------------------------------
  *           view-news
  *---------------------------------------------------------------------------*/
-/* line 47, ../scss/layout/_main.scss */
-.view-news .views-row,
-.view-collaborative-economy .views-row,
-.view-training .views-row,
-.view-collaborative-economy .views-row {
-  display: inline-block;
-  max-width: 228px;
-  vertical-align: top;
-  position: relative;
-}
-
-.view-news .views-row-even {
-  margin-left: 7px;
-  margin-right: 7px;
-}
 
 /* line 55, ../scss/layout/_main.scss */
 .view-news .views-row .views-field-nothing,
@@ -7846,10 +7831,7 @@ li:hover > .menu {
 }
 /* line 153, ../scss/layout/_main.scss */
 .view-call .views-row .views-field-body {
-  color: #7d7e80;
   display: inline-flex;
-  margin-bottom: 20px !important;
-  text-align: justify;
 }
 /* line 158, ../scss/layout/_main.scss */
 .view-call .views-row .views-field-body .field-content > p,
@@ -7864,13 +7846,6 @@ li:hover > .menu {
   /*left: 33%;*/
   /*right: 33%;*/
 /*}*/
-/* line 169, ../scss/layout/_main.scss */
-.view-call .views-row .views-field-view-node .field-content a {
-  border: 2px solid #1a1a1a;
-  color: #1a1a1a;
-  font-size: 0.6875em;
-  padding: 8px !important;
-}
 /* line 174, ../scss/layout/_main.scss */
 .view-call .views-row .views-field-view-node .field-content a:hover {
   opacity: 0.45;
@@ -8114,12 +8089,7 @@ li:hover > .menu {
   padding: 12px;
 }
 /* line 378, ../scss/layout/_main.scss */
-.block-views .content .more-link a,
-.block-telartes .content .more-link a {
-  border: 1px solid #222 !important;
-  color: #222 !important;
-  padding: 8px 15px;
-}
+
 
 /* line 385, ../scss/layout/_main.scss */
 .block-telartes .content > a {
@@ -8888,8 +8858,8 @@ li:hover > .menu {
 }
 /* line 1027, ../scss/layout/_main.scss */
 .not-front .main p {
-  font-size: 1em !important;
-  line-height: 1.5em;
+  /*font-size: 1em !important;*/
+  /*line-height: 1.5em;*/
   text-align: justify;
 }
 /* line 1032, ../scss/layout/_main.scss */
@@ -8971,12 +8941,7 @@ li:hover > .menu {
 .not-front .main .node .posted .user-picture {
   margin: 10px;
 }
-/* line 1097, ../scss/layout/_main.scss */
-.not-front .main h1,
-.not-front .main h2,
-.not-front .main h3 {
-  color: #222;
-}
+
 /* line 1102, ../scss/layout/_main.scss */
 .not-front .main .view-content {
   max-width: 1040px;
@@ -8996,38 +8961,7 @@ li:hover > .menu {
   /*width: 100%;*/
 /*}*/
 /* line 1115, ../scss/layout/_main.scss */
-.not-front .main .view-content .views-row .views-field span {
-  float: left;
-  font-size: 1.1em;
-  margin-right: 8px;
-  line-height:	14pt;
-}
-/* line 1123, ../scss/layout/_main.scss */
-/*.not-front .main .title,*/
-/*.not-front .main .button-group,*/
-/*.not-front .main section .block-title {*/
-  /*padding-left: 15px;*/
-/*}*/
-/* line 1128, ../scss/layout/_main.scss */
-/*.not-front .main .node-event,*/
-/*.not-front .main .node-news,*/
-/*.not-front .main .node-call,*/
-/*.not-front .main .node-editorial,*/
-/*.not-front .main .node-document,*/
-/*.not-front .main .node-multimedia,*/
-/*.not-front .main .node-photography,*/
-/*.not-front .main .node-venue,*/
-/*.not-front .main .node-incidence,*/
-/*.not-front .main .node-community-living-culture,*/
-/*.not-front .main .node-network-culture,*/
-/*.not-front .main .node-training,*/
-/*.not-front .main .node-communication,*/
-/*.not-front .main .node-collaborative-economy {*/
-  /*height: auto;*/
-  /*max-width: 100%;*/
-  /*float: left;*/
-  /*clear: both;*/
-/*}*/
+
 /* line 1146, ../scss/layout/_main.scss */
 .not-front .main .node-event .links,
 .not-front .main .node-news .links,
@@ -12781,22 +12715,6 @@ button {
 /*----/----/ $TAGS */
 
 /*----/----/ $CLASSES */
-.breadcrumbs {
-  margin-top: 11px;
-}
-
-.breadcrumbs a {
-  color:#CFCFD1;
-  font-size: 12px;
-  font-family: "Open Sans",sans-serif;
-}
-
-
-.breadcrumbs > *:before {
-  content: "/";
-  color: #aaa;
-  font-size: 13px;
-}
 
 .views-field-field-event-date {
   font-family: "Open Sans",sans-serif;
@@ -12852,8 +12770,8 @@ button {
   color: #A7A7AA;
 }
 .top-bar-section .main-nav li a {
-  font-family: "Open Sans",sans-serif;
-  font-size:13px;
+  font-family: "OpenSansRegular",sans-serif;
+  font-size:14px;
   color: #555556 !important;
 }
 

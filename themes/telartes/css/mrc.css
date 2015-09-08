@@ -2,7 +2,131 @@
 /*----/ $RESET */
 
 /*----/ $GENERAL */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot');
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot') format('embedded-opentype'),
+    url('../fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/open-sans/opensans-regular-webfont.woff') format('woff'),
+    url('../fonts/open-sans/opensans-regular-webfont.ttf') format('truetype'),
+    url('../fonts/open-sans/opensans-regular-webfont.svg#OpenSansRegular') format('svg');
+}
 
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/open-sans/opensans-semibold-webfont.eot');
+    src: url('../fonts/open-sans/opensans-semibold-webfont.eot') format('embedded-opentype'),
+    url('../fonts/open-sans/opensans-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/open-sans/opensans-semibold-webfont.woff') format('woff'),
+    url('../fonts/open-sans/opensans-semibold-webfont.ttf') format('truetype'),
+    url('../fonts/open-sans/opensans-semibold-webfont.svg#OpenSansSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GaramondRegular';
+    src: url('../fonts/garamond/garamond_regular-webfont.eot');
+    src: url('../fonts/garamond/garamond_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/garamond/garamond_regular-webfont.woff2') format('woff2'),
+    url('../fonts/garamond/garamond_regular-webfont.woff') format('woff'),
+    url('../fonts/garamond/garamond_regular-webfont.ttf') format('truetype'),
+    url('../fonts/garamond/garamond_regular-webfont.svg#garamondregular') format('svg');
+}
+
+/*----/----/ $TAGS */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "OpenSansSemiBold",sans-serif;
+    color: #404041;
+    font-weight: normal;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+h2 {
+    /*font-family: "OpenSansRegular", sans-serif;*/
+    color: #6d6e70;
+    font-size: 24px ;
+}
+
+/*----/----/ $CLASSES */
+.main p,
+.main p > * {
+    font-family: "GaramondRegular", serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+}
+
+.main > .content {
+    overflow: hidden;
+}
+
+.main > .content p,
+.main > .content p > * {
+    font-size: 22px !important;
+}
+.main .created,
+.main .views-field-field-call-fecha {
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: 13px;
+    color: #58585b;
+}
+
+.not-front .main .views-field-field-call-fecha  span{
+    float: left;
+    margin-right: 8px;
+    line-height:	14pt;
+}
+
+.block-views .content .more-link a,
+.block-telartes .content .more-link a,
+.view-call .views-field-view-node a,
+.view-library .link span a,
+.view-editorial .link span a {
+    border: 1px solid #404041 !important;
+    color: #404041 !important;
+    padding: 8px 15px;
+    font-family: "OpenSansRegular";
+}
+
+.view-call .views-field-view-node a {
+    font-size: 12px;
+}
+
+.view-news .views-row,
+.view-collaborative-economy .views-row,
+.view-training .views-row,
+.view-collaborative-economy .views-row {
+    display: inline-block;
+    max-width: 225px;
+    vertical-align: top;
+    position: relative;
+}
+
+.mrc-block-destacados {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.mrc-block-destacados .float-left {
+    width: 34%;
+    margin-right: 2%;
+}
+.mrc-block-destacados .float-right {
+    width: 64%;
+}
+
+.mrc-block-destacados .float-right h3 a {
+    font-size: 13px;
+    margin-top: -2px;
+}
+
+.mrc-block-destacados * {
+    font-size: 12px;
+    text-align: justify;
+}
 .mrc-unformmatted-list {
     list-style: none;
     margin: 0;
@@ -18,7 +142,9 @@
     display: block;
 }
 
-/*----/----/ $CLASSES */
+.names .field-content:empty {
+    display: none !important;
+}
 /*----/----/----/ $BOX PUBLISH */
 
 .view-library .views-row,
@@ -26,11 +152,18 @@
 .view-call .views-row {
     display: inline-block;
     margin: 1px 1px 1px 0px;
-    max-width: 225px;
-    padding: 12px;
+    max-width: 232px;
+    padding: 12px 12px 12px 0;
     position: relative;
     vertical-align: top;
 }
+
+.view-library .views-row:nth-child(3n+0),
+.view-editorial .views-row:nth-child(3n+0),
+.view-call .views-row:nth-child(3n+0) {
+    padding-right: 0;
+}
+
 .front .view-library .views-row,
 .front .view-editorial .views-row,
 .front .view-call .view-row  {
@@ -38,21 +171,6 @@
 }
 
 /*----/ $BODY */
-
-.breadcrumbs li:first-child a {
-    color: transparent !important;
-    display: inline-block;
-    width: 15px;
-    height: 19px;
-    overflow: hidden;
-    font-size: 16px;
-}
-.breadcrumbs li:first-child a:before {
-    font-family: "FontAwesome";
-    color: #C2C2C2 !important;;
-    display: inline-block;
-    content:"\f015"
-}
 
 .block.collapsiblock-processed > h2 {
     color: #747474;
@@ -64,6 +182,40 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
+
+/*----/----/ $BREADCRUMBS */
+.breadcrumbs {
+    margin-top: 11px;
+}
+
+.breadcrumbs a {
+    color:#CFCFD1;
+    font-size: 12px;
+    font-family: "Open Sans",sans-serif;
+}
+
+.breadcrumbs > *:before {
+    content: "/";
+    color: #aaa;
+    font-size: 13px;
+}
+
+.breadcrumbs li:first-child a {
+    color: transparent !important;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: -1px;
+}
+.breadcrumbs li:first-child a:before {
+    font-family: "FontAwesome";
+    color: #C2C2C2 !important;;
+    display: inline-block;
+    content:"\f015"
+}
+
 
 /*----/----/ $HOME */
 .front .custom-menu-wrapper .main-nav li ul li a {
@@ -170,19 +322,24 @@
     width: 9%;
 }
 
+.view-news .views-row-even {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*----/----/----/ $CONVOCATORIAS */
 .view-call .views-row {
-    height: 250px;
+    height: 435px;
 }
 
 .view-call .views-row .views-field-body {
-    height: 70px;
+    height: 140px;
 }
 
 /*----/----/----/ $EDITORIAL */
 .view-library .views-row,
 .view-editorial .views-row {
-    height: 290px;
+    height: 400px;
 }
 
 
@@ -218,12 +375,6 @@
     text-align: center !important;
 }
 
-.view-library .link span a,
-.view-editorial .link span a {
-    padding: 5px;
-    border: 1px solid #222;
-    display: inline-block;
-}
 
 
 /*----/----/ $ACOTORXS CULTURALES */
@@ -247,7 +398,7 @@
     overflow: hidden;
 }
 .view-culturals-actors .box-list .info .name {
-    margin-bottom:10px;
+    margin-bottom:5px;
     font-family: "Open Sans",sans-serif;
     font-weight: normal;
 }
@@ -255,6 +406,7 @@
     margin-bottom: 0;
     font-size: 17px;
     font-weight: normal;
+    margin-top: -5px;
 }
 .view-culturals-actors .box-list .info .name h3 a {
     color:#9530AC;
@@ -267,7 +419,7 @@
 
 .view-culturals-actors .box-list .info .infos,
 .view-culturals-actors .box-list .info .infos a {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family:"GaramondRegular", serif;
     font-size: 15px;
     color:#58585b;
 }
@@ -327,6 +479,46 @@
 .block-views table.views-view-grid {
     border: none;
 }
+
+/*----/----/ $CULTURA DE RED */
+.node.node-network-culture .field-collection-container {
+    float: left;
+    width: 50%;
+    border-top:1px solid #ccc;
+    padding: 15px;
+    height: 300px;
+}
+
+.node.node-network-culture .body+.field-collection-container {
+    border-right: 1px solid #ccc;
+}
+
+.node.node-network-culture .field-collection-container .field-label {
+    font-family: "OpenSansRegular";
+    font-weight: normal;
+}
+
+.node.node-network-culture .field-collection-container .field-collection-view {
+    padding: 0;
+    margin: 0;
+}
+
+.node.node-network-culture .field-collection-container .field-collection-view {
+    margin-bottom: 15px;
+}
+
+.node.node-network-culture .field-collection-container .field-type-link-field a {
+    color: #9530AC;
+    font-family: "OpenSansRegular";
+}
+
+
+.node.node-network-culture .field-collection-container .field-type-text-long  {
+    line-height: 1.5;
+    font-family: "GaramondRegular";
+    font-size: 16px;
+}
+
 
 /*----* $BOLETIN */
 .section-boletin .flexslider .slides li {
