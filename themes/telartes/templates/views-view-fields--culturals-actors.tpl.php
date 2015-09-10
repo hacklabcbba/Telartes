@@ -25,13 +25,25 @@
             <?php endif; ?>
         </div>
         <div class="infos">
-            <?php print $fields['type']->content; ?>
-            <?php print $fields['field_collective_f_of_interest']->content; ?>
-            <?php print $fields['field_collective_a_of_interest']->content; ?>
-            <?php print $fields['field_personal_f_of_area']->content; ?>
-            <?php print $fields['field_personal_f_of_interest']->content; ?>
-            <?php print $fields['field_network_field_of_interest']->content; ?>
-            <?php print $fields['field_network_areas_of_interest']->content; ?>
+            <div class="type"><?php print $fields['type']->content; ?></div>
+            <div class="col-f-inter">
+                <?php print $fields['field_collective_f_of_interest']->content; ?>
+            </div>
+            <div class="col-a-interest">
+                <?php print $fields['field_collective_a_of_interest']->content; ?>
+            </div>
+            <div class="col-f-area">
+                <?php print $fields['field_personal_f_of_area']->content; ?>
+            </div>
+            <div class="col-f-interest">
+                <?php print $fields['field_personal_f_of_interest']->content; ?>
+            </div>
+            <div class="col-net-f-in">
+                <?php print $fields['field_network_field_of_interest']->content; ?>
+            </div>
+            <div class="col-net-a-in">
+                <?php print $fields['field_network_areas_of_interest']->content; ?>
+            </div>
         </div>
     </div>
 </div>
