@@ -171,7 +171,8 @@ h3 {
 
 .view-library .views-row,
 .view-editorial .views-row,
-.view-call .views-row {
+.view-call .views-row,
+.view-id-formacion_telartes .views-row {
     display: inline-block;
     margin: 1px 1px 1px 0px;
     max-width: 232px;
@@ -378,7 +379,7 @@ h3 {
 }
 
 .front .view-news .views-row {
-    margin-bottom: 10px;
+    margin: 9px;
 }
 
 .not-front .view-news .views-row:nth-child(3n+0) {
@@ -553,40 +554,91 @@ h3 {
     border: none;
 }
 
+.node-type-circulacion-cultural  .views-field-view-node a,
+.node-type-circulacion-cultural .link{
+    display: none;
+}
+
 /*----/----/ $CULTURA DE RED */
-.node.node-network-culture .field-collection-container {
+
+.node.node-network-culture .field-collection-container a,
+.node.node-community-living-culture .field-collection-container a,
+.node.node-incidence .field-collection-container a,
+.node.node-collaborative-economy .field-collection-container a,
+.node.node-training .field-collection-container a {
+    color: #9530AC !important;
+    font-family: "OpenSansRegular";
+}
+
+.node.node-network-culture .field-collection-container,
+.node.node-community-living-culture .field-collection-container,
+.node.node-incidence .field-collection-container,
+.node.node-collaborative-economy .field-collection-container,
+.node.node-training .field-collection-container {
     float: left;
     width: 50%;
     border-top:1px solid #ccc;
     padding: 15px;
-    height: 300px;
+    /*height: 300px;*/
+    border-bottom: none;
 }
 
-.node.node-network-culture .body+.field-collection-container {
-    border-right: 1px solid #ccc;
+.node.node-network-culture .field-collection-container.onlychild,
+.node.node-community-living-culture .field-collection-container.onlychild,
+.node.node-incidence .field-collection-container.onlychild,
+.node.node-collaborative-economy .field-collection-container.onlychild,
+.node.node-training .field-collection-container.onlychild{
+    width: 100%
+}
+.node.node-network-culture .field-collection-container.onlychild .field-collection-view,
+.node.node-community-living-culture .field-collection-container.onlychild .field-collection-view,
+.node.node-incidence .field-collection-container.onlychild .field-collection-view,
+.node.node-collaborative-economy .field-collection-container.onlychild .field-collection-view,
+.node.node-training .field-collection-container.onlychild  .field-collection-view {
+    width: 45%;
+    display: inline-block;
 }
 
-.node.node-network-culture .field-collection-container .field-label {
+/*.node.node-network-culture .body+.field-collection-container,*/
+/*.node.node-community-living-culture .body+.field-collection-container,*/
+/*.node.node-incidence .body+.field-collection-container,*/
+/*.node.node-collaborative-economy .body+.field-collection-container,*/
+/*.node.node-training .body+.field-collection-container {*/
+    /*border-right: 1px solid #ccc;*/
+/*}*/
+
+.node.node-network-culture .field-collection-container .field-label,
+.node.node-community-living-culture .field-collection-container .field-label,
+.node.node-incidence .field-collection-container .field-label,
+.node.node-collaborative-economy .field-collection-container .field-label,
+.node.node-training .field-collection-container .field-label {
     font-family: "OpenSansRegular";
     font-weight: normal;
 }
 
-.node.node-network-culture .field-collection-container .field-collection-view {
+.node.node-network-culture .field-collection-container .field-collection-view,
+.node.node-community-living-culture .field-collection-container .field-collection-view,
+.node.node-incidence .field-collection-container .field-collection-view,
+.node.node-collaborative-economy .field-collection-container .field-collection-view,
+.node.node-training .field-collection-container .field-collection-view {
     padding: 0;
     margin: 0;
 }
 
-.node.node-network-culture .field-collection-container .field-collection-view {
+.node.node-network-culture .field-collection-container .field-collection-view,
+.node.node-community-living-culture .field-collection-container .field-collection-view,
+.node.node-incidence  .field-collection-container .field-collection-view,
+.node.node-collaborative-economy .field-collection-container .field-collection-view,
+.node.node-training  .field-collection-container .field-collection-view {
     margin-bottom: 15px;
 }
 
-.node.node-network-culture .field-collection-container .field-type-link-field a {
-    color: #9530AC;
-    font-family: "OpenSansRegular";
-}
 
-
-.node.node-network-culture .field-collection-container .field-type-text-long  {
+.node.node-network-culture .field-collection-container .field-type-text-long,
+.node.node-community-living-culture .field-collection-container .field-type-text-long,
+.node.node-incidence .field-collection-container .field-type-text-long,
+.node.node-collaborative-economy .field-collection-container .field-type-text-long,
+.node.node-training  .field-collection-container .field-type-text-long {
     line-height: 1.5;
     font-family: "GaramondRegular";
     font-size: 16px;
@@ -603,6 +655,7 @@ h3 {
     margin-right: 0;
 }
 
+/*----/----/ $FORMACIÓN */
 
 /*----* $BOLETIN */
 .section-boletin .flexslider .slides li {

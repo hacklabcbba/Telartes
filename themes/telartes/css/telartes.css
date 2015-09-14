@@ -7810,8 +7810,7 @@ li:hover > .menu {
   margin-bottom: 15px;
 }
 /* line 136, ../scss/layout/_main.scss */
-.view-call .views-row .views-field-field-call-date-1::before,
-.view-call .views-row .views-field-field-call-fecha::before {
+.view-call .views-row .views-field-field-call-date-1:before {
   background: url("../images/Calendarioconvocatoria.png") no-repeat left calc(0px);
   content: "";
   float: left;
@@ -8130,7 +8129,7 @@ li:hover > .menu {
   height: 40px;
   margin: 9px;
   overflow: hidden;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
   width: 100%;
 }
@@ -10426,7 +10425,7 @@ li:hover > .menu {
 .not-front .main .node-communication .field,
 .not-front .main .node-collaborative-economy .field {
   clear: both;
-  line-height: 3em;
+  line-height: 1.5;
 }
 /* line 1194, ../scss/layout/_main.scss */
 .not-front .main .node-event .field .field-label,
