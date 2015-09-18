@@ -497,7 +497,7 @@ body {
   line-height: 1;
   position: relative;
   cursor: default;
-  font-size:10.5pt;
+  font-size:15px;
 }
 
 /* line 313, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_global.scss */
@@ -7886,9 +7886,9 @@ li:hover > .menu {
 .view-collaborative-economy .view-content .views-row {
   display: inline-block;
   height: auto;
-  margin: 9px;
-  width: 228px;
-  padding: 0;
+  margin: 5px;
+  width: 223px;
+  padding: 0px;
   position: relative;
   vertical-align: top;
 }

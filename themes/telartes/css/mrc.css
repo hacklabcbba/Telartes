@@ -110,6 +110,10 @@ h3 {
     position: relative;
 }
 
+.view-id-_reas li  {
+    width: 100%;
+}
+
 .mrc-block-destacados {
     overflow: hidden;
     margin-bottom: 15px;
@@ -147,6 +151,10 @@ h3 {
     text-align: left;
 }
 
+.mrc-unformmatted-list .views-field.views-field-name a {
+    font-size: 15px !important;
+}
+
 .mrc-unformmatted-list > * {
     display:inline-block;
 }
@@ -172,10 +180,14 @@ h3 {
 .view-library .views-row,
 .view-editorial .views-row,
 .view-call .views-row,
-.view-id-formacion_telartes .views-row {
+.view-id-formacion_telartes .views-row,
+.view-fotografia .views-row,
+.view-documentos .views-row,
+.view-videos .views-row,
+.view-audios .views-row {
     display: inline-block;
     margin: 1px 1px 1px 0px;
-    max-width: 232px;
+    max-width: 230px;
     padding: 12px 12px 12px 0;
     position: relative;
     vertical-align: top;
@@ -500,6 +512,10 @@ h3 {
 
 /*----/----/ $NOTIFICACIONES */
 
+.view-notificaciones .box-list {
+    height: 85px;
+}
+
 .box-list .photos {
     width: 20%;
     margin-right: 3%;
@@ -565,7 +581,8 @@ h3 {
 .node.node-community-living-culture .field-collection-container a,
 .node.node-incidence .field-collection-container a,
 .node.node-collaborative-economy .field-collection-container a,
-.node.node-training .field-collection-container a {
+.node.node-training .field-collection-container a,
+.node.node-communication .field-collection-container a{
     color: #9530AC !important;
     font-family: "OpenSansRegular";
 }
@@ -574,7 +591,8 @@ h3 {
 .node.node-community-living-culture .field-collection-container,
 .node.node-incidence .field-collection-container,
 .node.node-collaborative-economy .field-collection-container,
-.node.node-training .field-collection-container {
+.node.node-training .field-collection-container,
+.node.node-communication .field-collection-container {
     float: left;
     width: 50%;
     border-top:1px solid #ccc;
@@ -587,14 +605,16 @@ h3 {
 .node.node-community-living-culture .field-collection-container.onlychild,
 .node.node-incidence .field-collection-container.onlychild,
 .node.node-collaborative-economy .field-collection-container.onlychild,
-.node.node-training .field-collection-container.onlychild{
+.node.node-communication .field-collection-container.onlychild,
+.node.node-training .field-collection-container.onlychild {
     width: 100%
 }
 .node.node-network-culture .field-collection-container.onlychild .field-collection-view,
 .node.node-community-living-culture .field-collection-container.onlychild .field-collection-view,
 .node.node-incidence .field-collection-container.onlychild .field-collection-view,
 .node.node-collaborative-economy .field-collection-container.onlychild .field-collection-view,
-.node.node-training .field-collection-container.onlychild  .field-collection-view {
+.node.node-training .field-collection-container.onlychild  .field-collection-view,
+.node.node-communication .field-collection-container.onlychild  .field-collection-view, {
     width: 45%;
     display: inline-block;
 }
@@ -611,7 +631,8 @@ h3 {
 .node.node-community-living-culture .field-collection-container .field-label,
 .node.node-incidence .field-collection-container .field-label,
 .node.node-collaborative-economy .field-collection-container .field-label,
-.node.node-training .field-collection-container .field-label {
+.node.node-training .field-collection-container .field-label,
+.node.node-communication .field-collection-container .field-label  {
     font-family: "OpenSansRegular";
     font-weight: normal;
 }
@@ -620,7 +641,8 @@ h3 {
 .node.node-community-living-culture .field-collection-container .field-collection-view,
 .node.node-incidence .field-collection-container .field-collection-view,
 .node.node-collaborative-economy .field-collection-container .field-collection-view,
-.node.node-training .field-collection-container .field-collection-view {
+.node.node-training .field-collection-container .field-collection-view,
+.node.node-communication .field-collection-container .field-collection-view {
     padding: 0;
     margin: 0;
 }
@@ -629,8 +651,11 @@ h3 {
 .node.node-community-living-culture .field-collection-container .field-collection-view,
 .node.node-incidence  .field-collection-container .field-collection-view,
 .node.node-collaborative-economy .field-collection-container .field-collection-view,
-.node.node-training  .field-collection-container .field-collection-view {
+.node.node-training  .field-collection-container .field-collection-view,
+.node.node-communication .field-collection-container .field-collection-view {
     margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 
@@ -638,10 +663,44 @@ h3 {
 .node.node-community-living-culture .field-collection-container .field-type-text-long,
 .node.node-incidence .field-collection-container .field-type-text-long,
 .node.node-collaborative-economy .field-collection-container .field-type-text-long,
-.node.node-training  .field-collection-container .field-type-text-long {
+.node.node-training  .field-collection-container .field-type-text-long,
+.node.node-communication .field-collection-container .field-type-text-long {
     line-height: 1.5;
     font-family: "GaramondRegular";
     font-size: 16px;
+}
+
+/*----/----/ $ESPACIOS CULTURALES */
+.view-espacio-cultural .views-field-nothing {
+    top:0;
+    left: 0;
+    display: none;
+}
+
+.view-espacio-cultural .views-row:hover .views-field-nothing {
+    display: block;
+    padding: 10px;
+}
+
+.view-espacio-cultural  .fields-wrapper a {
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.view-espacio-cultural  .fields-wrapper a:hover {
+    color: #fff !important;
+}
+
+.view-espacio-cultural  .fields-wrapper {
+    font-size: 11px;
+}
+
+.view-espacio-cultural  .views-row {
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
 /*----/----/ $MEDIATECA */
@@ -657,8 +716,127 @@ h3 {
 
 /*----/----/ $FORMACIÓN */
 
+.view-id-formacion_telartes .views-field.views-field-field-document-file a {
+    color: #9530AC;
+    font-size: 13px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
 /*----* $BOLETIN */
 .section-boletin .flexslider .slides li {
     height: 257px;
     overflow:hidden;
 }
+
+
+/*----/----/ $CONTACTO */
+
+#node-389 {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+#node-389 a {
+    color: #9530AC;
+}
+#node-389 .field-name-body p {
+    margin-bottom: 10px;
+    font-family: "OpenSansRegular",sans-serif !important;
+}
+
+#node-389 .field-name-body p a {
+    font-family: "OpenSansRegular",sans-serif !important;
+}
+
+#node-389 .field-name-body .cmail,
+#node-389 .field-name-body .cface,
+#node-389 .field-name-body .ctwitter {
+    padding-left: 40px;
+    height: 36px;
+    padding-top: 5px;
+}
+
+#node-389 .field-name-body .cmail {
+    background: url("../images/links/mail.png") no-repeat 0px 5px;
+}
+
+#node-389 .field-name-body .cmail:hover {
+    background: url("../images/links/mail-hover.png") no-repeat 0px 5px;
+}
+
+#node-389 .field-name-body .cface {
+    background: url("../images/links/fb.png") no-repeat 0px 5px;
+}
+
+#node-389 .field-name-body .cface:hover {
+    background: url("../images/links/fb-hover.png") no-repeat 0px 5px;
+}
+
+#node-389 .field-name-body .ctwitter {
+    background: url("../images/links/tw.png") no-repeat 0px 5px;
+}
+
+#node-389 .field-name-body .ctwitter:hover {
+    background: url("../images/links/tw-hover.png") no-repeat 0px 5px;
+}
+
+#block-421 {
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#block-bean-súmate-a-los-núcleos-locales .field-collection-container {
+    padding-bottom: 30px;
+}
+
+#block-bean-súmate-a-los-núcleos-locales .entity-field-collection-item .content > div {
+    float: left;
+}
+
+#block-bean-súmate-a-los-núcleos-locales  .field-collection-view a {
+    color: #9530AC;
+    padding-top: 8px;
+    display: block;
+    font-family: "OpenSansRegular",sans-serif !important;
+}
+
+#block-bean-súmate-a-los-núcleos-locales  .field-collection-view {
+    float: left;
+    overflow:hidden;
+    width: 46%;
+    border: none;
+}
+
+#block-bean-súmate-a-los-núcleos-locales  .field-type-image {
+    margin-right: 10px;
+}
+
+#block-421{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*----/----/ $INSIDENCIA */
+
+.view-documentos .views-field.views-field-field-document-file a {
+    color: #9530AC;
+    font-size: 13px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.view-culture-calendar .views-field.views-field-field-event-description .field-content{
+    font-family: "GaramondRegular",serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+}
+
+
+/*----/ $FOOTER */
+.l-footer {
+    margin-top: 20px;
+}
+
