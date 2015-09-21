@@ -7832,12 +7832,6 @@ li:hover > .menu {
 .view-call .views-row .views-field-body {
   display: inline-flex;
 }
-/* line 158, ../scss/layout/_main.scss */
-.view-call .views-row .views-field-body .field-content > p,
-.view-call .views-row .views-field-body .field-content p a {
-  line-height: 1em;
-  color: #7d7e80;
-}
 /* line 164, ../scss/layout/_main.scss */
 /*.view-call .views-row .views-field-view-node {*/
   /*position: absolute;*/
@@ -7882,16 +7876,16 @@ li:hover > .menu {
   font-size: 11px;
 }
 /* line 208, ../scss/layout/_main.scss */
-.view-culture-calendar .view-content .views-row,
-.view-collaborative-economy .view-content .views-row {
-  display: inline-block;
-  height: auto;
-  margin: 5px;
-  width: 223px;
-  padding: 0px;
-  position: relative;
-  vertical-align: top;
-}
+/*.view-culture-calendar .view-content .views-row,*/
+/*.view-collaborative-economy .view-content .views-row {*/
+  /*display: inline-block;*/
+  /*height: auto;*/
+  /*margin: 7px;*/
+  /*width: 217px;*/
+  /*padding: 0px;*/
+  /*position: relative;*/
+  /*vertical-align: top;*/
+/*}*/
 /* line 216, ../scss/layout/_main.scss */
 .view-culture-calendar .view-content .views-row .custom-content,
 .view-collaborative-economy .view-content .views-row .custom-content {
@@ -11159,7 +11153,8 @@ li:hover > .menu {
   left: 15%;
   position: relative;
   right: auto;
-  width: 57% !important;
+  width: 60% !important;
+  border-right: 1px solid #ccc;
 }
 
 .not-front .push-3 .content .view-calendar-to-telartes{
@@ -12725,6 +12720,7 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
+  font-size: 13px;
 }
 
 .box-list {

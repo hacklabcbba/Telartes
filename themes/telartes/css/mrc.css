@@ -73,16 +73,26 @@ h3 {
     font-size: 22px !important;
 }
 .not-front .not-front .main .created,
-.not-front .main .views-field-field-call-fecha {
+.not-front .main .views-field-field-call-fecha,
+.not-front .view-news .field-created-date {
     font-family: "OpenSansRegular",sans-serif;
     font-size: 13px;
     color: #58585b;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .not-front .main .views-field-field-call-fecha  span{
     float: left;
     margin-right: 8px;
     line-height:	14pt;
+}
+
+.not-front .block-views {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .block-views .content .more-link a,
@@ -105,7 +115,7 @@ h3 {
 .view-training .views-row,
 .view-collaborative-economy .views-row {
     display: inline-block;
-    max-width: 225px;
+    width: 225px;
     vertical-align: top;
     position: relative;
 }
@@ -144,6 +154,10 @@ h3 {
     line-height: 1.3;
 }
 
+.mrc-block-destacados .field-content p {
+    font-size: 16px;
+}
+
 .mrc-unformmatted-list {
     list-style: none;
     margin: 0;
@@ -151,8 +165,9 @@ h3 {
     text-align: left;
 }
 
-.mrc-unformmatted-list .views-field.views-field-name a {
-    font-size: 15px !important;
+.mrc-unformmatted-list .views-field.views-field-name a,
+.mrc-unformmatted-list .views-field.views-field-name {
+    font-size: 13px !important;
 }
 
 .mrc-unformmatted-list > * {
@@ -170,10 +185,153 @@ h3 {
 /*----/----/----/ $BOX GALLERIES */
 .main.columns .block-views .news-image,
 .main.columns .block-views .views-field-field-call-image,
-.main.columns .block-views .image {
-    height: 145px;
+.main.columns .block-views .image,
+.main.columns .block-views .views-field-field-event-image,
+.main.columns .block-views  .views-field-field-multimedia-link,
+.main.columns .block-views  .views-field-field-photography-photo{
+    width: 225px;
     overflow: hidden;
+    position: relative;
 }
+
+.main.columns .block-views .news-image img,
+.main.columns .block-views .views-field-field-call-image img,
+.main.columns .block-views .image img,
+.main.columns .block-views .views-field-field-event-image img,
+.main.columns .block-views  .views-field-field-multimedia-link img,
+.main.columns .block-views  .views-field-field-photography-photo img {
+    height: 145px;
+}
+
+.main.columns .block-views .news-image:after,
+.main.columns .block-views .views-field-field-call-image:after,
+.main.columns .block-views .image:after,
+.main.columns .block-views .views-field-field-event-image:after,
+.main.columns .block-views  .views-field-field-multimedia-link:after,
+.main.columns .block-views  .views-field-field-photography-photo:after,
+.main.columns .block-views .view-editorial .title a:after,
+.main.columns .block-views .view-documentos h3 a:after,
+.main.columns .block-views .view-audios h3 a:after,
+.sidebar-second .mrc-block-destacados .field_collective_picture a:after,
+.sidebar-second .mrc-block-destacados .field_network_picture a:after,
+.sidebar-second .mrc-block-destacados .field_image a:after,
+.sidebar-second .mrc-block-destacados .field_call_image a:after,
+.sidebar-second .mrc-block-destacados .field_editorial_image a:after,
+.sidebar-second .mrc-block-destacados .field_news_image a:after,
+.sidebar-second .mrc-block-destacados .field_event_image a:after,
+.sidebar-second .mrc-block-destacados .field_clear_image a:after,
+.sidebar-second .mrc-block-destacados .field_newsletter_image a:after,
+.sidebar-second .mrc-block-destacados .field_photography_photo a:after {
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    z-index: 100;
+    color: #fff;
+    top: 0;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.main.columns .block-views .view-documentos h3 {
+    position: relative;
+}
+
+.main.columns .block-views .view-documentos h3 a {
+    text-align: left !important;
+    padding-right: 30px;
+    display: block;
+}
+.main.columns .block-views .view-documentos h3 a:after {
+    content: "\f1c1";
+    color:#000;
+    opacity: 0.8;
+}
+
+.main.columns .block-views .view-audios h3 {
+    position: relative;
+}
+
+.main.columns .block-views .view-audios h3 a {
+    text-align: left !important;
+    padding-right: 30px;
+    display: block;
+}
+
+.main.columns .block-views .view-audios h3 a:after {
+    content: "\f025";
+    color:#000;
+    opacity: 0.8;
+}
+
+.main.columns .block-views .view-editorial .title a {
+    text-align: left !important;
+    padding-right: 30px;
+    position: relative;
+}
+
+
+.main.columns .block-views .view-editorial .title a:after,
+.sidebar-second .mrc-block-destacados .field_editorial_image a:after {
+    content: "\f0f6";
+    color:#000;
+}
+
+.sidebar-second .mrc-block-destacados .field_editorial_image a:after {
+    color:#fff;
+}
+
+.main.columns .block-views .views-field-field-call-image:after,
+.sidebar-second .mrc-block-destacados .field_call_image a:after {
+    content: "\f0a1";
+}
+
+.main.columns .block-views .news-image:after,
+.sidebar-second .mrc-block-destacados .field_news_image a:after {
+    content: "\f1ea";
+}
+
+.main.columns .block-views .views-field-field-event-image:after,
+.sidebar-second .mrc-block-destacados .field_event_image a:after {
+    content: "\f133";
+}
+
+.main.columns .block-views .views-field-field-multimedia-link:after {
+    content: "\f03d";
+}
+
+.main.columns .block-views .views-field-field-multimedia-link:after {
+    content: "\f03d";
+}
+
+.main.columns .block-views .views-field-field-photography-photo:after,
+.sidebar-second .mrc-block-destacados .field_photography_photo a:after{
+    content: "\f03e";
+}
+
+/*----/----/----/----/ $AUDIO GALERY */
+.block-views .view-audios .file {
+    display: block;
+    padding: 5px 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.block-views .view-audios .file a {
+    font-size: 13px;
+}
+
+/*----/----/----/----/ $NOTICIAS */
+.not-front .view-news .title-news {
+    font-family: "OpenSansSemiBold",sans-serif;
+    color: #404041;
+    font-weight: normal;
+    text-align: center !important;
+    display: block;
+}
+
 
 /*----/----/----/ $BOX PUBLISH */
 
@@ -184,19 +342,30 @@ h3 {
 .view-fotografia .views-row,
 .view-documentos .views-row,
 .view-videos .views-row,
-.view-audios .views-row {
+.view-audios .views-row,
+.view-culture-calendar .views-row {
     display: inline-block;
-    margin: 1px 1px 1px 0px;
-    max-width: 230px;
-    padding: 12px 12px 12px 0;
+    margin: 0px 9px 15px 0px;
+    width: 225px;
     position: relative;
     vertical-align: top;
+}
+.view-culture-calendar .views-row .views-field-field-event-date,
+.view-videos .views-row .views-field-created,
+.view-documentos .views-row .views-field-created,
+.view-fotografia .views-row .views-field-created,
+.view-audios .views-row .views-field-created {
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: 13px;
+    color: #58585b;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .view-library .views-row:nth-child(3n+0),
 .view-editorial .views-row:nth-child(3n+0),
 .view-call .views-row:nth-child(3n+0) {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .front .view-library .views-row,
@@ -220,7 +389,7 @@ h3 {
 
 .large-3.sidebar-second h2 {
     border: 1px solid #6D6E70;
-    padding: 8px 15px;
+    padding: 3px 15px;
 }
 
 .large-3.sidebar-second  h3 {
@@ -247,6 +416,13 @@ h3 {
     font-size: 13px;
     text-align: left;
 }
+
+/*----/----/ $SIDEBAR */
+.sidebar-second .mrc-block-destacados .float-left {
+    position: relative;
+}
+
+
 /*----/----/ $BREADCRUMBS */
 .breadcrumbs {
     margin-top: 11px;
@@ -336,7 +512,7 @@ h3 {
 }
 
 /*----/----/----/ $NOTICIAS */
-.nothing {
+.front .nothing {
     position: absolute;
     margin: 0px;
     top: 0px;
@@ -344,11 +520,11 @@ h3 {
     width: 100%;
 }
 
-.nothing > * {
+.front  .nothing > * {
     display: none;
 }
 
-.nothing:hover {
+.front  .nothing:hover {
     background-color: rgba(15, 14, 10, 0.5);
     opacity: 1;
     padding: 15px;
@@ -356,29 +532,29 @@ h3 {
     cursor: pointer;
 }
 
-.nothing:hover > * {
+.front  .nothing:hover > * {
     display: block;
 }
 
-.nothing a {
+.front  .nothing a {
     color:#fff;
     text-align: left;
 }
 
-.nothing .title-news {
+.front .nothing .title-news {
     text-transform: uppercase;
     font-size: 12px !important;
     font-weight: 700;
 }
 
-.nothing .field-created-date {
+.front .nothing .field-created-date {
     font-size: 0.65em;
     font-weight: 700;
     margin: 1px 0px 18px;
     width: 100%;
 }
 
-.nothing .field-created-date:before {
+.front .nothing .field-created-date:before {
     background: transparent url("../images/calendario.png") no-repeat scroll left calc(0px);
     content: "";
     display: inline-block;
@@ -386,7 +562,7 @@ h3 {
     width: 9%;
 }
 
-.view-news .views-row{
+.view-news .views-row {
     margin-right: 10px;
 }
 
@@ -404,17 +580,17 @@ h3 {
 
 /*----/----/----/ $CONVOCATORIAS */
 .view-call .views-row {
-    height: 435px;
+    /*height: 435px;*/
 }
 
 .view-call .views-row .views-field-body {
-    height: 140px;
+    /*height: 140px;*/
 }
 
 /*----/----/----/ $EDITORIAL */
 .view-library .views-row,
 .view-editorial .views-row {
-    height: 400px;
+    /*height: 400px;*/
 }
 
 
@@ -601,6 +777,8 @@ h3 {
     border-bottom: none;
 }
 
+
+
 .node.node-network-culture .field-collection-container.onlychild,
 .node.node-community-living-culture .field-collection-container.onlychild,
 .node.node-incidence .field-collection-container.onlychild,
@@ -670,6 +848,13 @@ h3 {
     font-size: 16px;
 }
 
+.add-border-left {
+    border-left: 1px solid #ccc;
+}
+.add-border-right {
+    border-right: 1px solid #ccc;
+}
+
 /*----/----/ $ESPACIOS CULTURALES */
 .view-espacio-cultural .views-field-nothing {
     top:0;
@@ -730,7 +915,7 @@ h3 {
 }
 
 
-/*----/----/ $CONTACTO */
+    /*----/----/ $CONTACTO */
 
 #node-389 {
     padding-bottom: 30px;
@@ -805,7 +990,7 @@ h3 {
 #block-bean-súmate-a-los-núcleos-locales  .field-collection-view {
     float: left;
     overflow:hidden;
-    width: 46%;
+    width: 45%;
     border: none;
 }
 
@@ -817,6 +1002,24 @@ h3 {
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #ccc;
+}
+
+.main .block-views .view-contact li.views-row {
+    width: 48.3%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main .block-views .view-contact li.views-row  .box-list {
+    height: 78px;
+}
+
+.main .block-views .view-contact h3 {
+    text-align: left !important;
+}
+
+.field-name-field-link-contact .field-collection-item-field-link-contact:hover .field-name-field-picture {
+    opacity: 0.5;
 }
 
 /*----/----/ $INSIDENCIA */
