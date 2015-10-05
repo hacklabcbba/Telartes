@@ -1048,6 +1048,9 @@ h3 {
 }
 /* ----- */
 /* ----  box galery  ---- */  /*   888888888888888888888888888888888888888888888888 */
+.content .mrc-unformmatted-list .views-row-first div div a img{
+	width: 100% !important;
+}
 main.row {
     height: 100%;
     margin: 0 auto;
@@ -1145,18 +1148,44 @@ main.row {
 }
 ul.pagination li a {
     color: #58595b;
-    /*padding: 0px;*/ /*.0625em 0.4375em;*/
 	font-family: "Open Sans",sans-serif;
 	font-weight: normal;
-	/*text-align: center;*/
 	font-size: 17px;
 }
-/*.view-culturals-actors .box-list .info .name, .view-culturals-actors .box-list .info .type {
-    font-family: "OpenSansRegular",sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    margin-bottom: 2px;
+/* /////   CONTENIDO     /////// */
+/*.view-content .view-grouping-header{
+	background-image: url("../images/background_pdf.png");
+    background-repeat: no-repeat;
+    color: white;
+    height: 101px;
+    padding: 25px 20px 25px 60px;
+    width: 278px;
+	color: white;
+    font-size: 17px;
+}
+.view-content .view-grouping-header span{
+}
+.view-content .view-grouping-header span img{
+}
+.view-content .view-grouping-header span a{
 }*/
+
+.not-front .block-views {
+    border: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+table.views-view-grid tr td {
+    vertical-align: top;
+}
+
+.not-front .main p, .not-front .main p > * {
+	color: #424243;
+    font-family: "GaramondRegular",serif !important;
+    font-size: 22px !important;
+    line-height: 25px !important;
+	text-align: justify !important;
+}
 
 /* /////////////   sidebar-second derecha */
 .sidebar-second{
@@ -1193,7 +1222,7 @@ ul.pagination li a {
 }
 .large-3.sidebar-second .field-content p span{	
     color: #58595b;
-    font-family: "GaramondRegular";
+    font-family: "GaramondRegular" !important;
     font-size: 16px !important;
     line-height: 16px;
 }
@@ -1211,7 +1240,20 @@ ul.pagination li a {
 	width: 104px;/*100%; 130px;*/
 	height: auto;
 }
-
+/*            BOLETINES    */
+.not-front .main .node img {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
+    /*height: 36px;
+    margin: 0;*/
+    max-width: 243px;
+    padding: 0;
+    width: 243px;
+}
+/* 			  BOLETINES		*/
 /*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  */
 @media only screen and (max-width: 1024px) {
 .not-front .main .breadcrumbs li a {
