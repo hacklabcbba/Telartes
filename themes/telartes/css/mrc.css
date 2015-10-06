@@ -1176,6 +1176,7 @@ ul.pagination li a {
     padding-top: 0px;
 }
 table.views-view-grid tr td {
+	padding: 0px 10px 31px 0px;
     vertical-align: top;
 }
 
@@ -1186,6 +1187,39 @@ table.views-view-grid tr td {
     line-height: 25px !important;
 	text-align: justify !important;
 }
+
+
+/* **** 	BEGIN	ENLACES - ARTICULACIONES 	**** */
+.node.node-network-culture .field-collection-container .field-label,
+.node.node-community-living-culture .field-collection-container .field-label,
+.node.node-incidence .field-collection-container .field-label,
+.node.node-collaborative-economy .field-collection-container .field-label,
+.node.node-training .field-collection-container .field-label,
+.node.node-communication .field-collection-container .field-label  {
+	font-size: 22px;
+	color: #6d6e70;
+	font-size: 22px !important;
+	line-height: 22px;
+    padding-bottom: 23px;
+}
+.node.node-network-culture .field-collection-container a, .node.node-community-living-culture .field-collection-container a, .node.node-incidence .field-collection-container a, .node.node-collaborative-economy .field-collection-container a, .node.node-training .field-collection-container a, .node.node-communication .field-collection-container a {
+    color: #704194 !important;
+}
+
+.not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
+    color: #58595b;
+    font-family: "GaramondRegular";
+    font-size: 17px;
+    line-height: 17px;
+	padding-bottom: 10px;
+}
+.node.node-network-culture .field-collection-container .field-collection-view, .node.node-community-living-culture .field-collection-container .field-collection-view, .node.node-incidence .field-collection-container .field-collection-view, .node.node-collaborative-economy .field-collection-container .field-collection-view, .node.node-training .field-collection-container .field-collection-view, .node.node-communication .field-collection-container .field-collection-view {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+/* **** 	END	ENLACES - ARTICULACIONES 	**** */
+
 
 /* /////////////   sidebar-second derecha */
 .sidebar-second{
@@ -1240,7 +1274,7 @@ table.views-view-grid tr td {
 	width: 104px;/*100%; 130px;*/
 	height: auto;
 }
-/*            BOLETINES    */
+/*          BEGIN  BOLETINES    */
 .not-front .main .node img {
 	width: 100%;
 	padding: 0px;
@@ -1253,7 +1287,36 @@ table.views-view-grid tr td {
     padding: 0;
     width: 243px;
 }
-/* 			  BOLETINES		*/
+.view-grouping-content table.views-view-grid{
+	border: none;
+    margin: 0px;
+}
+table.views-view-grid .views-field .field-content a img{
+	height: auto;
+    width: 255px;
+}
+table.views-view-grid td div h3{
+	text-align: center;
+}
+table.views-view-grid td div h3 a{
+	color: rgb(66, 66, 67);
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+table.views-view-grid td div.views-field-field-autor span.views-label-field-autor, table.views-view-grid td div.views-field-field-autor div.field-content{
+    font-family:"OpenSansRegular",sans-serif;
+    font-size: 14px;
+	color: #6d6e70;
+	float: left;
+}
+table.views-view-grid td div.views-field-body-1 div.field-content{	
+    font-family: "GaramondRegular";
+    font-size: 16px;
+	color: #58595b;
+	line-height: 19px;
+}
+/* 			END  BOLETINES		*/
 /*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  */
 @media only screen and (max-width: 1024px) {
 .not-front .main .breadcrumbs li a {
