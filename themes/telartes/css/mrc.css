@@ -62,7 +62,7 @@ h3 {
     font-family: "GaramondRegular", serif !important;
     font-size: 16px !important;
     line-height: 1.2 !important;
-    text-align: left !important;
+    /*text-align: left !important;*/
 }
 
 .main > .content {
@@ -116,7 +116,7 @@ h3 {
 .view-training .views-row,
 .view-collaborative-economy .views-row {
     display: inline-block;
-    width: 225px;
+    /*width: 225px;*/
     vertical-align: top;
     position: relative;
 }
@@ -1180,12 +1180,12 @@ table.views-view-grid tr td {
     vertical-align: top;
 }
 
-.not-front .main p, .not-front .main p > * {
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > * {
 	color: #424243;
     font-family: "GaramondRegular",serif !important;
     font-size: 22px !important;
     line-height: 25px !important;
-	text-align: justify !important;
+	text-align: justify;
 }
 
 
@@ -1224,6 +1224,9 @@ table.views-view-grid tr td {
 /* /////////////   sidebar-second derecha */
 .sidebar-second{
 	border-bottom: 2px solid #c8c9cb;
+	padding-top: 2%;
+	margin: 0.2em auto 0.5em;
+	text-align: center;
 }
 .sidebar-second .block-views {
 	border: none;
@@ -1234,6 +1237,10 @@ table.views-view-grid tr td {
 	color: #424243;
     font-size: 16px;	
 	font-family: "OpenSansSemiBold",sans-serif;
+}
+.large-3.sidebar-second h2.block-title {
+	margin: 0.2rem auto 0.5rem;
+    width: 175px;
 }
 .large-3.sidebar-second h3 , .large-3.sidebar-second h3 a {
 	margin-top: 0px;
@@ -1246,7 +1253,33 @@ table.views-view-grid tr td {
     line-height: 13px;
 	float: none;
 }
+/*  /////		BEGIN SLIDER    ///// */
+/*.not-front .main .node ul {
+    padding-left: 0px;
+}*/
+/*  /////		END	SLIDER    ///// */
 /*    8787878787878 */
+
+/*			BEGIN CONTENIDO COMPLETO */
+.view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
+	color: #58595b;
+    font-size: 17px; /*14px;*/
+	font-family: "OpenSansRegular", sans-serif;
+	padding-top: 0px;
+    line-height: 19px;
+	/*font-weight: bold;*/
+}
+.view-mode-full .image img{
+	padding: 9px 0px 11px !important;
+}
+.view-mediateca .views-row, .view-news .views-row, .view-collaborative-economy .views-row, .view-training .views-row, .view-collaborative-economy .views-row,
+.view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
+    width: 31%;/*30%;*/
+}
+.not-front .main .content ul li.views-row div.field-content p {
+	text-align:left !important;
+}
+/* 			END CONTENIDO COMPLETO	 */
 
 .sidebar-second .float-left .field-content a::after {
     padding-top: 9px;
@@ -1298,8 +1331,9 @@ table.views-view-grid .views-field .field-content a img{
 table.views-view-grid td div h3{
 	text-align: center;
 }
-table.views-view-grid td div h3 a{
-	color: rgb(66, 66, 67);
+/* 9999999999999999999 */
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a{
+	color: #424243;/*rgb(66, 66, 67);*/
     font-family: "OpenSansRegular",sans-serif;
     font-size: 17px;
     text-align: center;
@@ -1309,6 +1343,15 @@ table.views-view-grid td div.views-field-field-autor span.views-label-field-auto
     font-size: 14px;
 	color: #6d6e70;
 	float: left;
+}
+.view-content ul li.views-row section .field-content .fields-row div p{
+	text-align: left !important;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p{	
+    font-family: "GaramondRegular";
+    font-size: 16px !important;
+	color: #58595b;
+	line-height: 19px !important;
 }
 table.views-view-grid td div.views-field-body-1 div.field-content{	
     font-family: "GaramondRegular";

@@ -8853,7 +8853,7 @@ li:hover > .menu {
 .not-front .main p {
   /*font-size: 1em !important;*/
   /*line-height: 1.5em;*/
-  text-align: justify;
+  /*text-align: justify;*/
 }
 /* line 1032, ../scss/layout/_main.scss */
 /*.not-front .main .title,*/
