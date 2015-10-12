@@ -1046,7 +1046,10 @@ h3 {
     margin-top: 20px;
 }
 /* ----- */
-/* ----  box galery  ---- */  /*   8888888888888888888888 */
+/* ----  box galery  ---- */  /*   8888888888888888888888 */ 
+
+
+/* 		END HOME PAGE  */
 .content .mrc-unformmatted-list .views-row-first div div a img{
 	width: 100% !important;
 }
@@ -1253,6 +1256,31 @@ table.views-view-grid tr td {
 }*/
 /*  /////		END	SLIDER    ///// */
 /*			BEGIN CONTENIDO COMPLETO */
+.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-date, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, 
+.main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3,
+.main .block .content .view-id-news .view-content ul li.views-row div.fields-row,
+.main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
+	
+	padding-right: 20px;
+	/*padding-left: 15px;*/
+}
+.main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing{
+	width: 95%;
+}
+.main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing span, .main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing p, .main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing .field-created-date {
+	color: #FFF;
+}
+.main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-image .field-content{
+	padding-right:0px;
+}
+.main .block .content .view-id-call .view-content ul li.views-row div.views-field-body .field-content{
+	padding-right: 10px;	
+}
+.main .block .content .view-call .view-content ul li.views-row  .views-field-field-call-image{
+	overflow: hidden;
+	width: 100%;
+}
+.main .block .content .view-culture-calendar .view-content ul li.views-row,
 .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
 	color: #58595b;
     font-size: 17px; /*14px;*/
@@ -1309,7 +1337,7 @@ table.views-view-grid tr td {
 }
 /*          BEGIN  BOLETINES    */
 .not-front .main .node img {
-	width: 100%;
+	/*width: 100%;*/
 	padding: 0px;
 	margin: 0px;
 }
@@ -1360,6 +1388,167 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	line-height: 19px;
 }
 /* 			END  BOLETINES		*/
+
+/* 		BEGIN HOME PAGE  */
+/* begin agenda cultura */
+
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row{
+	width: 23%;
+	padding-right: 0px;
+}
+/*.colapsible #block-culture-calendar .content .view-culture-calendar .view-content ul li.views-row .news-image .field-content img{
+	width: auto !important;
+}*/
+/* end agenda cultura */
+/* begin noticias */
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row{
+	width: 23%;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .news-image .field-content img{
+	width: auto !important;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing  strong{
+	color: #FFF !important;
+    font-family: "GaramondRegular" !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+}
+/* end noticias */
+/* begin convocatoria */
+.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row{
+	width: 23%;
+}
+.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row .news-image .field-content img{
+	width: auto !important;
+}
+/*.colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing  strong{
+	color: #FFF !important;
+    font-family: "GaramondRegular" !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+}*/
+/* end convocatoria */
+/* begin mediateca*/
+.colapsible .tabb, .colapsible .tabb .row-tab{
+	overflow: hidden;
+}
+.colapsible .content .tabmultimedia .view{
+	width: 50%; /*48%;*/
+	float: left;
+}
+.colapsible .content .tabmultimedia .view .view-content{
+	overflow: hidden;
+    width: 100%;
+}
+.colapsible .content .tabmultimedia .view-document .view-content ul li.views-row{
+	border: 1px solid #ccc;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row .views-field-nothing{
+	overflow: hidden;
+    width: 97%;
+    margin-top: 4px;
+}
+/* */
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row .views-field .field-content img{
+	width: 100%;
+}
+/* */
+.colapsible .content .tabmultimedia .view .view-content ul.mrc-unformmatted-list{
+	overflow:hidden;
+	width: 100%;
+}
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row{
+	width: 48%;
+	padding: 0 7px 0 7px;
+	margin-right: 8px;
+}
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row-last {
+    margin-right: 0;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row{
+	margin: 2px auto 0px 5px;
+    padding: 4px;
+    width: 48%;
+    margin-top: 2px;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row-last{
+	margin-left: 0;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content{
+	overflow: hidden;
+    width: 100%;
+}
+/*
+.colapsible .content .tabmultimedia .view-photography .view-content .custom-content{
+}*/
+.colapsible .content .tabmultimedia  .view-photography{
+	clear: both;
+}
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row{
+	width: 48%;
+}
+.colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row-last div div a img{
+	overflow: hidden;
+    width: 100%;
+}
+.colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row{
+	margin-left: 0px;
+    padding-left: 4px;
+	/*padding: 0 7px 0 7px;
+	margin-right: 8px;*/
+}
+.colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row-last{
+	padding: 0px;
+    margin-left: 3px;
+}
+.colapsible .content .tabmultimedia .view-id-audio .view-content  ul li.views-row-last{
+	margin: 5px;
+    padding: 0px;
+}
+.colapsible .content .tabmultimedia .view-id-audio .view-content  ul li.views-row-last .views-field-nothing{
+	height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.colapsible .block-telartes-mediateca .content .mediateca-ver-todos{
+	height: auto;
+}
+.mediateca-ver-todos a{
+	border: 2px groove #4d4d4f;
+    color: #424243;
+    font-family: "OpenSansSemiBold",sans-serif;
+    font-size: 13px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+/*end mediateca*/
+/*begin editorial*/
+.front .view-library .title a::before, .front .view-editorial .title a::before{
+	background:none;
+	height: auto;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row{
+	padding: 0 10px 0 0;
+    width: 24%;
+    margin: 0 9px 10px 0;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row-last{
+	border-right: 0px;
+	margin-right: 0px;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content{
+	padding-right: 0px !important;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title h3 a{
+	font-size: 16px;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row .content .field-content p{
+	font-size: 15px !important;
+    text-align: left;
+}
+/* end editorial */
+
+
 /*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  */
 @media only screen and (max-width: 1024px) {
 .not-front .main .breadcrumbs li a {
