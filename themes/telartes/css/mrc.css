@@ -1048,8 +1048,12 @@ h3 {
 /* ----- */
 /* ----  box galery  ---- */  /*   8888888888888888888888 */ 
 
-
-/* 		END HOME PAGE  */
+/* BEGIN MENU TOP */
+.top-bar-section .main-nav li a {
+    font-family: "OpenSansSemiBold",sans-serif;
+    /*font-weight: bold;*/
+}
+/* END MENU TOP */
 .content .mrc-unformmatted-list .views-row-first div div a img{
 	width: 100% !important;
 }
@@ -1169,7 +1173,7 @@ table.views-view-grid tr td {
     vertical-align: top;
 }
 
-.not-front .main p.rtejustify, .not-front .main p.rtejustify > * {
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
 	color: #424243;
     font-family: "GaramondRegular",serif !important;
     font-size: 22px !important;
@@ -1220,11 +1224,18 @@ table.views-view-grid tr td {
 	border: none;
 }
 .large-3.sidebar-second h2 {
-    border: 2px solid #68696b; /*1px solid #6d6e70;*/
+    /*border: 2px solid #68696b;*/
     padding: 3px 15px;
 	color: #424243;
     font-size: 16px;	
 	font-family: "OpenSansSemiBold",sans-serif;
+	
+	border: 2px groove #4d4d4f;
+    /*color: #424243;
+    font-family: "OpenSansSemiBold",sans-serif;
+    font-size: 16px;
+    padding: 7px 10px;
+    text-transform: uppercase;*/
 }
 .large-3.sidebar-second h2.block-title {
 	margin: 0.2rem auto 0.5rem;
@@ -1256,13 +1267,14 @@ table.views-view-grid tr td {
 }*/
 /*  /////		END	SLIDER    ///// */
 /*			BEGIN CONTENIDO COMPLETO */
-.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-date, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, 
-.main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3,
-.main .block .content .view-id-news .view-content ul li.views-row div.fields-row,
-.main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
+.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
 	
 	padding-right: 20px;
 	/*padding-left: 15px;*/
+}
+.main .block .content .view-content ul li.views-row .views-field-created span, .main .block .content .view-content ul li.views-row .views-field-field-event-date{
+	padding-right: 0px;
+	text-align: left;
 }
 .main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing{
 	width: 95%;
@@ -1418,6 +1430,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row{
 	width: 23%;
 }
+.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row .views-field-body .field-content p{
+	line-height: 14px;
+}
 .colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row .news-image .field-content img{
 	width: auto !important;
 }
@@ -1487,6 +1502,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible .content .tabmultimedia .view .view-content ul li.views-row{
 	width: 48%;
 }
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row .views-field-body .field-content p{
+	line-height: 14px;
+}
 .colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row-last div div a img{
 	overflow: hidden;
     width: 100%;
@@ -1546,6 +1564,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	font-size: 15px !important;
     text-align: left;
 }
+
+/* 		END HOME PAGE  */
 /* end editorial */
 
 
