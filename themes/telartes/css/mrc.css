@@ -1047,13 +1047,40 @@ h3 {
 }
 /* ----- */
 /* ----  box galery  ---- */  /*   8888888888888888888888 */ 
-
+/* BEGIN HEADER */
+/*.l-header {
+    background-color: #d2d2d4;
+    height: 79px;
+    overflow: hidden;
+    width: 100%;
+}
+.l-header .contain-to-grid{
+	height: 100%;
+	width: auto;
+}
+.contain-to-grid .top-bar {
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.top-bar-section {}
+    overflow: hidden;
+}*/
+/* END HEADER */
 /* BEGIN MENU TOP */
 .top-bar-section .main-nav li a {
     font-family: "OpenSansSemiBold",sans-serif;
     /*font-weight: bold;*/
 }
 /* END MENU TOP */
+/* BEGIN MENU LEFT */
+#block-menu-menu-menu-left .content .menu li {
+    height: 2.8em;
+    list-style: outside none none;
+    padding: 4px 10px;
+    width: 60px;
+}
+/* END MENU LEFT */
 .content .mrc-unformmatted-list .views-row-first div div a img{
 	width: 100% !important;
 }
@@ -1568,9 +1595,162 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 /* 		END HOME PAGE  */
 /* end editorial */
 
+/*  BEGIN EDITAR FORMULARIO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.node-personal-form .field-type-image, .node-personal-form .field-type-file, .node-personal-form .field-name-field-audio-upload, .node-collective-form .field-type-image, .node-collective-form .field-type-file, .node-collective-form .field-name-field-audio-upload, .node-network-form .field-type-image, .node-network-form .field-type-file, .node-network-form .field-name-field-audio-upload, .node-photography-form .field-type-image, .node-photography-form .field-type-file, .node-photography-form .field-name-field-audio-upload, .node-multimedia-form .field-type-image, .node-multimedia-form .field-type-file, .node-multimedia-form .field-name-field-audio-upload, .node-audio-form .field-type-image, .node-audio-form .field-type-file, .node-audio-form .field-name-field-audio-upload, .node-document-form .field-type-image, .node-document-form .field-type-file, .node-document-form .field-name-field-audio-upload, .node-news-form .field-type-image, .node-news-form .field-type-file, .node-news-form .field-name-field-audio-upload, .node-call-form .field-type-image, .node-call-form .field-type-file, .node-call-form .field-name-field-audio-upload, .node-event-form .field-type-image, .node-event-form .field-type-file, .node-event-form .field-name-field-audio-upload{
+	float: none;
+	/*clear: both;*/
+	overflow: hidden;
+}
+#event-node-form .form-item a, #event-node-form .form-item label, #event-node-form .form-item span, #event-node-form .form-item p, #event-node-form .form-item  select, #event-node-form .form-item  .form-text, #event-node-form .form-item  .form-text{
+    color: #424243;
+    font-family: "OpenSansSemiBold",sans-serif;
+}
+#event-node-form #edit-field-event-image, #event-node-form #edit-field-event-pdf{
+	width: 100%;
+	margin-left: 0px;
+}
+#event-node-form #edit-field-event-image .image-widget-data{
+	clear: both;
+}
+#event-node-form #edit-field-event-image .image-widget-data .image-widget-data{
+	width: auto;
+}
+#event-node-form #edit-field-event-image .image-widget-data .image-widget-data  span{
+	float: left;
+}
+#event-node-form #edit-field-event-image .image-widget-data  .form-submit{
+	clear: both;
+}
+#event-node-form #edit-field-event-pdf .form-file, #event-node-form #edit-field-event-pdf .form-file .form-submit {
+    padding: 5px 0;
+}
+#event-node-form  #edit-actions{
+	clear: both;
+}
+#event-node-form  #edit-field-event-link, #event-node-form  #edit-field-prominent, #event-node-form  #edit-field-event-link div, #event-node-form  #edit-field-event-link label{
+	clear: both;
+	margin-left: 0;
+    text-align: left;
+}
+#event-node-form #edit-field-prominent  input[type="file"], #event-node-form #edit-field-prominent  input[type="checkbox"], #edit-field-prominent input[type="radio"] {
+    margin: 2px 0px;
+}
+.not-front .main .field-name-field-call-image img, .not-front .main .field-name-field-event-image img {
+    height: auto;
+    width: auto;
+}
+/*  END EDITAR FORMULARIO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-/*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  */
-@media only screen and (max-width: 1024px) {
+/*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*  */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+/* logo */
+.contain-to-grid .top-bar {
+    height: 72px;
+    overflow: hidden;
+}
+.top-bar .logo {
+    margin-right: 35px;
+    width: auto;
+}
+.top-bar .logo img {
+	height: 68px;
+    overflow: hidden;
+    width: auto;
+}
+/* menu */
+.top-bar-section .main-nav li {
+    margin-right: 40px;
+}
+.top-bar-section .main-nav li {
+    margin-right: 36px;
+}
+.top-bar-section .main-nav li a {
+    font-size: 10px;
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user {
+    width: 190px;
+}
+/* icono login*/
+.first-icon-user .link-icon-user i {
+    font-size: 33px;
+    padding: 8px 14px;
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
+    font-size: 33px;
+}
+
+
+/* menu imagen*/
+.front .custom-menu-wrapper .main-nav li ul li a {
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+}
+.view-menu-wrapper li ul li > .plus-icon {
+    padding: 7px 0 6px 22px;
+}
+.custom-menu-wrapper .menu-inciedncias {
+    left: 42%;
+    top: 45%;
+}
+.custom-menu-wrapper .cultura-viva-comunitaria {
+    left: 61%;
+    top: 85%;
+}
+.custom-menu-wrapper .comunicacion {
+    left: 41%;
+    top: 6%;
+}
+.custom-menu-wrapper .circulacion {
+    left: 24%;
+    top: 28%;
+}
+.custom-menu-wrapper .formacion {
+    left: 71%;
+    top: 42%;
+}
+.custom-menu-wrapper .boletin {
+    left: 5%;
+    top: 76%;
+}
+.custom-menu-wrapper .menu-manifiesto {
+    left: 5%;
+    top: 23%;
+}
+.custom-menu-wrapper .cultura-red {
+    left: 62%;
+    top: 4%;
+}
+.custom-menu-wrapper .foro {
+    left: 25%;
+    top: 80%;
+}
+.custom-menu-wrapper .menu-economia {
+    left: 31%;
+    top: 57%;
+}
+.buscador {
+    right: 15%;
+    top: 2%;
+}
+.buscador a .fa-search {
+    font-size: 36px;
+}
+.custom-menu-wrapper .social-networks {
+    right: 2%;
+    top: 2%;
+}
+
+/* agenda cultural home */
+.l-main .collapsiblock a .fa::before {
+    font-size: 18px;
+}
+.l-main .collapsiblock a {
+    padding: 16px 0 !important;
+}
+.row a {
+    font-size: 16px;
+}
+/* ************************** */
 .not-front .main .breadcrumbs li a {
     font-size: 10px;
 }
