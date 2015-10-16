@@ -1208,7 +1208,15 @@ table.views-view-grid tr td {
 	text-align: justify;
 }
 
-
+/* BEGIN FOOTER */
+.footer .content{
+	overflow: hidden;
+}
+.footer .content #cc{
+	font-size: 12px;
+    overflow: hidden;
+}
+/* END FOOTER */
 /* **** 	BEGIN	ENLACES - ARTICULACIONES 	**** */
 .node.node-network-culture .field-collection-container .field-label,
 .node.node-community-living-culture .field-collection-container .field-label,
@@ -1676,10 +1684,33 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-entity-field .field-label{
 	float: left;
 	font-size:16px;
-	margin: 2px 5px 2px 0px;
+	/*margin: 2px 5px 2px 0px;*/
 	color: #878689;
 	font-size: 18px;
 }
+.main .content .panel-display .center-wrapper .panel-col-first .inside .field-label-inline .field-label, .main .content .panel-display .center-wrapper .panel-col-first .inside .field-label-inline ul.inline{
+	margin: 0px;
+	line-height: 17px;
+    overflow: hidden;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .field-label-inline {
+	margin: 2px 5px 2px 0px;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .field-type-text-with-summary p, .main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .view-empty p{
+	font-size: 20px !important;
+    text-align: justify;
+	color: #79797c;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .view .view-content ul li {
+	overflow: hidden;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .view .view-content ul li div.views-field{
+	float: left;
+	padding-right: 10px;
+	color: #9c3b9b;
+	font-size: 17px;
+}
+
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-entity-field  ul.links{
 	float: left;
 	list-style-type: none;
@@ -1760,6 +1791,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }*/
 .main .content .panel-display .center-wrapper .panel-col-last .inside .panel-pane .pane-content{
 	border-bottom: 2px solid #d6d7d8;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-flickr .pane-content{
+	border-bottom: none;
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-collective-others{
 	margin-bottom: 20px;
