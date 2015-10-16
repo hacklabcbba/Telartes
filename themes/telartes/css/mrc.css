@@ -1641,6 +1641,179 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 /*  END EDITAR FORMULARIO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/*  BEGIN PERFILES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.main .content .panel-display .center-wrapper{
+	overflow: hidden;
+	border-bottom: 2px solid #c8c9cb; /*#ececec;*/
+}
+.main .content .panel-display .center-wrapper .panel-col-first{
+	overflow: hidden;
+	width: 65%;
+	border-right: 2px solid #c8c9cb; /*#ececec;*/
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside div{
+	float: left;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-picture{
+	overflow: hidden;
+	width: 26%;
+	/*float: left;*/
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-picture .flexslider{
+	margin-bottom: 0px;
+}
+
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-review{
+	clear: both;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-country, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-department, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-address, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-address, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-phone {
+	width: 70%;
+	color: #59595b;
+	font-size: 18px;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-entity-field .field-label{
+	float: left;
+	font-size:16px;
+	margin: 2px 5px 2px 0px;
+	color: #878689;
+	font-size: 18px;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-entity-field  ul.links{
+	float: left;
+	list-style-type: none;
+	margin: 0px;
+}
+
+
+
+
+.main .content .panel-display .center-wrapper .panel-col-last{
+	overflow: hidden;
+	width: 35%;
+	/*border-bottom: 2px solid #e6e6e6;*/
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside{
+	margin-left: 0px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-pane{
+    overflow: hidden;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-separator{
+    display: none;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube{
+	float: left;
+    height: 38px;
+    margin-left: 10px;
+    margin-right: 35px;
+    overflow: hidden;
+    width: 32px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-flickr a{
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    width: 43px;
+    color: transparent;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a{
+    background: rgba(0, 0, 0, 0) url("../images/links/fb.png") no-repeat scroll 0 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a:hover{
+    background: url("../images/links/fb-hover.png") no-repeat 0px 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a{
+    background: url("../images/links/tw.png") no-repeat scroll 0 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a:hover{
+    background: url("../images/links/tw-hover.png") no-repeat 0px 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a{
+    background: url("../images/links/yt.png") no-repeat scroll 0 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a:hover{
+    background: url("../images/links/yt-hover.png") no-repeat 0px 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a{
+    background: url("../images/links/flickr.png") no-repeat scroll 0 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a:hover{
+    background: url("../images/links/flicr-hover.png") no-repeat 0px 5px;
+}
+/*.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-others  a{
+    background: url("../images/links/fb.png") no-repeat scroll 0 5px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-others  a:hover{
+    background: url("../images/links/fb-hover.png") no-repeat 0px 5px;
+}*/
+
+
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1{
+	clear: both;
+	width: 100%;
+	
+}
+/*.main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-others .pane-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .pane-content{
+	border-bottom: 2px solid #d6d7d8;
+}*/
+.main .content .panel-display .center-wrapper .panel-col-last .inside .panel-pane .pane-content{
+	border-bottom: 2px solid #d6d7d8;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-collective-others{
+	margin-bottom: 20px;
+	margin-top: 16px;
+	margin-left: 10px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a{
+	border: 2px solid #d4d4d6;
+    color: #d4d4d6;
+    display: block;
+    font-size: 14px;
+    padding-bottom: 8px;
+    padding-top: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+	
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links{
+	margin-left: 10px;
+	font-size: 18px;
+}
+/*.main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links{
+	list-style-type: none;
+}*/
+
+.main .content .panel-display .center-wrapper .panel-col-last .inside ul{
+	list-style-type: none;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links li{
+	display: inline-block;
+    margin-right: 19px;
+    width: auto;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside  ul li div{
+	float: left;
+	margin-right: 1px;
+}
+.main .content .panel-display .center-wrapper .panel-col-last .inside ul li a, .main .content .panel-display .center-wrapper .panel-col-last .inside ul li div{
+	color: #9c3b9b;
+	font-size: 13px;
+}
+/*
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1{
+	clear: both;
+}*/
+/*.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1 h2.pane-title{
+	margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}*/
+
+/*  END PERFILES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 /*  -*-*-*-*-*-*  RESPONSIVE   *--*-*-*-*-*  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*  */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
 /* logo */
