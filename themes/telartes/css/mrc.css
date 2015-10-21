@@ -1702,7 +1702,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     margin: 2px 0px;
 }
 .not-front .main .field-name-field-call-image img, .not-front .main .field-name-field-event-image img {
-    height: auto;
+    /*height: auto;*/
     width: auto;
 }
 
@@ -1950,6 +1950,10 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     height: 72px;
     overflow: hidden;
 }
+.contain-to-grid .top-bar .top-bar-section{
+	overflow: hidden;
+	margin: 21px 0;
+}
 .top-bar .logo {
     margin-right: 35px;
     width: auto;
@@ -1967,7 +1971,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     margin-right: 36px;
 }
 .top-bar-section .main-nav li a {
-    font-size: 10px;
+    font-size: 11px;
 }
 .block-menu-menu-menu-notifications .first-icon-user .link-icon-user {
     width: 190px;
@@ -2135,4 +2139,132 @@ h1, h2, h3, h4, h5, h6 {
 /*.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
     font-size: 12px !important;
 }*/
+ul.pagination li a {
+    font-size: 13px;
+}
+.not-front .main > .content p, .not-front .main > .content p > * {
+    font-size: 16px !important;
+}
+/*.not-front .main p, .not-front .main p > * {
+    font-size: 16px !important;
+}*/
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
+    font-size: 16px !important;
+    line-height: 19px !important;
+	margin-bottom: 15px;
+}
+.not-front .main p strong, .not-front .main .view-mode-full .field-name-body p strong {
+    font-size: 16px !important;
+    line-height: 19px !important;
+}
+table.views-view-grid .views-field .field-content a img {
+    height: 100%;
+    width: 100%;
+}
+table.views-view-grid td div h3 {
+	font-size: 13px;
+    line-height: 16px;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a{
+	font-size: 13px;
+}
+table.views-view-grid td div.views-field-body-1 div.field-content {
+    font-size: 14px;
+    line-height: 15px;
+}
+.views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
+    height: 27px;
+    max-width: 181px;
+    padding: 0;
+    width: 181px;
+}
+
+.main.columns .block-views .news-image, .main.columns .block-views .views-field-field-call-image, .main.columns .block-views .image, .main.columns .block-views .views-field-field-event-image, .main.columns .block-views .views-field-field-multimedia-link, .main.columns .block-views .views-field-field-photography-photo {
+    width: auto;
+}
+
+.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body {
+    padding-right: 10px;
+}
+.view-culture-calendar .views-field.views-field-field-event-description .field-content {
+    font-size: 13px !important;
+    line-height: 14px !important;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 13px !important;
+    line-height: 14px !important;
+}
+.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
+    font-size: 13px !important;
+    line-height: 14px !important;
+}
+.not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 7px;
+}
+.node.node-network-culture .field-collection-container .field-label, .node.node-community-living-culture .field-collection-container .field-label, .node.node-incidence .field-collection-container .field-label, .node.node-collaborative-economy .field-collection-container .field-label, .node.node-training .field-collection-container .field-label, .node.node-communication .field-collection-container .field-label {
+    font-size: 16px !important;
+    line-height: 16px;
+    padding-bottom: 16px;
+}
+.l-footer .block-block {
+    margin-left: 5%;
+}
+#hivos, #hacklab, #drupal {
+    padding-left: 7%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* logo */
+.contain-to-grid .top-bar {
+    min-height: 53px;
+    overflow: hidden;
+	max-height: 70px;
+	height: auto;
+}
+.contain-to-grid .top-bar .top-bar-section{
+	overflow: hidden;
+	margin: 21px 0;
+}
+.contain-to-grid .top-bar ul {
+	height: 100%;
+	overflow: hidden;
+}
+.contain-to-grid .top-bar .name {
+	display: none;
+}
+.top-bar .logo {
+    margin-right: 35px;
+    width: auto;
+}
+.top-bar .logo img {
+	height: 66px;
+    overflow: hidden;
+    width: auto;
+}
+/* menu */
+.top-bar-section .main-nav li {
+    /*margin-right: 40px;*/
+}
+.top-bar-section .main-nav li {
+    /*margin-right: 36px;*/
+}
+.top-bar-section .main-nav li a {
+    /*font-size: 11px;*/
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user {
+    /*width: 190px;*/
+}
+/* icono login*/
+.first-icon-user .link-icon-user i {
+    /*font-size: 33px;
+    padding: 8px 14px;*/
+}
+.block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
+    /*font-size: 33px;*/
+}
+
+
 }
