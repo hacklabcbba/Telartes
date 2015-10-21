@@ -1349,10 +1349,32 @@ table.views-view-grid tr td {
 .content .view-mode-full .field{
 	float: none !important;
 }
+.content .field-name-field-link-contact .view-mode-full .field {
+    float: left !important;
+}
 .not-front .main .node .field-type-image a img{
 	width: 120px;
 	height: 120px;
 	margin: 10px 0px;
+}
+
+.main .content {
+}
+.main .content .view-mode-full {
+}
+.main .content .view-mode-full .field-type-text-with-summary {
+} 
+.main .content .view-mode-full .field-type-text-with-summary a, 
+.main .content .view-mode-full .field-type-text-with-summary a span, 
+.main .content .view-mode-full .field-type-link-field a,
+.main .content .view-mode-full .field-name-field-new-item-source-of-new ul.links li a{
+	color: #9530ac !important;
+}
+.main .content .view-mode-full .field-type-text-with-summary a:hover, 
+.main .content .view-mode-full .field-type-text-with-summary a:hover span, 
+.main .content .view-mode-full .field-type-link-field a:hover,
+.main .content .view-mode-full .field-name-field-new-item-source-of-new ul.links li a:hover{
+	color: #a5a5a5 !important;
 }
 /* 			END CONTENIDO COMPLETO	 */
 
@@ -1639,6 +1661,11 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .node-form .field-type-link-field .form-item .field-multiple-table tr td .form-type-link-field .link-field-subrow .link-field-title .description{
 	clear: both;
 }
+.node-form #edit-field-personal-about-me{
+	max-width: 100%;
+    width: 100%;
+	resize: none;
+}
 /*	-------------------------------- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
 #event-node-form .form-item a, #event-node-form .form-item label, #event-node-form .form-item span, #event-node-form .form-item p, #event-node-form .form-item  select, #event-node-form .form-item  .form-text, #event-node-form .form-item  .form-text{
     color: #424243;
@@ -1694,9 +1721,13 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	width: 65%;
 	border-right: 2px solid #c8c9cb; /*#ececec;*/
 }
+.main .content .panel-display .center-wrapper .panel-col-first .inside{
+	overflow: hidden;
+}
 .main .content .panel-display .center-wrapper .panel-col-first .inside div{
 	float: left;
 	margin-bottom: 0px;
+	width: 100%;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-picture, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-picture{
 	overflow: hidden;
@@ -1753,8 +1784,30 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin: 0px;
 }
 
+/* panels-ipe-portlet-wrapper   panels-ipe-portlet-content*/
+/*
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-curriculum{
+	overflow: hidden;
+}*/
+/*.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-curriculum img.file-icon{
+	display: none;
+}
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-curriculum a{
+	overflow: hidden;
+	border: 2px solid #d0d1d3;
+	width: 65px;
+	height: 40px;
+	color: transparent;
+}
 
+.main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-curriculum a:after { 
+	content: "" attr(title) "CVC";
+}*/
 
+/*
+ background: url("../images/links/mail.png") no-repeat 0px 5px;
+ background: url("../images/links/mail-hover.png") no-repeat 0px 5px;
+ */
 
 .main .content .panel-display .center-wrapper .panel-col-last{
 	overflow: hidden;
@@ -2035,7 +2088,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
 }
 .view-culturals-actors .box-list {
-    max-height: 81px; /*86px;110px*/
+    max-height: 95px; /*86px;110px*/
 	min-height: 80px;
 	width: auto;
 	background-color: #EDEDED;
@@ -2055,7 +2108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .box-list .info .name h3 {
     font-size: 13px;
-	margin-top: -3px;
+	margin-top: -3px !important;
 }
 .view-culturals-actors .box-list .info .name h3 a {
     font-size: 13px;
@@ -2067,11 +2120,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     line-height: 13px;
 }
-
+.large-3.sidebar-second h2.block-title {
+    font-size: 12px;
+	margin: 7px auto 5px;
+    /*width: 175px;*/
+}
 .large-3.sidebar-second h3 a {
     line-height: 13px;
+	font-size: 13px !important;
 }
 .large-3.sidebar-second .field-content p span {
     font-size: 12px !important;
 }
+/*.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
+    font-size: 12px !important;
+}*/
 }
