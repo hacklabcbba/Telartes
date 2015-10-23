@@ -408,6 +408,9 @@ h3 {
 .main .block-views h3 {
     text-align: center !important;
     margin-bottom: 5px;
+	
+	height: 45px !important;
+    overflow: hidden;
 }
 
 .main .block-views .field-content a {
@@ -1037,7 +1040,7 @@ h3 {
     font-family: "GaramondRegular",serif !important;
     font-size: 16px !important;
     line-height: 1.2 !important;
-    text-align: left !important;
+    text-align: justify !important;
 }
 
 
@@ -1302,10 +1305,12 @@ table.views-view-grid tr td {
 }*/
 /*  /////		END	SLIDER    ///// */
 /*			BEGIN CONTENIDO COMPLETO */
-.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
+.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description div.field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
 	
 	padding-right: 20px;
 	/*padding-left: 15px;*/
+	height: 56px;
+    overflow: hidden;
 }
 .main .block .content .view-content ul li.views-row .views-field-created span, .main .block .content .view-content ul li.views-row .views-field-field-event-date{
 	padding-right: 0px;
@@ -1321,7 +1326,8 @@ table.views-view-grid tr td {
 	padding-right:0px;
 }
 .main .block .content .view-id-call .view-content ul li.views-row div.views-field-body .field-content{
-	padding-right: 10px;	
+	padding-right: 10px;
+	text-align: justify;
 }
 .main .block .content .view-call .view-content ul li.views-row  .views-field-field-call-image{
 	overflow: hidden;
@@ -1342,9 +1348,17 @@ table.views-view-grid tr td {
 .view-mediateca .views-row, .view-news .views-row, .view-collaborative-economy .views-row, .view-training .views-row, .view-collaborative-economy .views-row,
 .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
     width: 31%;/*30%;*/
+	float: left;
 }
 .not-front .main .content ul li.views-row div.field-content p {
-	text-align:left !important;
+	text-align:justify;
+}
+.not-front .main p.rtejustify strong, .not-front .main .view-mode-full .field-name-body p strong{
+	font-family: "OpenSansRegular",sans-serif;
+    /*font-size: 16px !important;*/
+    font-weight: normal;
+    line-height: 19px !important;
+    text-align: justify;
 }
 .content .view-mode-full .field{
 	float: none !important;
@@ -1442,7 +1456,7 @@ table.views-view-grid td div.views-field-field-autor span.views-label-field-auto
 	float: left;
 }
 .view-content ul li.views-row section .field-content .fields-row div p{
-	text-align: left !important;
+	/*text-align: left !important;*/
 }
 .view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p{	
     font-family: "GaramondRegular";
@@ -1460,47 +1474,135 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 
 /* 		BEGIN HOME PAGE  */
 /* begin agenda cultura */
-
+.colapsible .collapsiblock-processed .content .view {
+    max-width: 70%;
+}
 .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row{
 	width: 23%;
 	padding-right: 0px;
 }
-/*.colapsible #block-culture-calendar .content .view-culture-calendar .view-content ul li.views-row .news-image .field-content img{
-	width: auto !important;
-}*/
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block label, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block select
+, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-header a.calendar , .colapsible #block-views-culture_calendar-block .content .view-culture-calendar #edit-submit-culture-calendar {
+    font-family: "OpenSansRegular" !important;
+	font-size: 13px;
+}
+.colapsible .view-culture-calendar .view-content .views-row .custom-content, .view-collaborative-economy .view-content .views-row .custom-content {
+    height: 217px;
+    width: 100%;
+}
+.colapsible  .custom-content p{
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+.colapsible  span.date-display-single, .colapsible  .date-display-start, .colapsible  .date-display-end{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 11px;
+}
+.colapsible  .custom-content .title{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 13px !important;
+    padding: 0px !important;
+    margin: 2px !important;
+}
+.colapsible  .custom-content .city-link{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 12px;
+}
+.colapsible .block-views .content .more-link, .block-telartes .content .more-link {
+    clear: both;
+}
 /* end agenda cultura */
 /* begin noticias */
+
+.colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block label, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block select, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block #edit-submit-news{
+    font-family: "OpenSansRegular" !important;
+	font-size: 13px;
+}
 .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row{
 	width: 23%;
+	padding: 0px;
 }
 .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .news-image .field-content img{
 	width: auto !important;
 }
 .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing  strong{
-	color: #FFF !important;
-    font-family: "GaramondRegular" !important;
-    font-size: 15px !important;
-    line-height: 16px !important;
+	color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    font-weight: normal;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing .fields-row{
+	height: auto !important;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing .fields-row .fields-wrapper .field-created-date{
+	font-family: "OpenSansRegular" !important;
+    font-size: 11px;
+    font-weight: normal;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing .fields-row .fields-wrapper p{
+	text-align: justify;
 }
 /* end noticias */
 /* begin convocatoria */
-.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row{
+
+.colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block label, .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block select, .colapsible #block-telartes-convocatoria.content .view-call .view-header a.calendar, .colapsible #block-telartes-convocatoria.content .view-call .view-header #edit-submit-call, .colapsible #block-telartes-convocatoria .content .view-content .views-field-field-call-fecha .views-label-field-call-fecha, .colapsible #block-telartes-convocatoria .content .view-content .views-field-field-call-fecha .date-display-single, .colapsible #block-telartes-convocatoria .content .view-content .views-field-field-call-fecha .views-field-title, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body p, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body span, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-view-node a{
+    font-family: "OpenSansRegular" !important;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .view-content ul li.views-row{
 	width: 23%;
+	overflow: hidden;
+	float: left;
 }
-.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row .views-field-body .field-content p{
-	line-height: 14px;
+.colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block label, .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block select, .colapsible #block-telartes-convocatoria.content .view-call .view-header a.calendar, .colapsible #block-telartes-convocatoria.content .view-call .view-header #edit-submit-call{
+	font-size: 13px;
 }
-.colapsible #block-telartes-convocatoria .content .view-call .view-content ul li.views-row .news-image .field-content img{
+.colapsible #block-telartes-convocatoria .content .view-content .views-field-field-call-fecha .views-label-field-call-fecha, .colapsible #block-telartes-convocatoria .content .view-content .views-field-field-call-fecha .date-display-single{
+	font-size: 11px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-title{
+	font-size: 14px;
+	height: 45px;
+    overflow: hidden;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body  {	
+	height: 56px;
+    overflow: hidden;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body p, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body span {	
+	font-size: 12px !important;
+	line-height: 14px;	
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-view-node a{
+	
+}
+.colapsible #block-telartes-convocatoria .content .view-content .view-content ul li.views-row .news-image .field-content img{
 	width: auto !important;
 }
-/*.colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-convocatoria .content .view-news .view-content ul li.views-row .nothing  strong{
-	color: #FFF !important;
-    font-family: "GaramondRegular" !important;
-    font-size: 15px !important;
-    line-height: 16px !important;
-}*/
 /* end convocatoria */
 /* begin mediateca*/
+.colapsible .content .tabb .mediateca li a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-created .field-content, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-title a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body p, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content span, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .title, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .file a{
+	font-family: "OpenSansRegular";
+}
+.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-created .field-content, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content span{
+	font-size: 11px;
+}
+.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-title{
+	margin-top: 7px;
+}
+.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-title a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .title{
+	font-size: 13px;
+}
+.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body p{
+	font-size: 12px;
+    margin-bottom: 5px;
+	text-align: justify;
+}
+.colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .file a{
+}
+
+
 .colapsible .tabb, .colapsible .tabb .row-tab{
 	overflow: hidden;
 }
@@ -1550,9 +1652,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	overflow: hidden;
     width: 100%;
 }
-/*
-.colapsible .content .tabmultimedia .view-photography .view-content .custom-content{
-}*/
 .colapsible .content .tabmultimedia  .view-photography{
 	clear: both;
 }
@@ -1569,8 +1668,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row{
 	margin-left: 0px;
     padding-left: 4px;
-	/*padding: 0 7px 0 7px;
-	margin-right: 8px;*/
 }
 .colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row-last{
 	padding: 0px;
@@ -1598,6 +1695,28 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 /*end mediateca*/
 /*begin editorial*/
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .title h3 a, .colapsible  #block-views-editorial-block .view-editorial .view-content ul li .content .field-content p, .colapsible  #block-views-editorial-block .view-editorial .view-content ul li .link .field-content a{
+    font-family: "OpenSansRegular";	
+}
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .title{	
+}
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .title h3 a{
+	font-size: 13px !important;
+	font-weight: bold;
+}
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .content{
+	height: 65px !important;	
+}
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .content .field-content p{	
+	font-size: 12px !important;
+    line-height: 14px !important;
+}
+.colapsible  #block-views-editorial-block .view-editorial .view-content ul li .link .field-content a{
+	font-size: 12px;
+}
+
+
+
 .front .view-library .title a::before, .front .view-editorial .title a::before{
 	background:none;
 	height: auto;
@@ -1613,14 +1732,15 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content{
 	padding-right: 0px !important;
+	height: 43px !important;
 }
-.colapsible .content ul.mrc-unformmatted-list li.views-row .title h3 a{
+/*.colapsible .content ul.mrc-unformmatted-list li.views-row .title h3 a{
 	font-size: 16px;
-}
-.colapsible .content ul.mrc-unformmatted-list li.views-row .content .field-content p{
+}*/
+/*.colapsible .content ul.mrc-unformmatted-list li.views-row .content .field-content p{
 	font-size: 15px !important;
     text-align: left;
-}
+}*/
 
 /* 		END HOME PAGE  */
 /* end editorial */
@@ -1823,7 +1943,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-separator{
     display: none;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube {
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube,
+
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-flickr{
 	float: left;
     height: 38px;
     margin-left: 10px;
@@ -1831,38 +1956,55 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     overflow: hidden;
     width: 32px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-flickr a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-flickr a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-twiter a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-youtube a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-flickr a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-flickr a,
+
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook .pane-content a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter .pane-content a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube .pane-content a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-flickr .pane-content a{
     display: block;
     height: 40px;
     overflow: hidden;
     width: 43px;
     color: transparent;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube .pane-title{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube .pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook h2.pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter h2.pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube h2.pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-flickr h2.pane-title{
 	display: none;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-facebook a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-facebook a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook .pane-content a{
     background: rgba(0, 0, 0, 0) url("../images/links/fb.png") no-repeat scroll 0 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-facebook a:hover{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-facebook a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-facebook a:hover,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook .pane-content a:hover{
     background: url("../images/links/fb-hover.png") no-repeat 0px 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-twiter  a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-twiter  a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter .pane-content a{
     background: url("../images/links/tw.png") no-repeat scroll 0 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-twiter  a:hover{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-twiter  a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-twiter  a:hover,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter .pane-content a:hover{
     background: url("../images/links/tw-hover.png") no-repeat 0px 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-youtube   a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-youtube   a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube .pane-content a{
     background: url("../images/links/yt.png") no-repeat scroll 0 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-youtube   a:hover{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-youtube   a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-youtube   a:hover,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube .pane-content a:hover{
     background: url("../images/links/yt-hover.png") no-repeat 0px 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-flickr   a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-flickr   a,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-flickr .pane-content a{
     background: url("../images/links/flickr.png") no-repeat scroll 0 5px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-flickr   a:hover{
+.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-flickr   a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-personal-flickr   a:hover, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-flickr .pane-content a:hover{
     background: url("../images/links/flicr-hover.png") no-repeat 0px 5px;
 }
 /*.main .content .panel-display .center-wrapper .panel-col-last .inside  div.pane-entity-field .field-name-field-collective-others  a{
@@ -1875,7 +2017,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	clear: both;
 }
 
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-og-members-panel-pane-1,
+ .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-others{
 	clear: both;
 	width: 100%;
 	
@@ -1886,15 +2029,19 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-flickr .pane-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-flickr .pane-content{
 	border-bottom: none;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-collective-others, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-personal-others{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-collective-others, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-personal-others,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-others,
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others{
 	margin-bottom: 20px;
 	margin-top: 16px;
 	margin-left: 10px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-pane .pane-node-field-personal-others h2.pane-title{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-pane .pane-node-field-personal-others h2.pane-title,
+/*.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-others  h2.pane-title*/{
 	margin-left: 10px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others a{
 	border: 2px solid #d4d4d6;
     color: #d4d4d6;
     display: block;
@@ -1903,11 +2050,11 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     padding-top: 7px;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 95%;
 	
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-area h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-area ul.links,
-.main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-create-links h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-others h2{
+.main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-create-links h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-others h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-areas-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-network-areas-of-interest ul.links{
 	margin-left: 10px;
 	font-size: 18px;
 }
@@ -1918,7 +2065,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-last .inside ul{
 	list-style-type: none;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-a-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-interest ul.links li{
+.main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-a-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-interest ul.links li, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest ul.links li{
 	display: inline-block;
     margin-right: 19px;
     width: auto;
@@ -2228,9 +2375,15 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
 	overflow: hidden;
 	margin: 21px 0;
 }
-.contain-to-grid .top-bar ul {
-	height: 100%;
-	overflow: hidden;
+.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 26% !important;
+}
+.top-bar-section #main-menu {
+}
+.top-bar-section #main-menu  {
 }
 .contain-to-grid .top-bar .name {
 	display: none;
@@ -2265,6 +2418,251 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
 .block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
     /*font-size: 33px;*/
 }
+.l-header-region {
+	/*display: none;*/
+}
 
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* logo */
+.l-header {
+    left: 12%;
+    overflow: hidden;
+    position: absolute;
+    width: 76%;	
+}
+.l-header, .l-header .contain-to-grid {
+    background: none;
+}
+.contain-to-grid .top-bar {
+    height: auto;
+    max-height: 70px;
+    min-height: 53px;
+    overflow: hidden;
+    width: 100%;
+}
+.contain-to-grid .top-bar .top-bar-section{
+	overflow: hidden;
+	margin: 0px;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf{
+	float: left;
+    margin-right: 8px;
+    overflow: hidden;
+    width: auto;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a{
+	font-size: 9px;
+    margin: 7px 0;
+    overflow: hidden;
+	background: none;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.last a{
+    margin: 2px 0;
+}
 
+.l-header-region {
+	/*display: none;*/
+}
+
+.l-header-region #block-menu-menu-menu-notifications {
+	right: 1%;
+    width: 16%;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
+	display: none;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 22% !important;
+}
+
+.contain-to-grid .top-bar ul.title-area a {
+	margin-right: 5px;
+    overflow: hidden;
+    width: 122px !important;
+}
+.contain-to-grid .top-bar ul.title-area a img {
+	height: auto;
+    margin: 2px;
+    overflow: hidden;
+    width: 110px;
+}
+.contain-to-grid .top-bar ul.title-area .toggle-topbar {
+	display: none;
+}
+.top-bar-section #main-menu {
+	height: 100%;
+    padding-top: 10px;
+}
+.contain-to-grid .top-bar .name {
+	display: none;
+}
+.top-bar .logo {
+    margin-right: 35px;
+    width: auto;
+}
+.top-bar .logo img {
+	height: 66px;
+    overflow: hidden;
+    width: auto;
+}
+/* 	menu left */
+.sidebar-first{
+	position: absolute !important;
+    top: 0 !important;
+    width: 97px !important;
+}
+.sidebar-first .responsive-menus{
+	
+}
+.sidebar-first .responsive-menus .responsive-menus-simple{
+	overflow: hidden;
+    width: 176px;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple .content #rm-removed .leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 10px;
+    overflow: hidden;
+	padding: 2% 5%;
+}
+.not-front .push-3 {
+	clear: both;
+    left: 5%;
+    margin-top: 10%;
+    width: 70%;
+}
+}
+
+@media screen and (max-width: 768px) {
+	/* logo */
+.l-header {
+    left: 12%;
+    overflow: hidden;
+    position: absolute;
+    width: 76%;	
+}
+.l-header, .l-header .contain-to-grid {
+    background: none;
+}
+.contain-to-grid .top-bar {
+    height: auto;
+    max-height: 70px;
+    min-height: 53px;
+    overflow: hidden;
+    width: 100%;
+}
+.contain-to-grid .top-bar .top-bar-section{
+	overflow: hidden;
+	margin: 0px;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf{
+	float: left;
+    margin-right: 8px;
+    overflow: hidden;
+    width: auto;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a{
+	font-size: 9px;
+    margin: 7px 0;
+    overflow: hidden;
+	background: none;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.last a{
+    margin: 2px 0;
+}
+
+.l-header-region {
+	/*display: none;*/
+}
+
+.l-header-region #block-menu-menu-menu-notifications {
+	right: 1%;
+    width: 16%;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
+	display: none;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 22% !important;
+}
+
+.contain-to-grid .top-bar ul.title-area a {
+	margin-right: 5px;
+    overflow: hidden;
+    width: 122px !important;
+}
+.contain-to-grid .top-bar ul.title-area a img {
+	height: auto;
+    margin: 2px;
+    overflow: hidden;
+    width: 110px;
+}*/
+.contain-to-grid .top-bar ul.title-area .toggle-topbar {
+	/*display: none;*/
+}
+.top-bar-section #main-menu {
+	height: 100%;
+    padding-top: 10px;
+}
+.contain-to-grid .top-bar .name {
+	display: none;
+}
+.top-bar .logo {
+    margin-right: 35px;
+    width: auto;
+}
+.top-bar .logo img {
+	height: 66px;
+    overflow: hidden;
+    width: auto;
+}
+/* 	menu left */
+.sidebar-first{
+	position: absolute !important;
+    top: 0 !important;
+    width: 97px !important;
+}
+.sidebar-first .responsive-menus{
+	
+}
+.sidebar-first .responsive-menus .responsive-menus-simple{
+	overflow: hidden;
+    width: 176px;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple .content #rm-removed .leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 10px;
+    overflow: hidden;
+	padding: 2% 5%;
+}
+.not-front .push-3 {
+	clear: both;
+    left: 5%;
+    margin-top: 10%;
+    width: 70%;
+}
 }
