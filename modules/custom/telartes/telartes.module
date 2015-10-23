@@ -242,14 +242,14 @@ function telartes_form_views_exposed_form_alter(&$form, &$form_state, $form_id) 
     $form['tid_2']['#options']['All']= t('-Todas-');
     $form['tid_3']['#options']['All']= t('-Todos-');
   }
-  /*else if ($form['#id'] == "views-exposed-form-culturals-actors-page") {
+  else if ($form['#id'] == "views-exposed-form-culturals-actors-page") {
     $form['type']['#options']['All'] = t('-Todos-');
     $form['type']['#options']['colectivo'] = t('Colectivo/Institución');
     $form['type']['#options']['personal'] = t('Individual/Personal');
-    $form['type']['#options']['red'] = t('Red/Colectivo');
+    $form['type']['#options']['red'] = t('Red/Articulación');
     $form['tid_1']['#options']['All'] = t('-Todas-');
     $form['tid_2']['#options']['All'] = t('-Todas-');
-  }*/
+  }
   else if ($form['#id'] == "views-exposed-form-espacio-cultural-page") {
     $form['tid']['#options']['All'] = t('-Todas-');
   }

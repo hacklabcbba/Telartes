@@ -8,8 +8,8 @@
     <?php if(isset($fields['field_multimedia_link'])) : ?>
     <?php print $fields['field_multimedia_link']->content; ?>
     <?php endif; ?>
-    <?php if(isset($fields['field_audio'])) : ?>
-    <?php print $fields['field_audio']->content; ?>
+    <?php if(isset($fields['field_audio_upload'])) : ?>
+    <?php print $fields['field_audio_upload']->content; ?>
     <?php endif; ?>
     <?php if(isset($fields['field_document_file'])) : ?>
     <?php print $fields['field_document_file']->content; ?>
