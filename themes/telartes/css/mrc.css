@@ -22,7 +22,7 @@
     url('../fonts/open-sans/opensans-semibold-webfont.svg#OpenSansSemiBold') format('svg');
 }
 
-@font-face {
+/*@font-face {
     font-family: 'GaramondRegular';
     src: url('../fonts/garamond/garamond_regular-webfont.eot');
     src: url('../fonts/garamond/garamond_regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -30,7 +30,7 @@
     url('../fonts/garamond/garamond_regular-webfont.woff') format('woff'),
     url('../fonts/garamond/garamond_regular-webfont.ttf') format('truetype'),
     url('../fonts/garamond/garamond_regular-webfont.svg#garamondregular') format('svg');
-}
+}*/
 
 /*----/----/ $TAGS */
 
@@ -38,18 +38,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "OpenSansSemiBold",sans-serif;
     color: #424143;/*#404041;*/
     font-weight: normal;
-	font-size: 22px;
+	font-size: 19px; /*22px;*/
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 25; /*28px;*/
 }
 
 h2 {
     font-family: "OpenSansRegular", sans-serif;
-    color: #6d6e70;
-    font-size: 22px ;
+    color: #424143;/*#6d6e70;*/
+    font-size: 19px;/*22px;*/
 }
 
 h3 {
@@ -59,9 +59,9 @@ h3 {
 /*----/----/ $CLASSES */
 .not-front .main p,
 .not-front .main p > * {
-    font-family: "GaramondRegular", serif !important;
-    font-size: 16px !important;
-    line-height: 1.2 !important;
+    font-family: "OpenSansRegular", serif !important;
+    font-size: 14px !important;/*16px*/
+    line-height: 16px !important; /*1.2 */
     /*text-align: left !important;*/
 }
 
@@ -71,7 +71,9 @@ h3 {
 
 .not-front .main > .content p,
 .not-front .main > .content p > * {
-    font-size: 22px !important;
+    font-size: 18px !important;/*22px;*/
+    text-align: justify;
+	color: #424243;
 }
 .not-front .not-front .main .created,
 .not-front .main .views-field-field-call-fecha,
@@ -151,7 +153,7 @@ h3 {
 .mrc-block-destacados .field-content {
     font-size: 16px;
     text-align: left !important;
-    font-family: "GaramondRegular";
+    font-family: "OpenSansRegular";
     line-height: 1.3;
 }
 
@@ -169,6 +171,7 @@ h3 {
 .mrc-unformmatted-list .views-field.views-field-name a,
 .mrc-unformmatted-list .views-field.views-field-name {
     font-size: 13px !important;
+	font-family: "OpenSansRegular";
 }
 
 .mrc-unformmatted-list > * {
@@ -352,15 +355,15 @@ h3 {
     width: 225px;
     position: relative;
     vertical-align: top;
-}
+}                                 
 .view-culture-calendar .views-row .views-field-field-event-date,
 .view-videos .views-row .views-field-created,
 .view-documentos .views-row .views-field-created,
 .view-fotografia .views-row .views-field-created,
 .view-audios .views-row .views-field-created {
     font-family: "OpenSansRegular",sans-serif;
-    font-size: 13px;
-    color: #58585b;
+    font-size: 12px;/*13px;*/
+    color: #424243;/*#58585b;*/
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -688,7 +691,7 @@ h3 {
 
 .view-culturals-actors .box-list .info .infos,
 .view-culturals-actors .box-list .info .infos a {
-    font-family:"GaramondRegular", serif;
+    font-family:"OpenSansRegular", serif;
     font-size: 15px;
     color: #58585A;/*#58585b;*/
 }
@@ -850,7 +853,7 @@ h3 {
 .node.node-training  .field-collection-container .field-type-text-long,
 .node.node-communication .field-collection-container .field-type-text-long {
     line-height: 1.5;
-    font-family: "GaramondRegular";
+    font-family: "OpenSansRegular";
     font-size: 16px;
 }
 
@@ -886,7 +889,9 @@ h3 {
 }
 
 .view-espacio-cultural  .fields-wrapper {
-    font-size: 11px;
+	font-size: 11px;
+    line-height: 14px;
+    text-align: justify;
 }
 
 .view-espacio-cultural  .views-row {
@@ -1037,10 +1042,11 @@ h3 {
     word-wrap: break-word;
 }
 .view-culture-calendar .views-field.views-field-field-event-description .field-content{
-    font-family: "GaramondRegular",serif !important;
-    font-size: 16px !important;
-    line-height: 1.2 !important;
+    font-family: "OpenSansRegular",serif !important;
+    font-size: 14px !important;/*16px*/
+    line-height: 16px; /*1.2 !important;*/
     text-align: justify !important;
+	height: 49px !important;
 }
 
 
@@ -1114,7 +1120,7 @@ main.row {
 }
 
 .views-exposed-form label {
-	font-size: 16px;
+	font-size: 14px;/*16px;*/
     position: relative;
     top: 6px;
 }
@@ -1127,13 +1133,13 @@ main.row {
 }
 
 .views-exposed-form .form-item{
-	font-size: 16px;
+	font-size: 14px;/*16px;*/
 	color: #424243;
 	font-weight: normal;
 }
 .views-exposed-widget .views-widget select {
 	width: auto;
-	height: 36px;
+	height: 34px;/*36px;*/
 	max-width: 152px;
 	padding: 0px;
 	margin: 0px;
@@ -1174,15 +1180,15 @@ main.row {
 
 .view-culturals-actors .box-list .info .infos, .view-culturals-actors .box-list .info .infos a {
     color: #58595b;
-    font-family: "GaramondRegular",serif;
+    font-family: "OpenSansRegular",serif;
     font-size: 16px;
 	line-height: 17px;
 }
 ul.pagination li a {
     color: #58595b;
-	font-family: "Open Sans",sans-serif;
+	font-family: "OpenSansRegular",sans-serif;
 	font-weight: normal;
-	font-size: 17px;
+	font-size: 15px;
 }
 /* /////   CONTENIDO     /////// */
 
@@ -1205,9 +1211,9 @@ table.views-view-grid tr td {
 
 .not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
 	color: #424243;
-    font-family: "GaramondRegular",serif !important;
-    font-size: 22px !important;
-    line-height: 25px !important;
+    font-family: "OpenSansRegular",serif !important;
+    font-size: 18px !important;/* 22px */
+    line-height: 21px !important; /*25px*/
 	text-align: justify;
 }
 
@@ -1227,20 +1233,19 @@ table.views-view-grid tr td {
 .node.node-collaborative-economy .field-collection-container .field-label,
 .node.node-training .field-collection-container .field-label,
 .node.node-communication .field-collection-container .field-label  {
-	font-size: 22px;
 	color: #6d6e70;
-	font-size: 22px !important;
-	line-height: 22px;
-    padding-bottom: 23px;
+	font-size: 19px !important;/*22px*/
+	line-height: 21px;/* 22px*/
+    padding-bottom: 21px;
 }
 .node.node-network-culture .field-collection-container a, .node.node-community-living-culture .field-collection-container a, .node.node-incidence .field-collection-container a, .node.node-collaborative-economy .field-collection-container a, .node.node-training .field-collection-container a, .node.node-communication .field-collection-container a {
     color: #704194 !important;
 }
 
 .not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
-    color: #58595b;
-    font-family: "GaramondRegular";
-    font-size: 17px;
+    color: #424243;/*#58595b;*/
+    font-family: "OpenSansRegular";
+    font-size: 15px;
     line-height: 17px;
 	padding-bottom: 10px;
 }
@@ -1290,7 +1295,9 @@ table.views-view-grid tr td {
     line-height: 13px;
 	float: none;
 }
-
+.view .more-link{
+	clear: both;
+}
 .view .more-link  a{
 	color: #424243;	
     font-family: "OpenSansSemiBold",sans-serif;
@@ -1304,17 +1311,31 @@ table.views-view-grid tr td {
     padding-left: 0px;
 }*/
 /*  /////		END	SLIDER    ///// */
-/*			BEGIN CONTENIDO COMPLETO */
-.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description div.field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body{
+/*			BEGIN CONTENIDO COMPLETO */ 
+.main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description div.field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body,
+ .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-date{
 	
 	padding-right: 20px;
 	/*padding-left: 15px;*/
-	height: 56px;
+	height: 51px;/*56px;*/
     overflow: hidden;
 }
 .main .block .content .view-content ul li.views-row .views-field-created span, .main .block .content .view-content ul li.views-row .views-field-field-event-date{
 	padding-right: 0px;
 	text-align: left;
+}
+.main .block .content .view-content ul li.views-row .created .field-content{
+	font-family: "OpenSansRegular";
+	font-size: 12px;
+}
+.main .block .content .view-content ul li.views-row .content .field-content p, .main .block .content .view-content ul li.views-row .content .field-content p strong{
+	font-family: "OpenSansRegular"; 
+	font-size: 13px !important;
+}
+.main .block .content .view-content ul li.views-row .content{
+	height: 58px;
+    overflow: hidden;
+    padding: 5px 20px 5px 0px;
 }
 .main .block .content .view-collaborative-economy .view-content ul li.views-row div.views-field-nothing{
 	width: 95%;
@@ -1336,10 +1357,10 @@ table.views-view-grid tr td {
 .main .block .content .view-culture-calendar .view-content ul li.views-row,
 .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
 	color: #58595b;
-    font-size: 17px; /*14px;*/
+    font-size: 15px; /*14px;*/
 	font-family: "OpenSansRegular", sans-serif;
 	padding-top: 0px;
-    line-height: 19px;
+    line-height: 17px;/*19px*/
 	/*font-weight: bold;*/
 }
 .view-mode-full .image img{
@@ -1400,16 +1421,19 @@ table.views-view-grid tr td {
 }
 .large-3.sidebar-second .field-content p span{	
     color: #58595b;
-    font-family: "GaramondRegular" !important;
+    font-family: "OpenSansRegular" !important;
     font-size: 16px !important;
     line-height: 16px;
 }
 .mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
     color: #58595b;
-    font-family: "GaramondRegular";
-    font-size: 16px !important;
-    line-height: 16px;
+    font-family: "OpenSansRegular";
+    font-size: 14px !important;/*16px */
+    line-height: 15px;/* 16px  */
     text-align: left;
+}
+.large-3.sidebar-second .block-views .view-content ul li.views-row .field-content p{
+	margin-bottom: 0px;	
 }
 .sidebar-second .mrc-unformmatted-list li.views-row{
 	margin:0px;
@@ -1446,7 +1470,7 @@ table.views-view-grid td div h3{
 table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a{
 	color: #424243;
     font-family: "OpenSansRegular",sans-serif;
-    font-size: 17px;
+    font-size: 15px; /*17px;*/
     text-align: center;
 }
 table.views-view-grid td div.views-field-field-autor span.views-label-field-autor, table.views-view-grid td div.views-field-field-autor div.field-content{
@@ -1459,16 +1483,16 @@ table.views-view-grid td div.views-field-field-autor span.views-label-field-auto
 	/*text-align: left !important;*/
 }
 .view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p{	
-    font-family: "GaramondRegular";
-    font-size: 16px !important;
+    font-family: "OpenSansRegular";
+    font-size: 14px !important; /*16px*/
 	color: #58595b;
-	line-height: 19px !important;
+	line-height: 17px !important; /*19px */
 }
 table.views-view-grid td div.views-field-body-1 div.field-content{	
-    font-family: "GaramondRegular";
-    font-size: 16px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
 	color: #58595b;
-	line-height: 19px;
+	line-height: 17px; /*19px*/
 }
 /* 			END  BOLETINES		*/
 
@@ -1884,7 +1908,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin: 2px 5px 2px 0px;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .field-type-text-with-summary p, .main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .view-empty p{
-	font-size: 20px !important;
+	font-size: 18px !important; /*20px*/
     text-align: justify;
 	color: #79797c;
 }
