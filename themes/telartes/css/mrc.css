@@ -2388,26 +2388,291 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+	/*home*/
+.view .more-link a {
+    font-size: 10px;
+}
+.front .custom-menu-wrapper .main-nav li ul li a {
+    font-size: 8px;
+}
+.custom-menu-wrapper .menu-inciedncias {
+    left: 41%;
+    top: 33%;
+}
+.custom-menu-wrapper .cultura-viva-comunitaria {
+    left: 59%;
+    top: 61%;
+}
+.custom-menu-wrapper .comunicacion {
+    left: 39%;
+    top: 2%;
+}
+.custom-menu-wrapper .circulacion {
+    left: 21%;
+    top: 18%;
+}
+.custom-menu-wrapper .formacion {
+    left: 73%;
+    top: 28%;
+}
+.custom-menu-wrapper .boletin {
+    left: 9%;
+    top: 57%;
+}
+.custom-menu-wrapper .menu-manifiesto {
+    /*right: 8%;*/
+    top: 15%;
+    left: 5%;
+}
+.custom-menu-wrapper .cultura-red {
+    left: 63%;
+    top: 3%;
+}
+.custom-menu-wrapper .foro {
+    left: 25%;
+    top: 57%;
+}
+.custom-menu-wrapper .menu-economia {
+    left: 27%;
+    top: 42%;
+}
+.buscador {
+    right: 17%;
+    top: 6%;
+}
+.custom-menu-wrapper .social-networks {
+    right: 0;
+    top: 7%;
+}
+.view-culture-calendar .view-header, .view-collaborative-economy .view-header {
+    margin-top: 13px;
+}
+.views-exposed-form label {
+    top: 0px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block label, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block select, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-header a.calendar, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar #edit-submit-culture-calendar {
+    font-size: 10px;
+}
+.views-exposed-widget .views-widget select {
+    height: 25px;
+    max-width: 71px;
+}
+.views-exposed-widgets .views-submit-button .form-submit {
+    height: 25px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row {
+    width: 31%;
+}
+.colapsible .view-culture-calendar .view-content .views-row .custom-content, .view-collaborative-economy .view-content .views-row .custom-content {
+    height: 167px;
+}
+.colapsible span.date-display-single, .colapsible .date-display-start, .colapsible .date-display-end {
+    font-size: 9px;
+    line-height: 9px;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content {
+    height: 33px !important
+}
+.colapsible .custom-content .title {
+    font-size: 10px !important;
+}
+.colapsible .custom-content p {
+    font-size: 9px;
+}
+.colapsible .custom-content .city-link {
+    font-size: 9px;
+}
+/* */
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row {
+    width: 31%;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block label, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block select, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block #edit-submit-news {
+    font-size: 10px;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing strong {
+    font-size: 9px !important;
+    line-height: 10px !important;
+}
+.front .nothing .field-created-date {
+    margin: 1px 0 9px;
+}
+/* */
+.colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block label, .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block select, .colapsible #block-telartes-convocatoria.content .view-call .view-header a.calendar, .colapsible #block-telartes-convocatoria.content .view-call .view-header #edit-submit-call {
+    font-size: 10px;
+}
+
+.colapsible .content ul.mrc-unformmatted-list li.views-row {
+    margin: 0 9px 15px 0;
+    /*padding: 0 10px 0 0;*/
+    width: 31%;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body {
+    height: 92px;
+    overflow: hidden;
+}
+.view-call .views-row .views-field-title {
+    margin-bottom: 9px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-title {
+    font-size: 11px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body p, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body span {
+    font-size: 10px !important;
+    line-height: 12px;
+}
+.view-call .views-field-view-node a {
+    font-size: 11px;
+    font-weight: normal;
+}
+/* */
+.block-telartes-mediateca .content .mediateca, .contextual-links-region .content .mediateca {
+    width: 70%;
+    margin: 0px auto;
+}
+.colapsible #block-telartes-mediateca .tabb, .colapsible #block-telartes-mediateca .tabb .row-tab {
+    margin: 0 auto;
+    max-width: 80%;
+}
+.colapsible .content .tabmultimedia .view {
+    max-width: 100%;
+    width: 100%;
+}
+.colapsible #block-telartes-mediateca  .collapsiblock-processed .content .view {
+    max-width: 100%;
+}
+.colapsible .content .tabmultimedia .view .view-content {
+    overflow: hidden;
+    width: 100%;
+}
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row {
+    float: left;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-created .field-content, .colapsible .content .tabb .tabmultimedia .view ul li .views-field .field-content .custom-content a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content span {
+    font-size: 10px;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-title a, .colapsible .content .tabb .tabmultimedia .view ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .title {
+    font-size: 11px;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-body p {
+    font-size: 11px;
+}
+.block-telartes-mediateca .content .tabmultimedia .view-multimedia .views-field-nothing .custom-content, .block-telartes-mediateca .content .tabmultimedia .view-photography .views-field-nothing .custom-content, .contextual-links-region .content .tabmultimedia .view-multimedia .views-field-nothing .custom-content, .contextual-links-region .content .tabmultimedia .view-photography .views-field-nothing .custom-content {
+    height: 98%;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row {
+    margin: 2px 5px 0;
+    padding: 0px;
+    width: 48%;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .content {
+    height: 70px !important;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row-last {
+    margin-left: 4px;
+    padding: 0px;
+}
+.row a {
+    font-size: 12px;
+}
+/* */
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content {
+    height: 47px !important;
+}
+.main.columns .block-views .news-image::after, .main.columns .block-views .views-field-field-call-image::after, .main.columns .block-views .image::after, .main.columns .block-views .views-field-field-event-image::after, .main.columns .block-views .views-field-field-multimedia-link::after, .main.columns .block-views .views-field-field-photography-photo::after, .main.columns .block-views .view-editorial .title a::after, .main.columns .block-views .view-documentos h3 a::after, .main.columns .block-views .view-audios h3 a::after, .sidebar-second .mrc-block-destacados .field_collective_picture a::after, .sidebar-second .mrc-block-destacados .field_network_picture a::after, .sidebar-second .mrc-block-destacados .field_image a::after, .sidebar-second .mrc-block-destacados .field_call_image a::after, .sidebar-second .mrc-block-destacados .field_editorial_image a::after, .sidebar-second .mrc-block-destacados .field_news_image a::after, .sidebar-second .mrc-block-destacados .field_event_image a::after, .sidebar-second .mrc-block-destacados .field_clear_image a::after, .sidebar-second .mrc-block-destacados .field_newsletter_image a::after, .sidebar-second .mrc-block-destacados .field_photography_photo a::after {
+    top: 7px;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .title h3 a {
+    font-size: 12px !important;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .content .field-content p {
+    font-size: 12px !important;
+    line-height: 13px !important;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .link .field-content a {
+    font-size: 11px;
+}
 	/* logo */
+.l-header {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.l-header, .l-header .contain-to-grid {
+    /*background: none;*/
+}
 .contain-to-grid .top-bar {
+    height: auto;
+    max-height: 70px;
     min-height: 53px;
     overflow: hidden;
-	max-height: 70px;
-	height: auto;
+	margin: 0px auto;
+    width: 85%;
 }
 .contain-to-grid .top-bar .top-bar-section{
 	overflow: hidden;
-	margin: 21px 0;
+	margin: 0px;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf{
+	float: left;
+    margin-right: 3%;
+    overflow: hidden;
+    width: auto;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a{
+	font-size: 9px;
+    margin: 7px 0;
+    overflow: hidden;
+	background: none;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.last a{
+    margin: 2px 0;
+}
+
+.l-header-region {
+	/*display: none;*/
+}
+
+.l-header-region #block-menu-menu-menu-notifications {
+	right: 1%;
+    width: 16%;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
+	display: none;
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
+}
+.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .contain-to-grid .top-bar ul.title-area {
 	float: left;
     height: 100%;
     overflow: hidden;
-    width: 26% !important;
+    width: 22% !important;
+}
+
+.contain-to-grid .top-bar ul.title-area a {
+	margin-right: 5px;
+    overflow: hidden;
+    width: 122px !important;
+}
+.contain-to-grid .top-bar ul.title-area a img {
+	height: auto;
+    margin: 2px;
+    overflow: hidden;
+    width: 110px;
+}
+.contain-to-grid .top-bar ul.title-area .toggle-topbar {
+	display: none;
 }
 .top-bar-section #main-menu {
-}
-.top-bar-section #main-menu  {
+	height: 100%;
+    padding-top: 10px;
+	width: 100%;
 }
 .contain-to-grid .top-bar .name {
 	display: none;
@@ -2422,256 +2687,45 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
     width: auto;
 }
 /* menu */
-.top-bar-section .main-nav li {
-    /*margin-right: 40px;*/
+.responsive-menus.responsified {
+    clear: both;
+    width: 50%;
 }
-.top-bar-section .main-nav li {
-    /*margin-right: 36px;*/
-}
-.top-bar-section .main-nav li a {
-    /*font-size: 11px;*/
-}
-.block-menu-menu-menu-notifications .first-icon-user .link-icon-user {
-    /*width: 190px;*/
-}
-/* icono login*/
-.first-icon-user .link-icon-user i {
-    /*font-size: 33px;
-    padding: 8px 14px;*/
-}
-.block-menu-menu-menu-notifications .first-icon-user .link-icon-user i {
-    /*font-size: 33px;*/
-}
-.l-header-region {
-	/*display: none;*/
-}
-
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	/* logo */
-.l-header {
-    left: 12%;
-    overflow: hidden;
-    position: absolute;
-    width: 76%;	
-}
-.l-header, .l-header .contain-to-grid {
+.responsive-menus.responsified span.toggler {
     background: none;
+    box-shadow: none;	
 }
-.contain-to-grid .top-bar {
-    height: auto;
-    max-height: 70px;
-    min-height: 53px;
-    overflow: hidden;
+.responsive-menus.responsified {
     width: 100%;
 }
-.contain-to-grid .top-bar .top-bar-section{
-	overflow: hidden;
-	margin: 0px;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf{
-	float: left;
-    margin-right: 8px;
-    overflow: hidden;
-    width: auto;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a{
-	font-size: 9px;
-    margin: 7px 0;
-    overflow: hidden;
-	background: none;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.last a{
-    margin: 2px 0;
-}
-
-.l-header-region {
-	/*display: none;*/
-}
-
-.l-header-region #block-menu-menu-menu-notifications {
-	right: 1%;
-    width: 16%;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
-	display: none;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
-	font-family: "OpenSansRegular",sans-serif;
-    font-size: 10px;
-    overflow: hidden;
-    padding: 2% 5%;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.contain-to-grid .top-bar ul.title-area {
-	float: left;
-    height: 100%;
-    overflow: hidden;
-    width: 22% !important;
-}
-
-.contain-to-grid .top-bar ul.title-area a {
-	margin-right: 5px;
-    overflow: hidden;
-    width: 122px !important;
-}
-.contain-to-grid .top-bar ul.title-area a img {
-	height: auto;
-    margin: 2px;
-    overflow: hidden;
-    width: 110px;
-}
-.contain-to-grid .top-bar ul.title-area .toggle-topbar {
-	display: none;
-}
-.top-bar-section #main-menu {
-	height: 100%;
-    padding-top: 10px;
-}
-.contain-to-grid .top-bar .name {
-	display: none;
-}
-.top-bar .logo {
-    margin-right: 35px;
-    width: auto;
-}
-.top-bar .logo img {
-	height: 66px;
-    overflow: hidden;
-    width: auto;
-}
 /* 	menu left */
-.sidebar-first{
+.sidebar-first .responsive-menus {
+	position: fixed;
+    top: 0;
+    width: 35px;
+    z-index: 1000;
+}
+.responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    z-index: 1000;
+}
+.responsive-menus .responsified span.toggler {
+	overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
+}
+/*.sidebar-first{
 	position: absolute !important;
     top: 0 !important;
     width: 97px !important;
-}
-.sidebar-first .responsive-menus{
-	
-}
-.sidebar-first .responsive-menus .responsive-menus-simple{
-	overflow: hidden;
-    width: 176px;
-}
-.sidebar-first .responsive-menus .responsive-menus-simple .content #rm-removed .leaf a{
-	font-family: "OpenSansRegular",sans-serif;
-	font-size: 10px;
-    overflow: hidden;
-	padding: 2% 5%;
-}
-.not-front .push-3 {
-	clear: both;
-    left: 5%;
-    margin-top: 10%;
-    width: 70%;
-}
-}
-
-@media screen and (max-width: 768px) {
-	/* logo */
-.l-header {
-    left: 12%;
-    overflow: hidden;
-    position: absolute;
-    width: 76%;	
-}
-.l-header, .l-header .contain-to-grid {
-    background: none;
-}
-.contain-to-grid .top-bar {
-    height: auto;
-    max-height: 70px;
-    min-height: 53px;
-    overflow: hidden;
-    width: 100%;
-}
-.contain-to-grid .top-bar .top-bar-section{
-	overflow: hidden;
-	margin: 0px;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf{
-	float: left;
-    margin-right: 8px;
-    overflow: hidden;
-    width: auto;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a{
-	font-size: 9px;
-    margin: 7px 0;
-    overflow: hidden;
-	background: none;
-}
-.contain-to-grid .top-bar .top-bar-section #main-menu li.last a{
-    margin: 2px 0;
-}
-
-.l-header-region {
-	/*display: none;*/
-}
-
-.l-header-region #block-menu-menu-menu-notifications {
-	right: 1%;
-    width: 16%;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
-	display: none;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
-	font-family: "OpenSansRegular",sans-serif;
-    font-size: 10px;
-    overflow: hidden;
-    padding: 2% 5%;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-/*.contain-to-grid .top-bar ul.title-area {
-	float: left;
-    height: 100%;
-    overflow: hidden;
-    width: 22% !important;
-}
-
-.contain-to-grid .top-bar ul.title-area a {
-	margin-right: 5px;
-    overflow: hidden;
-    width: 122px !important;
-}
-.contain-to-grid .top-bar ul.title-area a img {
-	height: auto;
-    margin: 2px;
-    overflow: hidden;
-    width: 110px;
 }*/
-.contain-to-grid .top-bar ul.title-area .toggle-topbar {
-	/*display: none;*/
-}
-.top-bar-section #main-menu {
-	height: 100%;
-    padding-top: 10px;
-}
-.contain-to-grid .top-bar .name {
-	display: none;
-}
-.top-bar .logo {
-    margin-right: 35px;
-    width: auto;
-}
-.top-bar .logo img {
-	height: 66px;
-    overflow: hidden;
-    width: auto;
-}
-/* 	menu left */
-.sidebar-first{
-	position: absolute !important;
-    top: 0 !important;
-    width: 97px !important;
-}
 .sidebar-first .responsive-menus{
-	
+	margin-top: 10px;
+}
+.sidebar-first .responsive-menus .responsified span.toggler {
+overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
 }
 .sidebar-first .responsive-menus .responsive-menus-simple{
 	overflow: hidden;
@@ -2689,4 +2743,200 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
     margin-top: 10%;
     width: 70%;
 }
+/* menu right */
+#block-menu-menu-menu-notifications .responsive-menus.responsified.responsive-toggled.absolute {
+    position: absolute;
+    z-index: 1000;
 }
+#block-menu-menu-menu-notifications .responsive-menus .toggler{
+	color: transparent;
+	text-align: right;
+}
+#block-menu-menu-menu-notifications .responsive-menus .toggler::before{
+	content:"\f007";
+	color: #000;
+    content: "";
+    font-family: FontAwesome;
+	font-size: 35px;
+	line-height: 37px;
+}
+
+/* contenido */
+.not-front .main .breadcrumbs li a {
+    font-size: 11px;
+}
+.not-front .push-3 {
+    left: 7%;
+    width: 60% !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+	margin-bottom: 0.2em;
+}
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
+    font-size: 14px !important;
+    line-height: 16px !important;
+}
+.sidebar-second {
+    margin: 10% auto 0.5em;
+    width: 30%;
+}
+.large-3.sidebar-second h2 {
+    font-size: 14px;
+    padding: 2px 12px;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 13px;
+	line-height: 13px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
+    font-size: 12px !important;
+    line-height: 14px;
+}
+
+.not-front .main .view-espacio-cultural .views-row {
+    float: left;
+    width: 48%;
+}
+.views-exposed-form label {
+    font-size: 12px;
+    top: 5px;
+}
+.views-exposed-form .form-item {
+    font-size: 12px;
+}
+
+/* cultura viva*/
+.node.node-network-culture .field-collection-container .field-label, .node.node-community-living-culture .field-collection-container .field-label, .node.node-incidence .field-collection-container .field-label, .node.node-collaborative-economy .field-collection-container .field-label, .node.node-training .field-collection-container .field-label, .node.node-communication .field-collection-container .field-label {
+    font-size: 16px !important;
+    line-height: 21px;
+    padding-bottom: 8px;
+}
+.main .block .content .view-culture-calendar .view-content ul li.views-row, .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
+    font-size: 13px;
+    line-height: 15px;
+}
+.not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
+    font-size: 13px;
+    line-height: 14px;
+    padding-bottom: 7px;
+}
+.view-mediateca .views-row, .view-news .views-row, .view-collaborative-economy .views-row, .view-training .views-row, .view-collaborative-economy .views-row, .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
+    width: 45%;
+}
+.main.columns .block-views .news-image, .main.columns .block-views .views-field-field-call-image, .main.columns .block-views .image, .main.columns .block-views .views-field-field-event-image, .main.columns .block-views .views-field-field-multimedia-link, .main.columns .block-views .views-field-field-photography-photo {
+    width: auto;
+}
+/* actores*/
+/*.view-culturals-actors .box-list {
+    height: 121px;
+    width: auto;
+}*/
+.view-culturals-actors .box-list .info .name h3 a {
+    font-size: 13px;
+}
+.box-list .info .name .names div {
+    font-size: 11px;
+}
+.view-culturals-actors .box-list .info .infos, .view-culturals-actors .box-list .info .infos a {
+    font-size: 11px;
+    line-height: 12px;
+}
+.view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-training .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news {
+    font-size: 10px !important;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 12px;
+    line-height: 13px;
+}
+.view-culture-calendar .views-row .views-field-field-event-date, .view-videos .views-row .views-field-created, .view-documentos .views-row .views-field-created, .view-fotografia .views-row .views-field-created, .view-audios .views-row .views-field-created {
+    font-size: 11px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+}
+
+/* incidence*/
+.main .block .content .view-content ul li.views-row .content {
+    height: auto;
+}
+.view-culture-calendar .views-field.views-field-field-event-description .field-content {
+    font-size: 12px !important;
+    height: 75px !important;
+    line-height: 12px;
+}
+.main .block .content .view-content ul li.views-row .created .field-content {
+    font-family: "OpenSansRegular";
+    font-size: 11px;
+}
+.not-front .main > .content p, .not-front .main > .content p > *, .not-front .main p, .not-front .main p > * {
+    font-size: 12px !important;
+    line-height: 13px !important;
+}
+.main .block-views .field-content a {
+    font-size: 14px;
+}
+.views-exposed-form label {
+    top: 0;
+}
+.views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
+    max-width: 143px;
+    width: 143px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links, .view-advanced-forum-topic-list .forum-tools {
+    font-size: 13px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a, .view-advanced-forum-topic-list .forum-tools a {
+	color: #9530ac;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a:hover, .view-advanced-forum-topic-list .forum-tools a:hover {
+	color: #a5a5a5;
+}
+.forum-topic-legend div {
+    font-size: 13px;
+}
+
+/* pagination*/
+ul.pagination li a {
+    font-size: 13px;
+}
+/* footer  */
+.l-footer .block-block {
+    margin: 0 auto;
+    max-width: 100%;
+}
+#hivos, #hacklab, #drupal  {
+    padding-left: 3%;
+}
+#hivos img {
+    height: 32px;
+    overflow: hidden;
+}
+#hacklab {
+    padding-top: 0%;
+}
+#hacklab img{ 
+    height: 30px;
+    width: auto;
+}
+}
+@media screen and (min-width: 641px) and (max-width: 767px) {
+.custom-menu-wrapper{
+	display: none;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+.custom-menu-wrapper{
+	display: none;
+}
+}
+/*@media screen and (min-width: 320px) and (max-width: 767px) {
+	
+#block-menu-menu-menu-notifications{display:none;}
+}*/
