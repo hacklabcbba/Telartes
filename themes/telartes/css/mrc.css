@@ -71,7 +71,7 @@ h3 {
 
 .not-front .main > .content p,
 .not-front .main > .content p > * {
-    font-size: 18px !important;/*22px;*/
+    font-size: 14px !important;/*18px 22px;*/
     text-align: justify;
 	color: #424243;
 }
@@ -1212,9 +1212,10 @@ table.views-view-grid tr td {
 .not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
 	color: #424243;
     font-family: "OpenSansRegular",serif !important;
-    font-size: 18px !important;/* 22px */
+    font-size: 14px !important;/*18px 22px */
     line-height: 21px !important; /*25px*/
 	text-align: justify;
+	clear:both;
 }
 
 /* BEGIN FOOTER */
@@ -1234,8 +1235,8 @@ table.views-view-grid tr td {
 .node.node-training .field-collection-container .field-label,
 .node.node-communication .field-collection-container .field-label  {
 	color: #6d6e70;
-	font-size: 19px !important;/*22px*/
-	line-height: 21px;/* 22px*/
+	font-size: 17px !important;/*22px*/
+	line-height: 19px;/* 22px*/
     padding-bottom: 21px;
 }
 .node.node-network-culture .field-collection-container a, .node.node-community-living-culture .field-collection-container a, .node.node-incidence .field-collection-container a, .node.node-collaborative-economy .field-collection-container a, .node.node-training .field-collection-container a, .node.node-communication .field-collection-container a {
@@ -1245,7 +1246,7 @@ table.views-view-grid tr td {
 .not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
     color: #424243;/*#58595b;*/
     font-family: "OpenSansRegular";
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
 	padding-bottom: 10px;
 }
@@ -1312,6 +1313,9 @@ table.views-view-grid tr td {
 }*/
 /*  /////		END	SLIDER    ///// */
 /*			BEGIN CONTENIDO COMPLETO */ 
+.not-front .main .node-event li, .not-front .main .node-news li, .not-front .main .node-call li, .not-front .main .node-editorial li, .not-front .main .node-document li, .not-front .main .node-multimedia li, .not-front .main .node-photography li, .not-front .main .node-venue li, .not-front .main .node-incidence li, .not-front .main .node-community-living-culture li, .not-front .main .node-network-culture li, .not-front .main .node-training li, .not-front .main .node-communication li, .not-front .main .node-collaborative-economy li {
+    width: 47%;
+}
 .main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description div.field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body,
  .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-date{
 	
@@ -1357,7 +1361,7 @@ table.views-view-grid tr td {
 .main .block .content .view-culture-calendar .view-content ul li.views-row,
 .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
 	color: #58595b;
-    font-size: 15px; /*14px;*/
+    font-size: 14px; /*14px;*/
 	font-family: "OpenSansRegular", sans-serif;
 	padding-top: 0px;
     line-height: 17px;/*19px*/
@@ -1890,14 +1894,14 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-country, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-department, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-address, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-address, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-phone {
 	width: 70%;
 	color: #59595b;
-	font-size: 18px;
+	font-size: 14px;/* 18px*/
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-entity-field .field-label{
 	float: left;
 	font-size:16px;
 	/*margin: 2px 5px 2px 0px;*/
 	color: #878689;
-	font-size: 18px;
+	font-size: 14px;/* 18px*/;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .field-label-inline .field-label, .main .content .panel-display .center-wrapper .panel-col-first .inside .field-label-inline ul.inline{
 	margin: 0px;
@@ -1908,7 +1912,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin: 2px 5px 2px 0px;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .field-type-text-with-summary p, .main .content .panel-display .center-wrapper .panel-col-first .inside .panel-pane .pane-content .view-empty p{
-	font-size: 18px !important; /*20px*/
+	font-size: 14px;/* 18px*/ !important; /*20px*/
     text-align: justify;
 	color: #79797c;
 }
@@ -1992,7 +1996,10 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     width: 43px;
     color: transparent;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter .pane-title, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube .pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-facebook .pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-twiter .pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-youtube .pane-title, 
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-flickr .pane-title, 
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-facebook h2.pane-title, 
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-twiter h2.pane-title, 
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-youtube h2.pane-title, 
@@ -2075,12 +2082,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     text-align: center;
     text-transform: uppercase;
     width: 95%;
-	
+	overflow: hidden;
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-area h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-area ul.links,
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-create-links h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-others h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-areas-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-network-areas-of-interest ul.links{
 	margin-left: 10px;
-	font-size: 18px;
+	font-size: 14px;/*18px*/
 }
 /*.main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links{
 	list-style-type: none;
@@ -2931,14 +2938,222 @@ ul.pagination li a {
 }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
+
+
+	/*home*/
+.view .more-link a {
+    font-size: 10px;
+}
+.front .custom-menu-wrapper .main-nav li ul li a {
+    font-size: 8px;
+}
+.custom-menu-wrapper .menu-inciedncias {
+    left: 41%;
+    top: 33%;
+}
+.custom-menu-wrapper .cultura-viva-comunitaria {
+    left: 59%;
+    top: 61%;
+}
+.custom-menu-wrapper .comunicacion {
+    left: 39%;
+    top: 2%;
+}
+.custom-menu-wrapper .circulacion {
+    left: 21%;
+    top: 18%;
+}
+.custom-menu-wrapper .formacion {
+    left: 73%;
+    top: 28%;
+}
+.custom-menu-wrapper .boletin {
+    left: 9%;
+    top: 57%;
+}
+.custom-menu-wrapper .menu-manifiesto {
+    /*right: 8%;*/
+    top: 15%;
+    left: 5%;
+}
+.custom-menu-wrapper .cultura-red {
+    left: 63%;
+    top: 3%;
+}
+.custom-menu-wrapper .foro {
+    left: 25%;
+    top: 57%;
+}
+.custom-menu-wrapper .menu-economia {
+    left: 27%;
+    top: 42%;
+}
+.buscador {
+    right: 17%;
+    top: 6%;
+}
+.custom-menu-wrapper .social-networks {
+    right: 0;
+    top: 7%;
+}
+.view-culture-calendar .view-header, .view-collaborative-economy .view-header {
+    margin-top: 13px;
+}
+.views-exposed-form label {
+    top: 0px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block label, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block select, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-header a.calendar, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar #edit-submit-culture-calendar {
+    font-size: 10px;
+}
+.views-exposed-widget .views-widget select {
+    height: 25px;
+    max-width: 71px;
+}
+.views-exposed-widgets .views-submit-button .form-submit {
+    height: 25px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row {
+    width: 31%;
+}
+.colapsible .view-culture-calendar .view-content .views-row .custom-content, .view-collaborative-economy .view-content .views-row .custom-content {
+    height: 167px;
+}
+.colapsible span.date-display-single, .colapsible .date-display-start, .colapsible .date-display-end {
+    font-size: 9px;
+    line-height: 9px;
+}
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content {
+    height: 33px !important
+}
+.colapsible .custom-content .title {
+    font-size: 10px !important;
+}
+.colapsible .custom-content p {
+    font-size: 9px;
+}
+.colapsible .custom-content .city-link {
+    font-size: 9px;
+}
+/* */
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row {
+    width: 47%;/*31%;*/
+}
+.colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block label, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block select, .colapsible #block-telartes-noticias .content .view-news .view-filters #views-exposed-form-news-block #edit-submit-news {
+    font-size: 10px;
+}
+.colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing span, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing p, .colapsible #block-telartes-noticias .content .view-news .view-content ul li.views-row .nothing strong {
+    font-size: 9px !important;
+    line-height: 10px !important;
+}
+.front .nothing .field-created-date {
+    margin: 1px 0 9px;
+}
+/* */
+.colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block label, .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block select, .colapsible #block-telartes-convocatoria.content .view-call .view-header a.calendar, .colapsible #block-telartes-convocatoria.content .view-call .view-header #edit-submit-call {
+    font-size: 10px;
+}
+
+.colapsible .content ul.mrc-unformmatted-list li.views-row {
+    margin: 0 9px 15px 0;
+    /*padding: 0 10px 0 0;*/
+    width: 47%;/*31%;*/
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body {
+    height: 92px;
+    overflow: hidden;
+}
+.view-call .views-row .views-field-title {
+    margin-bottom: 9px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-title {
+    font-size: 11px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body p, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body span {
+    font-size: 10px !important;
+    line-height: 12px;
+}
+.view-call .views-field-view-node a {
+    font-size: 11px;
+    font-weight: normal;
+}
+/* */
+.block-telartes-mediateca .content .mediateca, .contextual-links-region .content .mediateca {
+    width: 70%;
+    margin: 0px auto;
+}
+.colapsible #block-telartes-mediateca .tabb, .colapsible #block-telartes-mediateca .tabb .row-tab {
+    margin: 0 auto;
+    max-width: 80%;
+}
+.colapsible .content .tabmultimedia .view {
+    max-width: 100%;
+    width: 100%;
+}
+.colapsible #block-telartes-mediateca  .collapsiblock-processed .content .view {
+    max-width: 100%;
+}
+.colapsible .content .tabmultimedia .view .view-content {
+    overflow: hidden;
+    width: 100%;
+}
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row {
+    float: left;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-created .field-content, .colapsible .content .tabb .tabmultimedia .view ul li .views-field .field-content .custom-content a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content span {
+    font-size: 10px;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-title a, .colapsible .content .tabb .tabmultimedia .view ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .title {
+    font-size: 11px;
+}
+.colapsible .content .tabb .tabmultimedia .view ul li .views-field-body p {
+    font-size: 11px;
+}
+.block-telartes-mediateca .content .tabmultimedia .view-multimedia .views-field-nothing .custom-content, .block-telartes-mediateca .content .tabmultimedia .view-photography .views-field-nothing .custom-content, .contextual-links-region .content .tabmultimedia .view-multimedia .views-field-nothing .custom-content, .contextual-links-region .content .tabmultimedia .view-photography .views-field-nothing .custom-content {
+    height: 98%;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row {
+    margin: 2px 5px 0;
+    padding: 0px;
+    width: 47%;/*48%;*/
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .content {
+    height: 70px !important;
+}
+.colapsible .content .tabmultimedia .view-multimedia .view-content ul li.views-row-last {
+    margin-left: 4px;
+    padding: 0px;
+}
+.row a {
+    font-size: 12px;
+}
+/* */
+.colapsible .content ul.mrc-unformmatted-list li.views-row .title, .colapsible .content ul.mrc-unformmatted-list li.views-row .content {
+    height: 47px !important;
+}
+.main.columns .block-views .news-image::after, .main.columns .block-views .views-field-field-call-image::after, .main.columns .block-views .image::after, .main.columns .block-views .views-field-field-event-image::after, .main.columns .block-views .views-field-field-multimedia-link::after, .main.columns .block-views .views-field-field-photography-photo::after, .main.columns .block-views .view-editorial .title a::after, .main.columns .block-views .view-documentos h3 a::after, .main.columns .block-views .view-audios h3 a::after, .sidebar-second .mrc-block-destacados .field_collective_picture a::after, .sidebar-second .mrc-block-destacados .field_network_picture a::after, .sidebar-second .mrc-block-destacados .field_image a::after, .sidebar-second .mrc-block-destacados .field_call_image a::after, .sidebar-second .mrc-block-destacados .field_editorial_image a::after, .sidebar-second .mrc-block-destacados .field_news_image a::after, .sidebar-second .mrc-block-destacados .field_event_image a::after, .sidebar-second .mrc-block-destacados .field_clear_image a::after, .sidebar-second .mrc-block-destacados .field_newsletter_image a::after, .sidebar-second .mrc-block-destacados .field_photography_photo a::after {
+    top: 7px;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .title h3 a {
+    font-size: 12px !important;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .content .field-content p {
+    font-size: 12px !important;
+    line-height: 13px !important;
+}
+.colapsible #block-views-editorial-block .view-editorial .view-content ul li .link .field-content a {
+    font-size: 11px;
+}
+
+
 	/* logo */
 #block-views-banner-block, .custom-menu-wrapper{
 	display: none;
 }
 
 .l-header {
-    position: fixed;
+    position: unset;/*fixed;*/
     width: 100%;
+	height: 45px;
 }
 .l-header .contain-to-grid {
 	margin: 0 auto;
@@ -2948,6 +3163,10 @@ ul.pagination li a {
 .l-header .contain-to-grid .top-bar {
     margin: 0 auto;
     width: 50%;
+}
+.l-header .top-bar .logo img {
+    margin: 0px 8px;
+    height: 40px;
 }
 .contain-to-grid .top-bar ul.title-area {
     /*width: 100% !important;*/
@@ -3258,8 +3477,9 @@ ul.pagination li a {
 /*@media screen and (min-width: 640px) and (max-width: 767px) {*/
 @media screen and (max-width: 639px) {
 .l-header{
-    position: fixed;
-    top: 0;
+    position: unset;/*fixed;*/
+    top: 0px;
+	height:45px;
 }
 main.row {
     clear: both;
@@ -3270,11 +3490,11 @@ main.row {
 	display: none;
 }
 
-.l-header {
+/*.l-header {
     position: fixed;
     width: 100%;
 	top:0px;
-}
+}*/
 .l-header .contain-to-grid {
 	margin: 0 auto;
     position: fixed;
@@ -3486,6 +3706,12 @@ table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view
     font-size: 13px !important;
     line-height: 15px !important;
     padding-bottom: 4px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row {
+    width: 95%;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row div div a img {
+    width: 95%;
 }
 .main .block .content .view-culture-calendar .view-content ul li.views-row, .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
     font-size: 13px;
