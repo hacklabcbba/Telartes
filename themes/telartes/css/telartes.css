@@ -675,7 +675,7 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375em;
+    padding-left: 0em; /*0.9375em;*/
     padding-right: 0.9375em;
     float: left;
   }
@@ -857,7 +857,7 @@ select {
   /* line 158, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_grid.scss */
   .large-3 {
     position: relative;
-    width: 25%;
+    width: 24%;
     float: right;
   }
 
@@ -7898,6 +7898,8 @@ li:hover > .menu {
   padding: 4px;
   position: absolute;
   top: 0px;
+  font-family: "OpenSansRegular",sans-serif;
+  font-size: 13px;
 }
 /* line 220, ../scss/layout/_main.scss */
 .view-culture-calendar .view-content .views-row .custom-content:hover,
@@ -11150,11 +11152,12 @@ li:hover > .menu {
 
 /* line 1480, ../scss/layout/_main.scss */
 .not-front .push-3 {
-  left: 15%;
+  left: 14.8%;
   position: relative;
   right: auto;
   width: 60% !important;
   border-right: 1px solid #ccc;
+  padding-right: 2%;
 }
 
 .not-front .push-3 .content .view-calendar-to-telartes{
@@ -11920,7 +11923,7 @@ button {
 .node-event-form .field-name-field-call-pdf {
   clear: both;
   float: left;
-  max-width: 60%;
+  /*max-width: 60%;*/
   margin-left: 0;
 }
 /* line 120, ../scss/layout/_profile.scss */
