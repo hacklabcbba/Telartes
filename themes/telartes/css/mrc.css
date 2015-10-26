@@ -2632,29 +2632,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
 	/*display: none;*/
 }
 
-.l-header-region #block-menu-menu-menu-notifications {
-	right: 1%;
-    width: 16%;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  .link-icon-user{
-	display: none;
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf{
-}
-.l-header-region #block-menu-menu-menu-notifications #rm-removed  li.leaf a{
-	font-family: "OpenSansRegular",sans-serif;
-    font-size: 10px;
-    overflow: hidden;
-    padding: 2% 5%;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.contain-to-grid .top-bar ul.title-area {
-	float: left;
-    height: 100%;
-    overflow: hidden;
-    width: 22% !important;
-}
-
 .contain-to-grid .top-bar ul.title-area a {
 	margin-right: 5px;
     overflow: hidden;
@@ -2744,21 +2721,49 @@ overflow: hidden;
     width: 70%;
 }
 /* menu right */
-#block-menu-menu-menu-notifications .responsive-menus.responsified.responsive-toggled.absolute {
-    position: absolute;
+
+.l-header-region .responsive-menus .rm-removed .first-icon-user .link-icon-user{
+	display: none;
+}
+.l-header-region .responsive-menus .rm-removed  li.leaf{
+}
+.l-header-region  .responsive-menus  .rm-removed li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 22% !important;
+}
+.l-header .l-header-region .responsive-menus {
+	position: fixed;
+    right: 13px;
+    top: 0;
+    width: 35px;
     z-index: 1000;
 }
-#block-menu-menu-menu-notifications .responsive-menus .toggler{
+.l-header .l-header-region .responsive-menus .toggler{
 	color: transparent;
 	text-align: right;
 }
-#block-menu-menu-menu-notifications .responsive-menus .toggler::before{
+.l-header .l-header-region .responsive-menus .toggler:before{
 	content:"\f007";
 	color: #000;
     content: "";
     font-family: FontAwesome;
 	font-size: 35px;
 	line-height: 37px;
+}
+.l-header .l-header-region .responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    width: 120px;/*160px;*/
+    z-index: 1000;
+	right:0px;
 }
 
 /* contenido */
@@ -2925,18 +2930,670 @@ ul.pagination li a {
     width: auto;
 }
 }
-@media screen and (min-width: 641px) and (max-width: 767px) {
+@media screen and (min-width: 640px) and (max-width: 767px) {
+	/* logo */
+#block-views-banner-block, .custom-menu-wrapper{
+	display: none;
+}
+
+.l-header {
+    position: fixed;
+    width: 100%;
+}
+.l-header .contain-to-grid {
+	margin: 0 auto;
+    position: fixed;
+    width: 100%;
+}
+.l-header .contain-to-grid .top-bar {
+    margin: 0 auto;
+    width: 50%;
+}
+.contain-to-grid .top-bar ul.title-area {
+    /*width: 100% !important;*/
+}
+
+.top-bar .logo {
+    background-color: #fff;
+	width: auto !important;
+}
+.contain-to-grid .top-bar ul.title-area a img {
+     width: 98px !important;
+	/*display: none;*/
+}
 .custom-menu-wrapper{
 	display: none;
+}
+.contain-to-grid .top-bar .top-bar-section{
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a {
+    /*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
+    font-size: 9px;
+    margin: 0px;
+    overflow: hidden;
+	color: #fff !important;
+	padding:0px;
+	border:0px;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a:hover {
+    margin: 0px;
+	padding:0px;
+}
+
+.responsive-menus.responsified span.toggler {
+    background: none;
+    box-shadow: none;	
+}
+.responsive-menus.responsified {
+    width: auto;
+}
+/* 	menu left */
+.sidebar-first .responsive-menus {
+	position: fixed;
+    top: 0;
+    width: 35px;
+    z-index: 1000;
+}
+.responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    z-index: 1000;
+}
+.sidebar-first .responsive-menus .responsified span.toggler {
+	overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
+}
+/*.sidebar-first{
+	position: absolute !important;
+    top: 0 !important;
+    width: 97px !important;
+}*/
+.sidebar-first .responsive-menus{
+	margin-top: 10px;
+}
+.sidebar-first .responsive-menus .responsified span.toggler {
+	overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple{
+	overflow: hidden;
+    width: 176px;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple .content #rm-removed .leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 9px;
+    overflow: hidden;
+	padding: 2% 5%;
+}
+.not-front .push-3 {
+	clear: both;
+    left: 6%;
+    margin-top: 10%;
+    width: 70%;
+}
+/* menu right */
+
+.l-header-region .responsive-menus .rm-removed .first-icon-user .link-icon-user{
+	display: none;
+}
+.l-header-region  .responsive-menus  .rm-removed li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 22% !important;
+}*/
+.l-header .l-header-region .responsive-menus {
+	position: fixed;
+    right: 13px;
+    top: 0;
+    width: 35px;
+    z-index: 1000;
+}
+.l-header .l-header-region .responsive-menus .toggler{
+	color: transparent;
+	text-align: right;
+}
+.l-header .l-header-region .responsive-menus .toggler:before{
+	content:"\f007";
+	color: #000;
+    content: "";
+    font-family: FontAwesome;
+	font-size: 35px;
+	line-height: 37px;
+}
+.l-header .l-header-region .responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    width: 120px; /*160px;*/
+    z-index: 1000;
+	right:0px;
+}
+
+/* contenido */
+.not-front .main .breadcrumbs li a {
+    font-size: 11px;
+}
+.not-front .push-3 {
+    border-right: 0 none;
+    margin: 0 auto;
+    width: 90% !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+	margin-bottom: 0.2em;
+}
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
+    font-size: 14px !important;
+    line-height: 16px !important;
+}
+.sidebar-second {
+    margin: 0px auto;
+    right: 4%;
+    width: 90%;
+}
+.large-3.sidebar-second h2 {
+    font-size: 14px;
+    padding: 2px 12px;
+}
+.sidebar-second .mrc-unformmatted-list li.views-row {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 48%;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 13px;
+	line-height: 13px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
+    font-size: 12px !important;
+    line-height: 14px;
+}
+
+.not-front .main .view-espacio-cultural .views-row {
+    float: left;
+    width: 48%;
+}
+.views-exposed-form label {
+    font-size: 12px;
+    top: 5px;
+}
+.views-exposed-form .form-item {
+    font-size: 12px;
+}
+
+/* cultura viva*/
+.node.node-network-culture .field-collection-container .field-label, .node.node-community-living-culture .field-collection-container .field-label, .node.node-incidence .field-collection-container .field-label, .node.node-collaborative-economy .field-collection-container .field-label, .node.node-training .field-collection-container .field-label, .node.node-communication .field-collection-container .field-label {
+    font-size: 16px !important;
+    line-height: 21px;
+    padding-bottom: 8px;
+}
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row {
+    padding-right: 0;
+    width: 46%;
+}
+.main .block .content .view-culture-calendar .view-content ul li.views-row, .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
+    font-size: 13px;
+    line-height: 15px;
+}
+.not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
+    font-size: 13px;
+    line-height: 14px;
+    padding-bottom: 7px;
+}
+.view-mediateca .views-row, .view-news .views-row, .view-collaborative-economy .views-row, .view-training .views-row, .view-collaborative-economy .views-row, .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
+    width: 45%;
+}
+.main.columns .block-views .news-image, .main.columns .block-views .views-field-field-call-image, .main.columns .block-views .image, .main.columns .block-views .views-field-field-event-image, .main.columns .block-views .views-field-field-multimedia-link, .main.columns .block-views .views-field-field-photography-photo {
+    width: auto;
+}
+/* actores*/
+/*.view-culturals-actors .box-list {
+    height: 121px;
+    width: auto;
+}*/
+.view-culturals-actors .box-list .info .name h3 a {
+    font-size: 13px;
+}
+.box-list .info .name .names div {
+    font-size: 11px;
+}
+.view-culturals-actors .box-list .info .infos, .view-culturals-actors .box-list .info .infos a {
+    font-size: 11px;
+    line-height: 12px;
+}
+.view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-training .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news {
+    font-size: 10px !important;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 12px;
+    line-height: 13px;
+}
+.view-culture-calendar .views-row .views-field-field-event-date, .view-videos .views-row .views-field-created, .view-documentos .views-row .views-field-created, .view-fotografia .views-row .views-field-created, .view-audios .views-row .views-field-created {
+    font-size: 11px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+}
+
+/* incidence*/
+.main .block .content .view-content ul li.views-row .content {
+    height: auto;
+}
+.view-culture-calendar .views-field.views-field-field-event-description .field-content {
+    font-size: 12px !important;
+    height: 75px !important;
+    line-height: 12px;
+}
+.main .block .content .view-content ul li.views-row .created .field-content {
+    font-family: "OpenSansRegular";
+    font-size: 11px;
+}
+.not-front .main > .content p, .not-front .main > .content p > *, .not-front .main p, .not-front .main p > * {
+    font-size: 12px !important;
+    line-height: 13px !important;
+}
+.main .block-views .field-content a {
+    font-size: 14px;
+}
+.views-exposed-form label {
+    top: 0;
+}
+.views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
+    max-width: 143px;
+    width: 143px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links, .view-advanced-forum-topic-list .forum-tools {
+    font-size: 13px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a, .view-advanced-forum-topic-list .forum-tools a {
+	color: #9530ac;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a:hover, .view-advanced-forum-topic-list .forum-tools a:hover {
+	color: #a5a5a5;
+}
+.forum-topic-legend div {
+    font-size: 13px;
+}
+
+/* pagination*/
+ul.pagination li a {
+    font-size: 13px;
+}
+/* footer  */
+.l-footer .block-block {
+    margin: 0 auto;
+    max-width: 100%;
+}
+#hivos, #hacklab, #drupal  {
+    padding-left: 3%;
+}
+#hivos img {
+    height: 32px;
+    overflow: hidden;
+}
+#hacklab {
+    padding-top: 0%;
+}
+#hacklab img{ 
+    height: 30px;
+    width: auto;
 }
 }
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+/*@media screen and (min-width: 640px) and (max-width: 767px) {*/
+@media screen and (max-width: 639px) {
+.l-header{
+    position: fixed;
+    top: 0;
+}
+main.row {
+    clear: both;
+    margin-top: 7%;
+}
+	/* logo */
+#block-views-banner-block, .custom-menu-wrapper{
+	display: none;
+}
+
+.l-header {
+    position: fixed;
+    width: 100%;
+	top:0px;
+}
+.l-header .contain-to-grid {
+	margin: 0 auto;
+    position: fixed;
+    width: 100%;
+}
+.l-header .contain-to-grid .top-bar {
+    margin: 0 auto;
+    width: 62%;
+}
+.contain-to-grid .top-bar ul.title-area {
+    /*width: 100% !important;*/
+}
+
+.top-bar .logo {
+    background-color: #fff;
+	width: auto !important;
+}
+.contain-to-grid .top-bar ul.title-area a img {
+     width: 98px !important;
+	/*display: none;*/
+}
 .custom-menu-wrapper{
 	display: none;
 }
+.contain-to-grid .top-bar .top-bar-section{
+    left: 0;
+    margin: 0;
+    overflow: hidden;
 }
-/*@media screen and (min-width: 320px) and (max-width: 767px) {
-	
-#block-menu-menu-menu-notifications{display:none;}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a {
+    /*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
+    font-size: 9px;
+    margin: 0px;
+    overflow: hidden;
+	color: #fff !important;
+	padding:0px;
+	border:0px;
+}
+.contain-to-grid .top-bar .top-bar-section #main-menu li.leaf a:hover {
+    margin: 0px;
+	padding:0px;
+}
+
+.responsive-menus.responsified span.toggler {
+    background: none;
+    box-shadow: none;	
+}
+.responsive-menus.responsified {
+    width: auto;
+}
+/* 	menu left */
+.sidebar-first .responsive-menus {
+	position: fixed;
+    top: 0;
+    width: 35px;
+    z-index: 1000;
+}
+.responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    z-index: 1000;
+}
+.sidebar-first .responsive-menus .responsified span.toggler {
+	overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
+}
+/*.sidebar-first{
+	position: absolute !important;
+    top: 0 !important;
+    width: 97px !important;
 }*/
+.sidebar-first .responsive-menus{
+	margin-top: 10px;
+}
+.sidebar-first .responsive-menus .responsified span.toggler {
+	overflow: hidden;
+    padding-left: 16px;
+    text-align: left;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple{
+	overflow: hidden;
+    width: 176px;
+}
+.sidebar-first .responsive-menus .responsive-menus-simple .content #rm-removed .leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 9px;
+    overflow: hidden;
+	padding: 2% 5%;
+}
+.not-front .push-3 {
+	clear: both;
+    left: 6%;
+    margin-top: 10%;
+    width: 70%;
+}
+/* menu right */
+
+.l-header-region .responsive-menus .rm-removed .first-icon-user .link-icon-user{
+	display: none;
+}
+.l-header-region  .responsive-menus  .rm-removed li.leaf a{
+	font-family: "OpenSansRegular",sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 2% 5%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*.contain-to-grid .top-bar ul.title-area {
+	float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 22% !important;
+}*/
+.l-header .l-header-region .responsive-menus {
+	position: fixed;
+    right: 13px;
+    top: 0;
+    width: 35px;
+    z-index: 1000;
+}
+.l-header .l-header-region .responsive-menus .toggler{
+	color: transparent;
+	text-align: right;
+}
+.l-header .l-header-region .responsive-menus .toggler:before{
+	content:"\f007";
+	color: #000;
+    content: "";
+    font-family: FontAwesome;
+	font-size: 35px;
+	line-height: 37px;
+}
+.l-header .l-header-region .responsive-menus.responsified.responsive-toggled.absolute {
+    position: fixed;
+    width: 120px; /*160px;*/
+    z-index: 1000;
+	right:0px;
+}
+
+/* contenido */
+main.row {
+    height: 100%;
+    margin: 14% auto 0;
+    overflow: hidden;
+}
+.not-front .main .breadcrumbs li a {
+    font-size: 11px;
+}
+.not-front .push-3 {
+    border-right: 0 none;
+    margin: 0 auto;
+    width: 90% !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+	margin-bottom: 0.2em;
+}
+.not-front .main p.rtejustify, .not-front .main p.rtejustify > *, .not-front .main .view-mode-full .field-name-body p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.view .more-link a {
+    font-size: 10px;
+    padding: 7px 10px;
+}
+.sidebar-second {
+    margin: 0px auto;
+    right: 4%;
+    width: 90%;
+}
+.large-3.sidebar-second h2 {
+    font-size: 12px;
+    padding: 2px 12px;
+}
+.sidebar-second .mrc-unformmatted-list li.views-row {
+    /*float: left;*/
+    margin: 0 5px 5px 0;
+    width: 100%;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 13px;
+	line-height: 13px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.mrc-block-destacados .field-content, .large-3.sidebar-second .field-content p {
+    font-size: 12px !important;
+    line-height: 14px;
+}
+
+.not-front .main .view-espacio-cultural .views-row {
+    float: left;
+    width: 48%;
+}
+.views-exposed-form label {
+    font-size: 12px;
+    top: 5px;
+}
+.views-exposed-form .form-item {
+    font-size: 12px;
+}
+.main.columns .block-views .news-image img, .main.columns .block-views .views-field-field-call-image img, .main.columns .block-views .image img, .main.columns .block-views .views-field-field-event-image img, .main.columns .block-views .views-field-field-multimedia-link img, .main.columns .block-views .views-field-field-photography-photo img {
+    height: auto;
+}
+/* cultura viva*/
+.node.node-network-culture .field-collection-container .field-label, .node.node-community-living-culture .field-collection-container .field-label, .node.node-incidence .field-collection-container .field-label, .node.node-collaborative-economy .field-collection-container .field-label, .node.node-training .field-collection-container .field-label, .node.node-communication .field-collection-container .field-label {
+    font-size: 13px !important;
+    line-height: 15px !important;
+    padding-bottom: 4px;
+}
+.main .block .content .view-culture-calendar .view-content ul li.views-row, .view-mode-full .posted span, .view-mode-full div .field-label, .view-mode-full div.field-name-field-autor, .view-mode-full div a {
+    font-size: 13px;
+    line-height: 15px;
+}
+.not-front .main .node-event .field, .not-front .main .node-news .field, .not-front .main .node-call .field, .not-front .main .node-editorial .field, .not-front .main .node-document .field, .not-front .main .node-multimedia .field, .not-front .main .node-photography .field, .not-front .main .node-venue .field, .not-front .main .node-incidence .field, .not-front .main .node-community-living-culture .field, .not-front .main .node-network-culture .field, .not-front .main .node-training .field, .not-front .main .node-communication .field, .not-front .main .node-collaborative-economy .field {
+    font-size: 12px;
+    line-height: 13px;
+    padding-bottom: 4px;
+}
+.view-mediateca .views-row, .view-news .views-row, .view-collaborative-economy .views-row, .view-training .views-row, .view-collaborative-economy .views-row, .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
+    width: 45%;
+}
+.main.columns .block-views .news-image, .main.columns .block-views .views-field-field-call-image, .main.columns .block-views .image, .main.columns .block-views .views-field-field-event-image, .main.columns .block-views .views-field-field-multimedia-link, .main.columns .block-views .views-field-field-photography-photo {
+    width: auto;
+}
+/* actores*/
+/*.view-culturals-actors .box-list {
+    height: 121px;
+    width: auto;
+}*/
+.view-culturals-actors .box-list .info .name h3 a {
+    font-size: 13px;
+}
+.box-list .info .name .names div {
+    font-size: 11px;
+}
+.view-culturals-actors .box-list .info .infos, .view-culturals-actors .box-list .info .infos a {
+    font-size: 11px;
+    line-height: 12px;
+}
+.view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-training .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, .view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news {
+    font-size: 10px !important;
+}
+table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a {
+    font-size: 12px;
+    line-height: 13px;
+}
+.view-culture-calendar .views-row .views-field-field-event-date, .view-videos .views-row .views-field-created, .view-documentos .views-row .views-field-created, .view-fotografia .views-row .views-field-created, .view-audios .views-row .views-field-created {
+    font-size: 11px;
+}
+.view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p {
+    font-size: 10px !important;
+    line-height: 12px !important;
+}
+
+/* incidence*/
+.main .block .content .view-content ul li.views-row .content {
+    height: auto;
+}
+.view-culture-calendar .views-field.views-field-field-event-description .field-content {
+    font-size: 12px !important;
+    height: 75px !important;
+    line-height: 12px;
+}
+.main .block .content .view-content ul li.views-row .created .field-content {
+    font-family: "OpenSansRegular";
+    font-size: 11px;
+}
+.not-front .main > .content p, .not-front .main > .content p > *, .not-front .main p, .not-front .main p > * {
+    font-size: 12px !important;
+    line-height: 13px !important;
+}
+.main .block-views .field-content a {
+    font-size: 14px;
+}
+.views-exposed-form label {
+    top: 0;
+}
+.views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
+    max-width: 143px;
+    width: 143px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links, .view-advanced-forum-topic-list .forum-tools {
+    font-size: 13px;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a, .view-advanced-forum-topic-list .forum-tools a {
+	color: #9530ac;
+}
+.view-advanced-forum-topic-list .forum-node-create-links a:hover, .view-advanced-forum-topic-list .forum-tools a:hover {
+	color: #a5a5a5;
+}
+.forum-topic-legend div {
+    font-size: 13px;
+}
+
+/* pagination*/
+ul.pagination li a {
+    font-size: 13px;
+}
+/* footer  */
+.l-footer .block-block {
+    margin: 0 auto;
+    max-width: 100%;
+}
+#hivos, #hacklab, #drupal  {
+    padding-left: 3%;
+}
+#hivos img {
+    height: 32px;
+    overflow: hidden;
+}
+#hacklab {
+    padding-top: 0%;
+}
+#hacklab img{ 
+    height: 30px;
+    width: auto;
+}
+
+}
