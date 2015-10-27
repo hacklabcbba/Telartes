@@ -7385,7 +7385,7 @@ a.th {
   float: left;
   background: #fff;
   margin-right: 57px;
-  width: 200px !important;
+  width: 74% !important;/*200px*/
 }
 /* line 23, ../scss/layout/_header.scss */
 .top-bar .logo img {
@@ -11153,7 +11153,7 @@ li:hover > .menu {
 
 /* line 1480, ../scss/layout/_main.scss */
 .not-front .push-3 {
-  left: 14.8%;
+  left: 14.6%;/*14.8%;*/
   position: relative;
   right: auto;
   width: 60% !important;
