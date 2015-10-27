@@ -1104,7 +1104,7 @@ main.row {
 .not-front .push-3{
 	border-right: 2px solid #d0d1d3;
 	margin-top: 18px;
-	left: 200px;
+	/*left: 200px;*/
 	width: 60% !important;
 }
 .breadcrumbs {
@@ -1218,7 +1218,7 @@ table.views-view-grid tr td {
 	color: #424243;
     font-family: "OpenSansRegular",serif !important;
     font-size: 14px !important;/*18px 22px */
-    line-height: 21px !important; /*25px*/
+    line-height: 17px !important; /*25px*/
 	text-align: justify;
 	clear:both;
 }
@@ -1295,10 +1295,10 @@ table.views-view-grid tr td {
 }
 .large-3.sidebar-second h3 a, .section-boletin .content .views-row a {
     color: #58595b;
-    font-size: 17px; /*14px;*/
+    font-size: 14px; /*14px;*/
 	font-family: "OpenSansRegular", sans-serif;
 	padding-top: 0px;
-    line-height: 13px;
+    line-height: 14px;
 	float: none;
 }
 .view .more-link{
@@ -1379,9 +1379,40 @@ table.views-view-grid tr td {
 .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
     width: 31%;/*30%;*/
 	float: left;
+	height: 215px;
+    margin-bottom: 15px;
+    overflow: hidden;    
+	margin-right: 15px;
+}
+.view-collaborative-economy .mrc-unformmatted-list .views-row .views-field-title{
+	height: 48px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.view-mediateca .views-row .mrc-list-mediateca .views-field-title .field-content a, .view-collaborative-economy .mrc-unformmatted-list .views-row .views-field-title .field-content a{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 15px;
+} 
+.view-mediateca .views-row .mrc-list-mediateca .field-content p, .view-collaborative-economy .views-row .mrc-list-mediateca .field-content p, .view-training .views-row .mrc-list-mediateca .field-content p{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 14px;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+.view-collaborative-economy .mrc-unformmatted-list .views-row .field-content img{
+	height: 100%;
+    width: 100% !important;
 }
 .not-front .main .content ul li.views-row div.field-content p {
 	text-align:justify;
+}
+.view-culture-calendar .mrc-unformmatted-list .views-row .city-link, 
+.view-culture-calendar .mrc-unformmatted-list .views-row .custom-content p, 
+.view-culture-calendar  .mrc-unformmatted-list .views-row .views-field-title{
+	color: #fff;
+}
+.view-culture-calendar .mrc-unformmatted-list .views-row .custom-content p{
+	line-height:14px;
 }
 .not-front .main p.rtejustify strong, .not-front .main .view-mode-full .field-name-body p strong{
 	font-family: "OpenSansRegular",sans-serif;
@@ -1420,6 +1451,27 @@ table.views-view-grid tr td {
 .main .content .view-mode-full .field-name-field-new-item-source-of-new ul.links li a:hover{
 	color: #a5a5a5 !important;
 }
+.view-boletin .view-content .view-grouping li.views-row {
+	float: left;
+	width: 31%;
+	height: 323px;
+    margin: 0px 15px 15px 0px;
+}
+.view-boletin .view-content .view-grouping li.views-row .views-field .field-content a img {
+	width: auto !important;	
+}
+.view-boletin .view-content .view-grouping li.views-row .views-field .field-content, .view-boletin .view-content .view-grouping li.views-row .views-field .field-content .views-field-field-autor {
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	line-height: 16px;
+    text-align: justify;
+}
+.view-boletin .view-content .view-grouping li.views-row div h3{
+	overflow: hidden;
+    text-align: center;
+	height: 45px;
+}
+
 /* 			END CONTENIDO COMPLETO	 */
 
 .sidebar-second .float-left .field-content a::after {
@@ -1453,13 +1505,10 @@ table.views-view-grid tr td {
 }
 /*          BEGIN  BOLETINES    */
 .not-front .main .node img {
-	/*width: 100%;*/
 	padding: 0px;
 	margin: 0px;
 }
 .views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
-    /*height: 36px;
-    margin: 0;*/
     max-width: 243px;
     padding: 0;
     width: 243px;
@@ -1468,18 +1517,17 @@ table.views-view-grid tr td {
 	border: none;
     margin: 0px;
 }
-table.views-view-grid .views-field .field-content a img{
+/*table.views-view-grid .views-field .field-content a img{
 	height: auto;
     width: 255px;
 }
 table.views-view-grid td div h3{
 	text-align: center;
 }
-/* 9999999999999999999 */
 table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view-content ul li.views-row div div .title-news, .view-content ul li.views-row .title h3 a, .view-content ul li.views-row span h3 a{
 	color: #424243;
     font-family: "OpenSansRegular",sans-serif;
-    font-size: 15px; /*17px;*/
+    font-size: 15px; 
     text-align: center;
 }
 
@@ -1490,20 +1538,19 @@ table.views-view-grid td div.views-field-field-autor span.views-label-field-auto
 	float: left;
 }
 .view-content ul li.views-row section .field-content .fields-row div p{
-	/*text-align: left !important;*/
 }
 .view-content ul li.views-row section .field-content .fields-row div p span, .view-content ul li.views-row .field-content p span, .view-content ul li.views-row .fields-row .fields-wrapper p, .view-content ul li.views-row .content div p{	
     font-family: "OpenSansRegular";
-    font-size: 14px !important; /*16px*/
+    font-size: 14px !important;
 	color: #58595b;
-	line-height: 17px !important; /*19px */
+	line-height: 17px !important; 
 }
 table.views-view-grid td div.views-field-body-1 div.field-content{	
     font-family: "OpenSansRegular";
     font-size: 14px;
 	color: #58595b;
-	line-height: 17px; /*19px*/
-}
+	line-height: 17px;
+}*/
 /* 			END  BOLETINES		*/
 
 /* 		BEGIN HOME PAGE  */
@@ -3856,4 +3903,10 @@ ul.pagination li a {
     width: auto;
 }
 
+}
+/* landscape */
+@media screen and (max-height: 480px) {
+.pull-6 {
+    position: absolute !important;
+}
 }

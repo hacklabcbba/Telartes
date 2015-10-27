@@ -6509,6 +6509,7 @@ ul.pagination li {
 /* line 133, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_pagination.scss */
 .pagination-centered {
   text-align: center;
+  clear: both;
 }
 /* line 110, ../../../../../../../../../usr/local/share/gems/gems/zurb-foundation-4.3.2/scss/foundation/components/_pagination.scss */
 .pagination-centered ul.pagination li {
@@ -7388,7 +7389,7 @@ a.th {
   width: 200px !important;
 }
 .top-bar .title-area .logo{
-  width: 77.9% !important;
+  width: 74% !important;/*77.9%*/
 }
 /* line 23, ../scss/layout/_header.scss */
 .top-bar .logo img {
