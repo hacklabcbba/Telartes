@@ -7388,7 +7388,7 @@ a.th {
   width: 200px !important;
 }
 .top-bar .title-area .logo{
-  width: 74% !important;
+  width: 77.9% !important;
 }
 /* line 23, ../scss/layout/_header.scss */
 .top-bar .logo img {
@@ -12803,4 +12803,9 @@ button {
 #edit-field-event-description{
 	clear: both;
     overflow: hidden;
+}
+.alert-box.alert, .alert-box.success {
+	/*z-index: 1000;*/
+    width: 95%;
+    float: right;
 }

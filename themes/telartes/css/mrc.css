@@ -172,6 +172,8 @@ h3 {
 .mrc-unformmatted-list .views-field.views-field-name {
     font-size: 13px !important;
 	font-family: "OpenSansRegular";
+	height: 33px !important;
+    line-height: 17px;
 }
 
 .mrc-unformmatted-list > * {
@@ -365,7 +367,8 @@ h3 {
     font-size: 12px;/*13px;*/
     color: #424243;/*#58585b;*/
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 0px;/*10px;*/
+	height:35px !important;
 }
 
 .view-library .views-row:nth-child(3n+0),
@@ -1101,6 +1104,8 @@ main.row {
 .not-front .push-3{
 	border-right: 2px solid #d0d1d3;
 	margin-top: 18px;
+	left: 200px;
+	width: 60% !important;
 }
 .breadcrumbs {
 	margin-top: 0px;
@@ -1321,7 +1326,7 @@ table.views-view-grid tr td {
 	
 	padding-right: 20px;
 	/*padding-left: 15px;*/
-	height: 51px;/*56px;*/
+	height: 50px;/*51px 56px;*/
     overflow: hidden;
 }
 .main .block .content .view-content ul li.views-row .views-field-created span, .main .block .content .view-content ul li.views-row .views-field-field-event-date{
@@ -1477,6 +1482,7 @@ table.views-view-grid td div h3 a, .view-content ul li.views-row div h3 a, .view
     font-size: 15px; /*17px;*/
     text-align: center;
 }
+
 table.views-view-grid td div.views-field-field-autor span.views-label-field-autor, table.views-view-grid td div.views-field-field-autor div.field-content{
     font-family:"OpenSansRegular",sans-serif;
     font-size: 14px;
@@ -1503,7 +1509,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 /* 		BEGIN HOME PAGE  */
 /* begin agenda cultura */
 .colapsible .collapsiblock-processed .content .view {
-    max-width: 70%;
+    max-width: 75%;/*70%;*/
+	/*overflow:hidden;*/
 }
 .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row{
 	width: 23%;
@@ -1515,7 +1522,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	font-size: 13px;
 }
 .colapsible .view-culture-calendar .view-content .views-row .custom-content, .view-collaborative-economy .view-content .views-row .custom-content {
-    height: 217px;
+    height: 100%;/*217px;*/
     width: 100%;
 }
 .colapsible  .custom-content p{
@@ -1721,6 +1728,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     padding: 7px 10px;
     text-transform: uppercase;
 }
+.colapsible .content #documentos .view, .colapsible .content #videos .view, .colapsible .content #fotos .view, .colapsible .content #audios .view {
+	width: 100%;
+}
+.colapsible .content #documentos .view .view-content ul li.views-row, .colapsible .content #videos .view .view-content ul li.views-row, .colapsible .content #fotos .view .view-content ul li.views-row, .colapsible .content #audios .view .view-content ul li.views-row{
+	width: 23%;
+}
 /*end mediateca*/
 /*begin editorial*/
 .colapsible  #block-views-editorial-block .view-editorial .view-content ul li .title h3 a, .colapsible  #block-views-editorial-block .view-editorial .view-content ul li .content .field-content p, .colapsible  #block-views-editorial-block .view-editorial .view-content ul li .link .field-content a{
@@ -1850,7 +1863,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     margin: 2px 0px;
 }
 .not-front .main .field-name-field-call-image img, .not-front .main .field-name-field-event-image img {
-    /*height: auto;*/
+    height: auto;
     width: auto;
 }
 
@@ -1956,6 +1969,24 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
  background: url("../images/links/mail.png") no-repeat 0px 5px;
  background: url("../images/links/mail-hover.png") no-repeat 0px 5px;
  */
+ .main .view-news .views-row .views-field .field-content img{
+	 width: 100%;
+	 height: 100%;
+ }
+.main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news , .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .field-created-date, .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper p, .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper span, .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper strong
+/*.view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, 
+.view-training .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news, 
+.view-collaborative-economy .views-row .views-field-nothing .field-content .fields-row .fields-wrapper .title-news*/
+{
+	/*color: #fff !important;*/
+    font-family: "OpenSansSemiBold";
+	color: white;
+}
+.main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper p, .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper span, .main .view-news .views-row .views-field-nothing .field-content .fields-row .fields-wrapper strong{
+	font-size: 12px !important;
+    line-height: 13px !important;
+    margin: 0px;
+}
 
 .main .content .panel-display .center-wrapper .panel-col-last{
 	overflow: hidden;
@@ -2235,6 +2266,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     font-size: 16px;
 }
 /* ************************** */
+.not-front .push-3{
+	width: 55% !important;
+}
 .not-front .main .breadcrumbs li a {
     font-size: 10px;
 }
