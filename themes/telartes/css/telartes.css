@@ -7385,7 +7385,10 @@ a.th {
   float: left;
   background: #fff;
   margin-right: 57px;
-  width: 74% !important;/*200px*/
+  width: 200px !important;
+}
+.top-bar .title-area .logo{
+  width: 74% !important;
 }
 /* line 23, ../scss/layout/_header.scss */
 .top-bar .logo img {
