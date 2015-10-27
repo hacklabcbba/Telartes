@@ -10906,7 +10906,7 @@ li:hover > .menu {
 	left:50px;
 	max-width:145px;
 	padding:0;
-	margin-top: -10px;
+	margin-top: -4px; /*-10px;*/
 	position:absolute;
 	overflow:hidden;
 
@@ -10916,7 +10916,7 @@ li:hover > .menu {
 	font-weight:bold;
 	letter-spacing:0.8px;
 	white-space:nowrap;
-	line-height:37pt;
+	line-height:32pt;/*37pt;*/
 	
 	/* CSS3 Transition: */
 	-webkit-transition: 0.25s;
@@ -10954,9 +10954,9 @@ li:hover > .menu {
 	background-color:#e16666;
 	color:#FFF;
     white-space: initial;
-    line-height: 17px;
+    line-height: 21px;/*17px;*/
 	text-align:center;
-    line-height: 25px;
+    /*line-height: 25px;*/
 	/*text-shadow:1px 1px 1px #FFF;*/
 }
 
@@ -10966,7 +10966,7 @@ li:hover > .menu {
 	 background-color: #17acab;
 	color:#FFF;
     white-space: initial;
-    line-height: 17px;
+    line-height: 14px;/*17px;*/
 	text-align:center;
 	/*text-shadow:1px 1px 0 #17acab;*/
 }
@@ -11009,9 +11009,9 @@ li:hover > .menu {
 	background-color:#ec1e2e;
 	color:#FFF;
     white-space: initial;
-    line-height: 17px;
+    line-height: 21px;/*17px;*/
 	text-align:center;
-    line-height: 25px;
+    /*line-height: 25px;*/
 	/*text-shadow:1px 1px 0 #d244a6;*/
 }
 
@@ -11022,7 +11022,7 @@ li:hover > .menu {
 	color:#FFF;
 	text-align:center;
     white-space: initial;
-    line-height: 25px;
+    /*line-height: 25px;*/
 	/*text-shadow:1px 1px 0 #d244a6;*/
 }
 #block-menu-menu-menu-left .content .menu .boletin { background-position:-287px 0;}
@@ -11059,6 +11059,7 @@ li:hover > .menu {
 	background-color:#e54e42;
 	color:#FFF;
 	/*text-shadow:1px 1px 0 #d244a6;*/
+	line-height: 42px;
 }
 
 /* fin nuevo menu cesar */
@@ -12792,4 +12793,11 @@ button {
 .top-bar-section .main-nav li a.active {
   border-bottom: 2px solid #555556
 }
-
+/* add Juan*/
+#cke_1_top {
+	clear:both;
+}
+#edit-field-event-description{
+	clear: both;
+    overflow: hidden;
+}
