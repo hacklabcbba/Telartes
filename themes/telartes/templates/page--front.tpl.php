@@ -25,6 +25,18 @@
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
             <?php endif; ?>
+		<ul class="buscador">
+                <li>
+                  <a id="fa-search" ><i class="fa fa-search"></i></a>
+                  <div class="sesrch-block">
+                    <?php 
+                      $block = module_invoke('search','block_view','form');
+                      print render($block);
+                    ?>
+                  </div
+                </li>
+            </ul>
+
             <?php if ($top_bar_secondary_menu) :?>
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
@@ -214,17 +226,6 @@
                   </ul>
                 </li> 
               </ul><!--/.menu-economia -->
-              <ul class="buscador">
-                <li>
-                  <a id="fa-search" ><i class="fa fa-search"></i></a>
-                  <div class="sesrch-block">
-                    <?php 
-                      $block = module_invoke('search','block_view','form');
-                      print render($block);
-                    ?>
-                  </div
-                </li>
-            </ul>
               <ul class="social-networks">
                 <li class="twiter">
                   <a href="#">twitter</a>
