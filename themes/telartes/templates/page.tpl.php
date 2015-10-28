@@ -12,7 +12,6 @@
       <?php endif; ?>
         <nav class="top-bar "<?php print $top_bar_options; ?>>
           <ul class="title-area">
-          
 
            <?php if ($logo): ?>
              <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('telartes'); ?>">
@@ -27,6 +26,17 @@
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
             <?php endif; ?>
+	<ul class="buscador">
+                <li>
+                  <a id="fa-search" ><i class="fa fa-search"></i></a>
+                  <div class="sesrch-block">
+                    <?php 
+                      $block = module_invoke('search','block_view','form');
+                      print render($block);
+                    ?>
+                  </div
+                </li>
+            </ul>
             <?php if ($top_bar_secondary_menu) :?>
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
@@ -65,6 +75,7 @@
       <?php if ($alt_main_menu): ?>
         <nav id="main-menu" class="navigation" role="navigation">
           <?php print ($alt_main_menu); ?>
+		
         </nav> <!-- /#main-menu -->
       <?php endif; ?>
 
