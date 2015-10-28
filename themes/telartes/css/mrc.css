@@ -1866,6 +1866,76 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 
 /* 		END HOME PAGE  */
 /* end editorial */
+/* begin areas, categorias */
+
+.main .content .node-teaser .node-title a, .main .content .node-teaser .posted span, .main .content .node-teaser .field-type-text-with-summary p, .main .content .node-teaser .field-type-text-with-summary p strong, .main .content .node-teaser .links .node-readmore, .main .content .node-teaser .links .node-readmore span, .main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a{
+	font-family: "OpenSansRegular";
+}
+.main .content .node-teaser{
+}
+/*.main .content #node-1213, #node-1200, #node-1040{
+	clear:both;
+}*/
+.main .content .node-news, .main .content .node-personal, .main .content .node-multimedia, .main .content .node-document{
+	float: left !important;
+    height: 477px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    /*overflow: hidden;*/
+    width: 31%;
+}
+.main .content .node-teaser .node-title{
+	line-height: 19px;
+}
+.main .content .node-teaser .node-title a{
+	font-size: 14px;
+    line-height: 14px;
+}
+.main .content .node-teaser .posted {
+	height: 35px;
+    overflow: hidden;
+}
+.main .content .node-teaser .posted span{
+	font-size: 12px;
+}
+.main .content .node-teaser .field-type-image  img{
+	width: 100% !important;
+	height: auto !important;
+}
+.main .content .node-teaser .field-name-body{
+	border: none;
+	padding-top: 0px;
+}
+.main .content .node-teaser .field-name-body blockquote{
+	border: none;
+	padding-top: 0px;
+}
+.main .content .node-teaser .field-name-body p, .main .content .node-teaser .field-name-body p strong{
+	font-size: 12px !important;
+}
+/*.main .content .node-news, .main .content .node-personal, .main .content .node-multimedia, .main .content .node-document{*/
+.main .content .node-news .links, .main .content .node-personal .links, .main .content .node-multimedia .links, .main .content .node-document .links{
+	height: 81px;
+    overflow: hidden;
+    width: 100%;
+}
+.main .content .node-teaser .links li{
+	width: 100%;
+}
+.main .content .node-teaser .links .node-readmore{
+}
+.main .content .node-teaser .links .node-readmore a, .main .content .node-teaser .links .node-readmore a span{
+	font-size: 12px;
+}
+.main .content .node-teaser .links .comment_forbidden{
+}
+.main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a{
+	font-size: 12px;
+}
+.main .content .node-teaser .links .comment_forbidden span a{
+	color: #9c3b9b;
+}
+/* end areas, categorias */
 
 /*  BEGIN EDITAR FORMULARIO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .node-personal-form .field-type-image, .node-personal-form .field-type-file, .node-personal-form .field-name-field-audio-upload, .node-collective-form .field-type-image, .node-collective-form .field-type-file, .node-collective-form .field-name-field-audio-upload, .node-network-form .field-type-image, .node-network-form .field-type-file, .node-network-form .field-name-field-audio-upload, .node-photography-form .field-type-image, .node-photography-form .field-type-file, .node-photography-form .field-name-field-audio-upload, .node-multimedia-form .field-type-image, .node-multimedia-form .field-type-file, .node-multimedia-form .field-name-field-audio-upload, .node-audio-form .field-type-image, .node-audio-form .field-type-file, .node-audio-form .field-name-field-audio-upload, .node-document-form .field-type-image, .node-document-form .field-type-file, .node-document-form .field-name-field-audio-upload, .node-news-form .field-type-image, .node-news-form .field-type-file, .node-news-form .field-name-field-audio-upload, .node-call-form .field-type-image, .node-call-form .field-type-file, .node-call-form .field-name-field-audio-upload, .node-event-form .field-type-image, .node-event-form .field-type-file, .node-event-form .field-name-field-audio-upload{
@@ -1974,7 +2044,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-name .field-name-field-personal-name, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-lastname .field-name-field-personal-lastname{
 	margin-right:5px;	
     font-family: "OpenSansRegular";
-    font-size: 13px;
+    font-size: 15px;
+	font-weight: bold;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-picture, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-picture{
 	clear: both;
