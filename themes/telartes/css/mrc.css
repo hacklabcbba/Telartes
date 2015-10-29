@@ -1472,7 +1472,7 @@ table.views-view-grid tr td {
 	height: 45px;
 }
 .stMainServices{
-	height: 100%;
+	height: 100% !important;
 }
 /* 			END CONTENIDO COMPLETO	 */
 
@@ -1482,7 +1482,7 @@ table.views-view-grid tr td {
 /*    575666687648438487465418  */
 .large-3.sidebar-second .field-content p{
 }
-.large-3.sidebar-second .field-content p span{	
+.large-3.sidebar-second .field-content p span{
     color: #58595b;
     font-family: "OpenSansRegular" !important;
     font-size: 16px !important;
@@ -1919,20 +1919,26 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	border: none;
 	padding-top: 0px;
 }
-.main .content .node-teaser .field-name-body p, .main .content .node-teaser .field-name-body p strong{
+.main .content .node-teaser .field-name-body p, .main .content .node-teaser .field-name-body p strong, .main .content .node-teaser .field-name-field-personal-about-me p, .main .content .node-teaser .field-name-field-personal-about-me{
 	font-size: 12px !important;
+	margin: 0px;
+	clear: both;
+    height: 68px;
+    overflow: hidden;
+    padding: 8px 0;
+	line-height: 16px !important;
 }
 .main .content .node-teaser .field-name-field-personal-name, .main .content .node-teaser .field-name-field-personal-lastname{
-	float: leaf;
+	float: left;
 	padding-right:5px;
 }
 .main .content .node-teaser .field-name-field-personal-about-me{
 	clear: both;
     height: 64px;
 }
-.main .content .node-teaser .field-name-field-personal-about-me p{
+/*.main .content .node-teaser .field-name-field-personal-about-me p{
 	padding: 10px 0px;
-}
+}*/
 .main .content .node-teaser .links{
 	height: 81px;
     overflow: hidden;
