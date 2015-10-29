@@ -1474,6 +1474,11 @@ table.views-view-grid tr td {
 .stMainServices{
 	height: 100% !important;
 }
+.field-name-field-audio-upload object {
+    height: 50px !important;
+    overflow: hidden;
+    width: 92px !important;
+}
 /* 			END CONTENIDO COMPLETO	 */
 
 .sidebar-second .float-left .field-content a::after {
