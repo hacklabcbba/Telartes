@@ -1868,14 +1868,14 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 /* end editorial */
 /* begin areas, categorias */
 
-.main .content .node-teaser .node-title a, .main .content .node-teaser .posted span, .main .content .node-teaser .field-type-text-with-summary p, .main .content .node-teaser .field-type-text-with-summary p strong, .main .content .node-teaser .links .node-readmore, .main .content .node-teaser .links .node-readmore span, .main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a{
+.main .content .node-teaser .node-title a, .main .content .node-teaser .posted span, .main .content .node-teaser .field-type-text-with-summary p, .main .content .node-teaser .field-type-text-with-summary p strong, .main .content .node-teaser .links .node-readmore, .main .content .node-teaser .links .node-readmore span, .main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a, .main .content .node-teaser .links .comment-add a{
 	font-family: "OpenSansRegular";
 }
 .main .content .node-teaser{
 }
 .main .content .node-teaser{
 	float: left !important;
-    height: 500px;/*477px;*/
+    height: 510px;/*477px;*/
     margin-bottom: 15px;
     margin-right: 15px;
     width: 31%;
@@ -1896,19 +1896,19 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .node-teaser .posted span{
 	font-size: 12px;
 }
-.main .content .node-teaser .field-type-image {
+.main .content .node-teaser .field {
 	text-align: center;
 }
-.main .content .node-teaser .field-type-image  img{
+.main .content .node-teaser .field  img{
 	height: auto !important;
-    max-height: 288px;
-    max-width: 288px;
+    min-height: 300px !important;
+    min-width: 300px !important;
     width: 100% !important;
 }
-.main .content .node-event .field-type-image  img{
+/*.main .content .node-event .field-type-image  img{
 	width: auto !important;
 	height: auto !important;
-}
+}*/
 .main .content .node-teaser .field-name-body{
 	border: none;
 	padding-top: 0px;
@@ -1922,8 +1922,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .node-teaser .field-name-body p, .main .content .node-teaser .field-name-body p strong{
 	font-size: 12px !important;
 }
-/*.main .content .node-news, .main .content .node-personal, .main .content .node-multimedia, .main .content .node-document{*/
-/*.main .content .node-news .links, .main .content .node-personal .links, .main .content .node-multimedia .links, .main .content .node-document .links{*/
 .main .content .node-teaser .links{
 	height: 81px;
     overflow: hidden;
@@ -1942,8 +1940,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a{
 	font-size: 12px;
 }
-.main .content .node-teaser .links .comment_forbidden span a{
+.main .content .node-teaser .links .comment_forbidden span a, .main .content .node-teaser .links .comment-add a{
 	color: #9c3b9b;
+}
+.main .content .node-teaser .links .comment-add{
+}
+.main .content .node-teaser .links .comment-add a{
 }
 /* end areas, categorias */
 
