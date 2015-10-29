@@ -1912,7 +1912,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	padding: 10px 0px;
 	border: none;
 	/*padding-top: 0px;*/
-	height: 60px;
+	height: 70px;
     overflow: hidden;
 }
 .main .content .node-teaser .field-name-body blockquote{
@@ -1925,7 +1925,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	clear: both;
     height: 68px;
     overflow: hidden;
-    padding: 8px 0;
+    padding: 0px;
 	line-height: 16px !important;
 }
 .main .content .node-teaser .field-name-field-personal-name, .main .content .node-teaser .field-name-field-personal-lastname{
