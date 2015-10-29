@@ -1471,7 +1471,9 @@ table.views-view-grid tr td {
     text-align: center;
 	height: 45px;
 }
-
+.stMainServices{
+	height: 100%;
+}
 /* 			END CONTENIDO COMPLETO	 */
 
 .sidebar-second .float-left .field-content a::after {
@@ -1900,10 +1902,10 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	text-align: center;
 }
 .main .content .node-teaser .field  img{
-	height: 300px !important;
-    max-height: 300px !important;
-    max-width: 300px !important;
-    width: 300px !important;
+	height: 288px !important;
+    max-height: 288px !important;
+    max-width: 288px !important;
+    width: 288px !important;
 	margin: 10px 0 !important;
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
