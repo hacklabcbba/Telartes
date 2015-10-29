@@ -1900,10 +1900,10 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	text-align: center;
 }
 .main .content .node-teaser .field  img{
-	height: auto !important;
-    min-height: 300px !important;
-    min-width: 300px !important;
-    width: 100% !important;
+	height: 300px !important;
+    max-height: 300px !important;
+    max-width: 300px !important;
+    width: 300px !important;
 }
 /*.main .content .node-event .field-type-image  img{
 	width: auto !important;
