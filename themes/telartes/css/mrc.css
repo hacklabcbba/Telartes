@@ -1904,14 +1904,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     max-height: 300px !important;
     max-width: 300px !important;
     width: 300px !important;
+	margin: 10px 0 !important;
 }
-/*.main .content .node-event .field-type-image  img{
-	width: auto !important;
-	height: auto !important;
-}*/
-.main .content .node-teaser .field-name-body{
+.main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
+	padding: 10px 0px;
 	border: none;
-	padding-top: 0px;
+	/*padding-top: 0px;*/
 	height: 60px;
     overflow: hidden;
 }
@@ -1921,6 +1919,17 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .main .content .node-teaser .field-name-body p, .main .content .node-teaser .field-name-body p strong{
 	font-size: 12px !important;
+}
+.main .content .node-teaser .field-name-field-personal-name, .main .content .node-teaser .field-name-field-personal-lastname{
+	float: leaf;
+	padding-right:5px;
+}
+.main .content .node-teaser .field-name-field-personal-about-me{
+	clear: both;
+    height: 64px;
+}
+.main .content .node-teaser .field-name-field-personal-about-me p{
+	padding: 10px 0px;
 }
 .main .content .node-teaser .links{
 	height: 81px;
