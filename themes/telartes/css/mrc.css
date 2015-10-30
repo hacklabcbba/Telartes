@@ -1882,7 +1882,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .main .content .node-teaser{
 	float: left !important;
-    height: 510px;/*477px;*/
+    height: 460px;/*477px;*/
     margin-bottom: 15px;
     margin-right: 15px;
     width: 31%;
@@ -1916,11 +1916,11 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     width: 240px !important;*/
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
-	padding: 10px 0px;
 	border: none;
-	/*padding-top: 0px;*/
-	height: 70px;
+	height: 50px;
+    margin-bottom: 5px;
     overflow: hidden;
+    padding: 0;
 }
 .main .content .node-teaser .field-name-body blockquote{
 	border: none;
@@ -1943,9 +1943,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	clear: both;
     height: 64px;
 }
-/*.main .content .node-teaser .field-name-field-personal-about-me p{
-	padding: 10px 0px;
-}*/
 .main .content .node-teaser .links{
 	height: 81px;
     overflow: hidden;
@@ -1961,15 +1958,13 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .main .content .node-teaser .links .comment_forbidden{
 }
-.main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a{
+.main .content .node-teaser .links .comment_forbidden span, .main .content .node-teaser .links .comment_forbidden span a, .main .content .node-teaser .links .comment-add a{
 	font-size: 12px;
 }
 .main .content .node-teaser .links .comment_forbidden span a, .main .content .node-teaser .links .comment-add a{
 	color: #9c3b9b;
 }
 .main .content .node-teaser .links .comment-add{
-}
-.main .content .node-teaser .links .comment-add a{
 }
 /* end areas, categorias */
 
