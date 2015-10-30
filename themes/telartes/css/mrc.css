@@ -1907,11 +1907,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	text-align: center;
 }
 .main .content .node-teaser .field  img{
-	height: 288px !important;
-    max-height: 288px !important;
-    max-width: 288px !important;
-    width: 288px !important;
-	margin: 10px 0 !important;
+	height: 234px !important;
+    margin: 0 !important;
+    width: 234px !important;
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
 	padding: 10px 0px;
