@@ -1908,8 +1908,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .main .content .node-teaser .field  img{
 	height: 234px !important;
-    margin: 0 !important;
+    margin: 0px !important;
     width: 234px !important;
+	
+	/*height: 240px !important;
+    margin: 0px !important;
+    width: 240px !important;*/
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
 	padding: 10px 0px;
