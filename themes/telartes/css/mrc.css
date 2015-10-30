@@ -1093,8 +1093,16 @@ h3 {
     width: 60px;
 }
 /* END MENU LEFT */
+.content .mrc-unformmatted-list .views-row .views-field-field-multimedia-link, .content .mrc-unformmatted-list .views-row .field-content, .content .mrc-unformmatted-list .views-row .field-content  .field-content {
+	width: 100% !important;
+}
 .content .mrc-unformmatted-list .views-row-first div div a img{
 	width: 100% !important;
+}
+.content .mrc-unformmatted-list .views-row h3 a{
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "OpenSansRegular";
 }
 main.row {
     height: 100%;
@@ -1512,8 +1520,8 @@ table.views-view-grid tr td {
 }
 /*          BEGIN  BOLETINES    */
 .not-front .main .node img {
-	padding: 0px;
-	margin: 0px;
+	padding: 0px !important;
+	margin: 0px !important;
 }
 .views-exposed-widget .views-widget .form-item-field-boletin-target-id select {
     max-width: 243px;
