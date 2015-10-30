@@ -3264,7 +3264,7 @@ ul.pagination li a {
     width: 40px !important;*/
 }
 .buscador a .fa-search {
-	font-size: 11px;
+	font-size: 19px;
     right: 55px;
     top: 0px;
     /*bottom: 0;
@@ -3274,13 +3274,13 @@ ul.pagination li a {
 	top: 6px;*/
 }
 .buscador a .fa-search:hover {
-    font-size: 11px;
+    font-size: 19px;
 }
 .buscador .sesrch-block {
     bottom: 0px;
-    right: 17px;
-	font-size: 11px;
-	top: 8px;
+    font-size: 11px;
+    right: 49px;
+    top: 3px;
 }
 .buscador .sesrch-block > form .form-text, .buscador .sesrch-block > form .form-submit {
     height: 30px;
