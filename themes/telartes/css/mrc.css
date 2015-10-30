@@ -1588,9 +1588,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .buscador a:hover {
 	background: none !important;
 }
-/*.buscador a i{
-	background: none;
-}*/
+
 .buscador a .fa-search {
     bottom: 0;
     height: 39px;
