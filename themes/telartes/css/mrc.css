@@ -206,7 +206,9 @@ h3 {
 .main.columns .block-views .views-field-field-event-image img,
 .main.columns .block-views  .views-field-field-multimedia-link img,
 .main.columns .block-views  .views-field-field-photography-photo img {
-    height: 145px;
+    /*height: 145px;*/
+	width: 100% !important;
+	height: auto;
 }
 
 .main.columns .block-views .news-image:after,
@@ -1462,11 +1464,11 @@ table.views-view-grid tr td {
 .view-boletin .view-content .view-grouping li.views-row {
 	float: left;
 	width: 31%;
-	height: 323px;
+	height: 430px;
     margin: 0px 15px 15px 0px;
 }
 .view-boletin .view-content .view-grouping li.views-row .views-field .field-content a img {
-	width: auto !important;	
+	width: 100% !important;	
 }
 .view-boletin .view-content .view-grouping li.views-row .views-field .field-content, .view-boletin .view-content .view-grouping li.views-row .views-field .field-content .views-field-field-autor {
 	font-family: "OpenSansRegular";
@@ -1922,8 +1924,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     width: 234px !important;*/
     margin: 0px !important;
 	
-	width:265px !important;
-	height: 265px !important;
+	width:242px !important;
+	height: 242px !important;
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
 	border: none;
@@ -2118,6 +2120,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	float: left;
     margin-right: 15px;
     width: 31%;
+	height: 510px;
+    margin-bottom: 10px;
 }
 .view-publicaciones-usuario .views-row .node-teaser{
 	padding: 0px;
