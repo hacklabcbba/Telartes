@@ -1196,8 +1196,8 @@ main.row {
 .view-culturals-actors .box-list .info .infos, .view-culturals-actors .box-list .info .infos a {
     color: #58595b;
     font-family: "OpenSansRegular",serif;
-    font-size: 16px;
-	line-height: 17px;
+    font-size: 14px;
+	line-height: 14px;
 }
 ul.pagination li a {
     color: #58595b;
@@ -1614,6 +1614,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	width: 23%;
 	padding-right: 0px;
 }
+.colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row div div a img{
+	width: 100%;
+}
 .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block label, .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-filters #views-exposed-form-culture-calendar-block select
 , .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-header a.calendar , .colapsible #block-views-culture_calendar-block .content .view-culture-calendar #edit-submit-culture-calendar {
     font-family: "OpenSansRegular" !important;
@@ -1972,6 +1975,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .main .content .node-teaser .links li{
 	width: 100%;
+}
+
+.main .content .node-teaser .links .comment-comments{
 }
 .main .content .node-teaser .links .disqus_comments_num a{
 	font-size:12px;
