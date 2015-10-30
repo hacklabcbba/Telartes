@@ -1887,6 +1887,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     margin-right: 15px;
     width: 31%;
 }
+.main .content .views-row .node-teaser{
+    width: 100%;
+}
 .main .content .node-teaser .node-title{
 	height: 42px;
     line-height: 19px;
@@ -1907,13 +1910,12 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	text-align: center;
 }
 .main .content .node-teaser .field  img{
-	height: 234px !important;
+	/*height: 234px !important;
+    width: 234px !important;*/
     margin: 0px !important;
-    width: 234px !important;
 	
-	/*height: 240px !important;
-    margin: 0px !important;
-    width: 240px !important;*/
+	width:265px !important;
+	height: 265px !important;
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
 	border: none;
@@ -1934,22 +1936,41 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     overflow: hidden;
     padding: 0px;
 	line-height: 16px !important;
+	font-weight: normal;
 }
 .main .content .node-teaser .field-name-field-personal-name, .main .content .node-teaser .field-name-field-personal-lastname{
 	float: left;
-	padding-right:5px;
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    padding-right: 5px
 }
 .main .content .node-teaser .field-name-field-personal-about-me{
 	clear: both;
     height: 64px;
+	padding-left: 0px;
+}
+.main .content .node-teaser .field-name-field-personal-about-me p, .main .content .node-teaser .field-name-field-personal-about-me strong, .main .content .node-teaser .field-name-field-personal-about-me em{
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
 }
 .main .content .node-teaser .links{
 	height: 81px;
     overflow: hidden;
     width: 100%;
+	padding-left: 0px;
 }
 .main .content .node-teaser .links li{
 	width: 100%;
+}
+.main .content .node-teaser .links .disqus_comments_num a{
+	font-size:12px;
+	font-weight: normal;
+	color: #9c3b9b;
+}
+.main .content .node-teaser .links li .comment-comments, .main .content .node-teaser .links li .comment-new-comments{
+	font-size: 12px !important;
+    font-weight: normal;
 }
 .main .content .node-teaser .links .node-readmore{
 }
@@ -2086,7 +2107,40 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin-bottom: 5px;
 }
 .view-publicaciones-usuario .views-row{
-	margin-right: 5px;
+	float: left;
+    margin-right: 15px;
+    width: 31%;
+}
+.view-publicaciones-usuario .views-row .node-teaser{
+	padding: 0px;
+    width: 100%;
+}
+.view-publicaciones-usuario .views-row .node-teaser .posted {
+    height: 48px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.view-publicaciones-usuario .views-row .node-teaser .field img {
+    height: 268px !important;
+    margin: 0 !important;
+    width: 268px !important;
+}
+.view-publicaciones-usuario .views-row .node-teaser .links {
+    margin-left: 0px;
+}
+.view-publicaciones-usuario.node-teaser .field-name-field-personal-about-me {
+    clear: both;
+    height: 64px;
+	/*font-size: 12px;
+    font-family: "OpenSansRegular";
+	font-size: 12px;
+	font-weight: normal;*/
+}
+.view-publicaciones-usuario.node-teaser .field-name-field-personal-about-me p, .view-publicaciones-usuario.node-teaser .field-name-field-personal-about-me p strong, .view-publicaciones-usuario.node-teaser .field-name-field-personal-about-me p strong{
+	font-size: 12px;
+    font-family: "OpenSansRegular";
+	font-size: 12px;
+	font-weight: normal;
 }
 .view-publicaciones-usuario .views-row .views-field .field-content a{
 	font-size: 12px;
