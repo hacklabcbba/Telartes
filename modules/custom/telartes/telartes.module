@@ -4,6 +4,7 @@
  * Implements hook_menu().
  */
 function telartes_menu() {
+  global $user;
   $items = array();
   $items['home'] = array(
     'page callback' => 'home_page',
@@ -18,7 +19,6 @@ function telartes_menu() {
     'access callback' => TRUE
   );
   
-  
   $items['user/%user/Editar-Formulario'] = array(
     'title' => 'Editar Formulario de Registro',
     'type' => MENU_LOCAL_TASK,
@@ -26,6 +26,7 @@ function telartes_menu() {
     'description' => 'Edit form user',
     'page callback' => 'telartesusuario',
   );
+
   return $items;
 }
 
@@ -310,21 +311,33 @@ function telartes_init(){
 function telartes_menu_link__menu_menu_notifications($variables) {
   $element = &$variables['element'];
   global $user;
+
+
   $node = telartes_node_load_by_user($user->uid);
+  $name = $lasname = "";
+	
+  if (isset($node->field_personal_name['und'][0]['value'])){ 
+    $name = $node->field_personal_name['und'][0]['value'];
+  }
+  if (isset($node->field_personal_lastname['und'][0]['value'])){ 
+    $lastname = $node->field_personal_lastname['und'][0]['value'];
+  }
+
   if (isset($node->field_personal_picture['und'][0]['uri'])) {
+	dpm($node->field_personal_picture['und'][0]['uri']);
     $uri = $node->field_personal_picture['und'][0]['uri'];
     $style = '64x64';
     $image_path = image_style_url($style, $uri);
     if ($element['#title'] == 'Usuario') {
       $element['#title'] = '<span class="menu-user-picture" ><img alt="user" src="'.$image_path.'" /></span>';
-      $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$user->name.'</span></div>';
+      $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$name.'</span></div>';
     }
   }
   else {
     if ($element['#title'] == 'Usuario') {
       $element['#title'] = '<span class="menu-user-picture" ><i class="fa fa-user" aria-hidden="true"></i></span>';
       if (isset($user->name)) {
-        $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$user->name.'</span></div>';
+        $element['#title'] .= '<div class = "row-menu-user-name"><span class = "menu-user-name">'.$name.'</span></div>';
       }
     }
   }
@@ -460,4 +473,33 @@ function telartes_gets_tid_user_interest($terms) {
     $tids[] = $value['tid'];
   }
   return $tids;
+}
+
+function telartes_form_user_register_form_alter(&$form, $form_state, $form_id) {
+  //define validation function
+  $form['#validate'][] = 'my_user_register_validate';
+  //overwrite the username help text
+  $form['account']['name']['#description'] = 'Username has to be between 5-15 characters long and can only contain letters and numbers';
+}
+
+function my_user_register_validate($form, &$form_state) {
+
+  $output['error'] = FALSE;
+  $username = $form_state['input']['name'];
+  $password = $form_state['input']['pass']['pass1'];
+
+  if (strlen($username) < 5 || strlen($username) > 15) {
+    $output['error'] = TRUE;
+    $output['msg'] = t('The username has to be between 5 and 15 characters long. ');
+  }
+  if (strpos($username,' ') > 0 || strpos($username,'.') > 0 || strpos($username,'-') > 0 || strpos($username,'_') > 0 || strpos($username, "'") !== FALSE ){
+    $output['error'] = TRUE;
+    $output['msg'] = t('Username cannot contain spaces . - _ ' . chr(39)  );
+  }
+
+//display username errors
+  if ($output['error']){
+    //drupal_set_message( $output['msg'], 'error');
+    form_set_error('name', $output['msg']);
+  }
 }
