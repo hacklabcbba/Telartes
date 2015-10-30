@@ -201,7 +201,7 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 //  }
 //}
 
-function telartes_theme($existing, $type, $theme, $path){
+/*function telartes_theme($existing, $type, $theme, $path){
   return array(
     'user_register_form' => array(
       // Forms always take the form argument.
@@ -210,7 +210,7 @@ function telartes_theme($existing, $type, $theme, $path){
       'template' => 'templates/user-profile-edit',
     ),
   );
-} 
+} */
 /* Adiciona etiqueta span al menu izquierdo */
 function telartes_menu_link(array $variables) {
 	$element = $variables['element'];
