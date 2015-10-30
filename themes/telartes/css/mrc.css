@@ -2771,7 +2771,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
     width: 31%;
 }
 .colapsible .view-culture-calendar .view-content .views-row .custom-content, .view-collaborative-economy .view-content .views-row .custom-content {
-    height: 167px;
+    height: 100%;/*167px;*/
 }
 .colapsible span.date-display-single, .colapsible .date-display-start, .colapsible .date-display-end {
     font-size: 9px;
@@ -2901,7 +2901,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content {
 	/* logo */
 .l-header {
     overflow: hidden;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
 }
 .l-header, .l-header .contain-to-grid {
@@ -3248,24 +3248,33 @@ ul.pagination li a {
 /* end menu user*/
 /* buscador */
 .buscador {
-    right: 20%;
+    /*right: 20%;
     top: 6%;
+    width: 65% !important;*/
+	right: 16%;
+    top: 18%;
     width: 65% !important;
 }
 .buscador a {
-    height: 40px;
+	padding: 7px 0 7px 14px !important;
     right: 0;
     width: 40px !important;
+    /*height: 40px;
+    right: 0;
+    width: 40px !important;*/
 }
 .buscador a .fa-search {
-    bottom: 0;
+	font-size: 11px;
+    right: 55px;
+    top: 0px;
+    /*bottom: 0;
     height: 39px;
     right: 36px;
     font-size: 25px;
-	top: 6px;
+	top: 6px;*/
 }
 .buscador a .fa-search:hover {
-    font-size: 25px;
+    font-size: 11px;
 }
 .buscador .sesrch-block {
     bottom: 0px;

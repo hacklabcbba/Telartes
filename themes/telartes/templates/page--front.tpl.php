@@ -228,13 +228,13 @@
               </ul><!--/.menu-economia -->
               <ul class="social-networks">
                 <li class="twiter">
-                  <a href="#">twitter</a>
+                  <a href="https://twitter.com/telartes">twitter</a>
                 </li>
                 <li class="facebook">
-                  <a href="#">facebook</a>
+                  <a href="https://www.facebook.com/telArtes.Bolivia">facebook</a>
                 </li>
                 <li class="youtube">
-                  <a href="#">youtube</a>
+                  <a href="https://www.youtube.com/channel/UC5UZy36HLZYCyfuTAOw2d6g">youtube</a>
                 </li>
               </ul><!--/.social-networks -->
             </li>
