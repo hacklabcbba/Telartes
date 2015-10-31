@@ -1206,7 +1206,9 @@ ul.pagination li a {
 	font-size: 15px;
 }
 /* /////   CONTENIDO     /////// */
-
+.button-group li.active a.active{
+	background-color: #d0d0d0;
+}
 .view-content .view-grouping-header span{
 }
 .view-content .view-grouping-header span img{
