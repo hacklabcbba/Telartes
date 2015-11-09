@@ -1,5 +1,5 @@
 <div class="mrc-block-destacados">
-    <?php if (isset($fields['field_collective_picture']) || isset($fields['field_network_picture']) || isset($fields['field_photography_photo']) || isset($fields['field_image']) || isset($fields['field_call_image']) || isset($fields['field_editorial_image']) || isset($fields['field_news_image']) || isset($fields['field_event_image']) || isset($fields['field_clear_image']) || isset($fields['field_newsletter_image'])|| isset($fields['field_imagen_por_defecto'])): ?>
+    <?php if (isset($fields['field_collective_picture']) || isset($fields['field_network_picture']) || isset($fields['field_photography_photo']) || isset($fields['field_image']) || isset($fields['field_call_image']) || isset($fields['field_editorial_image']) || isset($fields['field_news_image']) || isset($fields['field_event_image']) || isset($fields['field_clear_image']) || isset($fields['field_newsletter_image'])|| isset($fields['field_imagen_por_defecto'])|| isset($fields['field_multimedia_link'])): ?>
         <div class="float-left">
             <?php if (isset($fields['field_collective_picture'])): ?>
                 <div class="field_collective_picture">
@@ -56,6 +56,11 @@
 	    <?php if (isset($fields['field_imagen_por_defecto'])): ?>
                 <div class="field_imagen_por_defecto">
                     <?php print $fields['field_imagen_por_defecto']->content; ?>
+                </div>
+            <?php endif; ?>
+	    <?php if (isset($fields['field_multimedia_link'])): ?>
+                <div class="field_multimedia_link">
+                    <?php print $fields['field_multimedia_link']->content; ?>
                 </div>
             <?php endif; ?>
 
