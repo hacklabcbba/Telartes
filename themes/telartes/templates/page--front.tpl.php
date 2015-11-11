@@ -226,7 +226,7 @@
                   </ul>
                 </li> 
               </ul><!--/.menu-economia -->
-              <ul class="social-networks">
+              <ul class="social-networks"><!--/.social-networks begin-->
                 <li class="twiter">
                   <a href="https://twitter.com/telartes">twitter</a>
                 </li>
@@ -236,7 +236,7 @@
                 <li class="youtube">
                   <a href="https://www.youtube.com/channel/UC5UZy36HLZYCyfuTAOw2d6g">youtube</a>
                 </li>
-              </ul><!--/.social-networks -->
+              </ul><!--/.social-networks end-->
             </li>
           </ul>
         </nav><!--/.custom-menu-wrapper -->
