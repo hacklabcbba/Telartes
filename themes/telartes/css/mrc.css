@@ -1209,6 +1209,16 @@ ul.pagination li a {
 .button-group li.active a.active{
 	background-color: #d0d0d0;
 }
+.confirm-parent, .password-parent {
+    width: 100%;
+}
+div.password-confirm {
+    margin-top: 10px;
+}
+
+#user-register-form #edit-name, #user-register-form #edit-mail, #user-register-form #edit-pass-pass1, #user-register-form #edit-pass-pass2{
+	width: 50%;
+}
 .view-content .view-grouping-header span{
 }
 .view-content .view-grouping-header span img{
@@ -1612,7 +1622,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 /* end buscador */
 /* begin agenda cultura */
 .colapsible .collapsiblock-processed .content .view {
-    max-width: 75%;/*70%;*/
+    /*max-width: 75%;*//*70%;*/
 	/*overflow:hidden;*/
 }
 .colapsible #block-views-culture_calendar-block .content .view-culture-calendar .view-content ul li.views-row{
@@ -1777,7 +1787,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	padding: 0 7px 0 7px;
 	margin-right: 8px;
 }
-
 .colapsible .content .tabmultimedia .view .view-content ul li.views-row-last {
     margin-right: 0;
 }
@@ -2125,7 +2134,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-name .field-name-field-personal-name, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-lastname .field-name-field-personal-lastname{
 	margin-right:5px;	
     font-family: "OpenSansRegular";
-    font-size: 19px;/*15px;*/
+    font-size: 19px;
 	font-weight: bold;
 }
 .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-collective-picture, .main .content .panel-display .center-wrapper .panel-col-first .inside .pane-node-field-personal-picture{
@@ -4272,8 +4281,10 @@ ul.pagination li a {
 
 }
 /* landscape */
-@media screen and (max-height: 480px) {
+@media screen and (min-height: 480px) {
 .pull-6 {
     position: absolute !important;
+	background-color: red;
+	border: 1px solid green;
 }
 }
