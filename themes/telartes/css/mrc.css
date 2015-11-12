@@ -1745,7 +1745,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-title a, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field .field-content .custom-content .title a, .colapsible .content .tabb .tabmultimedia .view .view-content ul li .views-field .field-content .custom-content .title{
 	font-size: 13px;
 }
-.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body p{
+.colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body p, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body h1, .colapsible .content .tabb .tabmultimedia .view  ul li .views-field-body span{
 	font-size: 12px;
     margin-bottom: 5px;
 	text-align: justify;
@@ -1809,7 +1809,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible .content .tabmultimedia .view .view-content ul li.views-row{
 	width: 48%;
 }
-.colapsible .content .tabmultimedia .view .view-content ul li.views-row .views-field-body .field-content p{
+.colapsible .content .tabmultimedia .view .view-content ul li.views-row .views-field-body .field-content p, .colapsible .content .tabmultimedia .view .view-content ul li.views-row .views-field-body .field-content h1, .colapsible .content .tabmultimedia .view .view-content ul li.views-row .views-field-body .field-content span{
 	line-height: 14px;
 }
 .colapsible .content .tabmultimedia .view-photography .view-content  ul li.views-row-last div div a img{
@@ -1856,6 +1856,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .colapsible .content #documentos .view .view-content ul li.views-row, .colapsible .content #videos .view .view-content ul li.views-row, .colapsible .content #fotos .view .view-content ul li.views-row, .colapsible .content #audios .view .view-content ul li.views-row{
 	width: 23%;
+	overflow: hidden;
 }
 /*end mediateca*/
 /*begin editorial*/
