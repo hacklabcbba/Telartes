@@ -1934,8 +1934,10 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	float: left !important;
     height: 460px;/*477px;*/
     margin-bottom: 15px;
-    margin-right: 15px;
-    width: 31%;
+    /*margin-right: 15px;*/
+    width: 31%;	
+	padding-right: 15px;
+	border-bottom: 2px solid #d0d1d3;
 }
 .main .content .views-row .node-teaser{
     width: 100%;
@@ -1964,7 +1966,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     width: 234px !important;*/
     margin: 0px !important;
 	
-	width:242px !important;
+	width: 100% !important; /*242px !important;*/
 	height: 242px !important;
 }
 .main .content .node-teaser .field-name-body, .main .content .node-teaser .field-name-field-personal-about-me{
@@ -2161,7 +2163,9 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 }
 .view-publicaciones-usuario .views-row{
 	float: left;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
+	padding-right: 15px;
+	border-bottom: 2px solid #d0d1d3;
     width: 31%;
 	height: 510px;
     margin-bottom: 10px;
@@ -2169,6 +2173,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .view-publicaciones-usuario .views-row .node-teaser{
 	padding: 0px;
     width: 100%;
+	border: none;
 }
 .view-publicaciones-usuario .views-row .node-teaser .posted {
     height: 48px;
