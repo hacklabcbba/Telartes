@@ -1354,14 +1354,22 @@ table.views-view-grid tr td {
 }*/
 /*  /////		END	SLIDER    ///// */
 /*			BEGIN CONTENIDO COMPLETO */ 
-.not-front .main .node-event li, .not-front .main .node-news li, .not-front .main .node-call li, .not-front .main .node-editorial li, .not-front .main .node-document li, .not-front .main .node-multimedia li, .not-front .main .node-photography li, .not-front .main .node-venue li, .not-front .main .node-incidence li, .not-front .main .node-community-living-culture li, .not-front .main .node-network-culture li, .not-front .main .node-training li, .not-front .main .node-communication li, .not-front .main .node-collaborative-economy li {
+.not-front .main .node-event li, .not-front .main .node-news li, .not-front .main .node-call li, .not-front .main .node-editorial li, .not-front .main .node-document li, .not-front .main .node-multimedia li, .not-front .main .node-photography li, .not-front .main .node-venue li, .not-front .main .node-incidence li, 
+.not-front .main .node-community-living-culture li, .not-front .main .node-network-culture li, .not-front .main .node-training li, .not-front .main .node-communication li, .not-front .main .node-collaborative-economy li {
     width: 47%;
 }
 .view-mode-full .field-name-field-new-category .links,.view-mode-full .field-name-field-news-fields .links, .view-mode-full .field-name-field-news-areas .links,.view-mode-full .field-name-field-news-category-type .links{
 	margin: 5px !important;
     width: auto;
 }
+/* 
+field field-name-field-new-category field-type-taxonomy-term-reference field-label-above field-wrapper clearfix 
+field field-name-field-news-fields field-type-taxonomy-term-reference field-label-above field-wrapper clearfix*/
 
+/*.not-front .main .node-event .field-label-above .links li{*/
+.not-front .main .node .field-label-above .links li{
+    width: auto;
+}
 .main .block .content .view-content ul li.views-row .created, .main .block .content .view-content ul li.views-row .content, .main .block .content .view-content ul li.views-row .title, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description div.field-content, .main .block .content .view-videos .view-content ul li.views-row span, .main .block .content .view-videos .view-content ul li.views-row .views-field-created, .main .block .content .view-videos .view-content ul li.views-row .views-field-name, .main .block .content .view-videos .view-content ul li.views-row .views-field-body, .main .block .content .view-id-fotografia .view-content ul li.views-row span, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-created, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-name, .main .block .content .view-id-fotografia .view-content ul li.views-row .views-field-body, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-description, .main .block .content .view-fotografia .view-content ul li.views-row span h3, .main .block .content .view-culture-calendar .view-content ul li.views-row div h3, .main .block .content .view-id-news .view-content ul li.views-row div.fields-row, .main .block .content .view-formacion-telartes .view-content ul li.views-row span.views-field-title, .main .block .content .view-formacion-telartes .view-content ul li.views-row div.views-field-body,
  .main .block .content .view-culture-calendar .view-content ul li.views-row .views-field-field-event-date{
 	
