@@ -4284,7 +4284,7 @@ ul.pagination li a {
 @media screen and (min-height: 480px) {
 .pull-6 {
     position: absolute !important;
-	background-color: red;
-	border: 1px solid green;
+	/*background-color: red;
+	border: 1px solid green;*/
 }
 }
