@@ -1362,11 +1362,6 @@ table.views-view-grid tr td {
 	margin: 5px !important;
     width: auto;
 }
-/* 
-field field-name-field-new-category field-type-taxonomy-term-reference field-label-above field-wrapper clearfix 
-field field-name-field-news-fields field-type-taxonomy-term-reference field-label-above field-wrapper clearfix*/
-
-/*.not-front .main .node-event .field-label-above .links li{*/
 .not-front .main .node .field-label-above .links li{
     width: auto;
 }
@@ -4321,11 +4316,128 @@ ul.pagination li a {
 }
 
 }
-/* landscape */
-@media screen and (max-height: 480px) {
+/* portrait */
+/*@media screen and (height: 700px) { … }*/
+@media screen and (max-height: 481px){
 .pull-6 {
-    position: absolute !important;
+    /*position: absolute !important;*/
 	/*background-color: red;
 	border: 1px solid green;*/
+}
+}
+
+@media screen and(max-device-height: 481px){
+.pull-6 {
+    /*position: absolute !important;*/
+	/*background-color: red;
+	border: 1px solid green;*/
+}
+}
+@media screen and (max-device-device-height: 481px) and (orientation: portrait) {
+.pull-6 {
+    /*position: absolute !important;*/
+	/*background-color: red;
+	border: 1px solid green;*/
+}
+}
+@media screen and (min-width 768px and max-height: 480x){
+.responsive-menus #block-menu-menu-menu-left .content .menu a{
+	background: url('../images/iconos-menu-left_min.png') no-repeat;
+	height: 32px;
+    width: 30px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .manifiesto {
+    background-position: 0 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .manifiesto:hover {
+    background-position: 0 -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .cultura-viva {
+    background-position: -30px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .cultura-viva:hover {
+    background-position: -30px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .cultura-red {
+    background-position: -60px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .cultura-red:hover {
+    background-position: -60px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .incidencia {
+    background-position: -90px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .incidencia:hover {
+    background-position: -90px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .comunicacion {
+    background-position: -120px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .comunicacion:hover {
+    background-position: -120px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .formacion {
+    background-position: -152px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .formacion:hover {
+    background-position: -152px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .circulacion {
+    background-position: -182px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .circulacion:hover {
+    background-position: -182px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .economia {
+    background-position: -213px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .economia:hover {
+    background-position: -213px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .boletin {
+    background-position: -243px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .boletin:hover {
+    background-position: -243px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .twitter {
+    background-position: -335px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .twitter:hover {
+    background-position: -335px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .facebook {
+    background-position: -305px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .facebook:hover {
+    background-position: -305px -33px;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .youtube {
+    background-position: -365px 0;
+}
+.responsive-menus #block-menu-menu-menu-left  .content .menu .youtube:hover {
+    background-position: -365px -33px;
+}
+
+.responsive-menus {    
+	width: 50px;;
+}
+.responsive-menus #block-menu-menu-menu-left{
+}
+.responsive-menus #block-menu-menu-menu-left .menu{
+	/*overflow:hidden;*/
+}
+.responsive-menus #block-menu-menu-menu-left .content .menu li {
+	height: 38px;
+    width: 50px;
+}
+.responsive-menus #block-menu-menu-menu-left .content .menu li span {
+    left: 40px;
+    z-index: 1000;
+}
+/*.responsive-menus #block-menu-menu-menu-left .content .menu  li:nth-child(2n) span {
+    left: 50px;
+}*/
+.responsive-menus #block-menu-menu-menu-left .menu .item-sidebar{
 }
 }
