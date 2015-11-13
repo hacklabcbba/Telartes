@@ -4317,29 +4317,7 @@ ul.pagination li a {
 
 }
 /* portrait */
-/*@media screen and (height: 700px) { … }*/
-@media screen and (max-height: 481px){
-.pull-6 {
-    /*position: absolute !important;*/
-	/*background-color: red;
-	border: 1px solid green;*/
-}
-}
 
-@media screen and(max-device-height: 481px){
-.pull-6 {
-    /*position: absolute !important;*/
-	/*background-color: red;
-	border: 1px solid green;*/
-}
-}
-@media screen and (max-device-device-height: 481px) and (orientation: portrait) {
-.pull-6 {
-    /*position: absolute !important;*/
-	/*background-color: red;
-	border: 1px solid green;*/
-}
-}
 @media screen and (min-width 768px and max-height: 480x){
 .responsive-menus #block-menu-menu-menu-left .content .menu a{
 	background: url('../images/iconos-menu-left_min.png') no-repeat;
@@ -4425,7 +4403,6 @@ ul.pagination li a {
 .responsive-menus #block-menu-menu-menu-left{
 }
 .responsive-menus #block-menu-menu-menu-left .menu{
-	/*overflow:hidden;*/
 }
 .responsive-menus #block-menu-menu-menu-left .content .menu li {
 	height: 38px;
@@ -4435,9 +4412,6 @@ ul.pagination li a {
     left: 40px;
     z-index: 1000;
 }
-/*.responsive-menus #block-menu-menu-menu-left .content .menu  li:nth-child(2n) span {
-    left: 50px;
-}*/
 .responsive-menus #block-menu-menu-menu-left .menu .item-sidebar{
 }
 }
