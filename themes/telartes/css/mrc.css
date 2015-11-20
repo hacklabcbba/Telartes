@@ -694,10 +694,17 @@ h3 {
 }
 .view-culturals-actors .box-list .info .name .names div {
     display: inline-block;
-
     color: #404041;
 }
-
+.view-culturals-actors .box-list .info .name .names .field-content{
+    float: left;
+    overflow: hidden;
+    padding-right: 5px;
+    width: auto !important;
+}
+.view-culturals-actors .box-list .info .infos{
+	clear: both;
+}
 .view-culturals-actors .box-list .info .infos,
 .view-culturals-actors .box-list .info .infos a {
     font-family:"OpenSansRegular", serif;
