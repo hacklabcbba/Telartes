@@ -763,7 +763,9 @@ h3 {
 .view-culturals-actors .mrc-unformmatted-list li.views-row-odd {
     margin-right: 1%;
 }
-
+.view-culturals-actors .mrc-unformmatted-list li:nth-child(-n+3){
+	border-bottom: 1px solid red
+}
 /*----/----/ $CIRCULACIÓN CULTURAL */
 
 .block-views table.views-view-grid {
@@ -1731,7 +1733,24 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	width: 23%;
 	overflow: hidden;
 	float: left;
+	
+	padding: 0px;	
+	
+	border: 1px solid red !important;
+    margin: 0 9px 10px 0;
+    padding: 10px;
+    width: 24%;
 }
+.colapsible #block-telartes-convocatoria .content .view-content .view-content ul li.views-row .views-field-field-call-fecha{
+	margin-bottom: 5px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .view-content ul li.views-row .views-field-title{
+	margin-bottom: 5px;
+}
+.colapsible #block-telartes-convocatoria .content .view-content .view-content ul li.views-row .views-field-body .field-content{
+	padding-right: 0px;
+}
+
 .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block label, .colapsible #block-telartes-convocatoria .content .view-call .view-filters #views-exposed-form-call-block select, .colapsible #block-telartes-convocatoria.content .view-call .view-header a.calendar, .colapsible #block-telartes-convocatoria.content .view-call .view-header #edit-submit-call{
 	font-size: 13px;
 }
@@ -1750,6 +1769,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body p, .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-body span {	
 	font-size: 12px !important;
 	line-height: 14px;	
+	margin-bottom: 0px;
 }
 .colapsible #block-telartes-convocatoria .content .view-content .views-row .views-field-view-node a{
 	
