@@ -478,7 +478,9 @@ h3 {
 }
 
 .custom-menu-wrapper .menu-manifiesto {
-    left: 85px;
+    /*left: 85px;*/
+	right: 110px;
+    top: 26%;
 }
 
 .custom-menu-wrapper .comunicacion {
@@ -502,8 +504,10 @@ h3 {
 }
 
 .custom-menu-wrapper .boletin {
-    left: 90px;
-    top: 310px;
+    /*left: 90px;
+    top: 310px;*/
+	right: 10%;
+    top: 100%;
 }
 
 .custom-menu-wrapper .menu-inciedncias {
@@ -2417,8 +2421,8 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin-left: 10px;
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others a{
-	border: 2px solid #d4d4d6;
-    color: #d4d4d6;
+	border: 2px solid #9c3b9b; /*#d4d4d6;*/
+    color: #9c3b9b; /*#d4d4d6;*/
     display: block;
     font-size: 14px;
     padding-bottom: 8px;
@@ -2427,6 +2431,11 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     text-transform: uppercase;
     width: 95%;
 	overflow: hidden;
+}
+
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others a:hover{	
+	border: 2px solid #d4d4d6;
+    color: #d4d4d6;
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-og-members-panel-pane-1 .view-content, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-collective-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-collective-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-a-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-a-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-f-of-area h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-personal-f-of-area ul.links,
 .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-create-links h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-personal-others h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-field-of-interest ul.links, .main .content .panel-display .center-wrapper .panel-col-last .inside .pane-node-field-network-areas-of-interest h2, .main .content .panel-display .center-wrapper .panel-col-last .inside .field-name-field-network-areas-of-interest ul.links{
