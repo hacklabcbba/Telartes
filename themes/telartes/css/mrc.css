@@ -2416,8 +2416,7 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
 	margin-top: 16px;
 	margin-left: 10px;
 }
-.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-pane .pane-node-field-personal-others h2.pane-title,
-/*.main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-network-others  h2.pane-title*/{
+.main .content .panel-display .center-wrapper .panel-col-last .inside div.panel-pane .pane-node-field-personal-others h2.pane-title{
 	margin-left: 10px;
 }
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others a{
@@ -2432,7 +2431,6 @@ table.views-view-grid td div.views-field-body-1 div.field-content{
     width: 95%;
 	overflow: hidden;
 }
-
 .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-collective-others a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside div.pane-node-field-personal-others a:hover, .main .content .panel-display .center-wrapper .panel-col-last .inside div.field-name-field-network-others a:hover{	
 	border: 2px solid #d4d4d6;
     color: #d4d4d6;
