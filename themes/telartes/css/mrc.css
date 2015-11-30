@@ -1072,27 +1072,7 @@ h3 {
 	position: absolute;
 }
 /* ----- */
-/* ----  box galery  ---- */  /*   8888888888888888888888 */ 
-/* BEGIN HEADER */
-/*.l-header {
-    background-color: #d2d2d4;
-    height: 79px;
-    overflow: hidden;
-    width: 100%;
-}
-.l-header .contain-to-grid{
-	height: 100%;
-	width: auto;
-}
-.contain-to-grid .top-bar {
-    height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-.top-bar-section {}
-    overflow: hidden;
-}*/
-/* END HEADER */
+
 /* BEGIN MENU TOP */
 .top-bar-section .main-nav li a {
     font-family: "OpenSansSemiBold",sans-serif;
@@ -1327,11 +1307,7 @@ table.views-view-grid tr td {
 	font-family: "OpenSansSemiBold",sans-serif;
 	
 	border: 2px groove #4d4d4f;
-    /*color: #424243;
-    font-family: "OpenSansSemiBold",sans-serif;
-    font-size: 16px;
-    padding: 7px 10px;
-    text-transform: uppercase;*/
+    
 }
 .large-3.sidebar-second h2.block-title {
 	margin: 0.2rem auto 0.5rem;
@@ -1534,6 +1510,72 @@ table.views-view-grid tr td {
     overflow: hidden;
     width: 92px !important;
 }
+/*		CONGRESO */
+#mesas-congreso{	
+	overflow: hidden;
+    width: 100%;
+}
+#mesas-congreso .mesa{	
+	float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 31%;
+}
+/*#mesas-congreso .mesa p{
+    text-align: justify;
+}
+#mesas-congreso .mesa p a{	
+	color: #fff;
+	background-color: #4f8868;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 24px 20px;
+    text-align: justify;
+}
+#mesas-congreso .mesa p a:hover{
+	background-color: #872361;
+}
+#mesas-congreso .mesa p a:before{
+    content: "\f03e";
+	margin-right: 15px;
+	font-size: 25px;
+}*/
+/*#mesas-congreso .mesa a span:before,*/
+#mesas-congreso .mesa a span:before{
+    content: "\f1c1";
+	font-size: 22px;
+    padding-left: 0;
+    padding-right: 20px;
+}
+#mesas-congreso .mesa a{	
+	background-color: #4f8868;
+    color: #fff;
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    padding: 15px 35px;
+    text-align: center;
+}
+#mesas-congreso .mesa a:hover{
+	background-color: #872361;
+}
+#mesas-congreso .mesa a span{
+	overflow: hidden;
+    padding-left: 15px;
+    padding-right: 30px;
+    text-align: center;
+    width: 100%;
+}
+.view-documentos-congreso .view-content ul li.views-row{	
+	float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 31%;
+}
+
 /* 			END CONTENIDO COMPLETO	 */
 
 .sidebar-second .float-left .field-content a::after {
