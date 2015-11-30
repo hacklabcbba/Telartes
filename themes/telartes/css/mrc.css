@@ -1522,29 +1522,10 @@ table.views-view-grid tr td {
     overflow: hidden;
     width: 31%;
 }
-/*#mesas-congreso .mesa p{
-    text-align: justify;
-}
-#mesas-congreso .mesa p a{	
-	color: #fff;
-	background-color: #4f8868;
-    height: 100px;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    padding: 24px 20px;
-    text-align: justify;
-}
-#mesas-congreso .mesa p a:hover{
-	background-color: #872361;
-}
-#mesas-congreso .mesa p a:before{
-    content: "\f03e";
-	margin-right: 15px;
-	font-size: 25px;
-}*/
-/*#mesas-congreso .mesa a span:before,*/
+
 #mesas-congreso .mesa a span:before{
-    content: "\f1c1";
+    font-family: "FontAwesome";
+    content: "\f07c";
 	font-size: 22px;
     padding-left: 0;
     padding-right: 20px;
@@ -1553,9 +1534,12 @@ table.views-view-grid tr td {
 	background-color: #4f8868;
     color: #fff;
     display: block;
+    font-family: "OpenSansRegular",serif !important;
+    font-weight: bold;
     height: 90px;
+    line-height: 16px;
     overflow: hidden;
-    padding: 15px 35px;
+    padding: 15px 30px;
     text-align: center;
 }
 #mesas-congreso .mesa a:hover{
@@ -1567,6 +1551,7 @@ table.views-view-grid tr td {
     padding-right: 30px;
     text-align: center;
     width: 100%;
+	font-family: "OpenSansRegular",serif !important;
 }
 .view-documentos-congreso .view-content ul li.views-row{	
 	float: left;
