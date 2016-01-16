@@ -1326,6 +1326,7 @@ table.views-view-grid tr td {
 }
 .view .more-link{
 	clear: both;
+	text-align: center;
 }
 .view .more-link  a{
 	color: #424243;	
@@ -1334,6 +1335,7 @@ table.views-view-grid tr td {
 	border: 2px groove #4d4d4f; /*2px solid #4d4d4f;*/
 	text-transform: uppercase;
 	padding: 7px 10px;
+	display: inline-block;
 }
 /*  /////		BEGIN SLIDER    ///// */
 /*.not-front .main .node ul {
@@ -1414,6 +1416,18 @@ table.views-view-grid tr td {
     margin-bottom: 15px;
     overflow: hidden;    
 	margin-right: 15px;
+}
+/*************************************************************************************************************/
+.view-mediateca .views-row .mrc-list-mediateca .field-content a img{
+	overflow: hidden;
+	width: 100%;
+}
+.view-mediateca .views-row .mrc-list-mediateca{
+	height:100%;
+}
+.view-mediateca .views-row .mrc-list-mediateca h3{
+	line-height: 14px;
+    overflow: hidden;
 }
 .view-collaborative-economy .mrc-unformmatted-list .views-row .views-field-title{
 	height: 48px;
