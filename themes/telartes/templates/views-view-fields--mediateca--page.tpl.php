@@ -1,4 +1,9 @@
-<div class="mrc-list-mediateca">
+<?php if(isset($fields['field_photography_photo']) || 
+         isset($fields['field_multimedia_link']) )   : ?>
+	<div class="mrc-list-mediateca img-list-mediateca">
+<?php else: ?>
+	<div class="mrc-list-mediateca">
+<?php endif; ?>
     <?php if(isset($fields['field_photography_photo'])) : ?>
     <?php print $fields['field_photography_photo']->content; ?>
     <?php endif; ?>
