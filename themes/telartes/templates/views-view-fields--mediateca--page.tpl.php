@@ -15,7 +15,9 @@
     <?php print $fields['field_multimedia_link']->content; ?>
     <?php endif; ?>
     <?php if(isset($fields['field_audio_upload'])) : ?>
+    <div class="audio-list_file">
     <?php print $fields['field_audio_upload']->content; ?>
+    </div>
     <?php endif; ?>
     <?php if(isset($fields['field_document_file'])) : ?>
     <?php print $fields['field_document_file']->content; ?>
