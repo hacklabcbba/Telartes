@@ -1467,6 +1467,9 @@ table.views-view-grid tr td {
 .img-list-mediateca .field-content{
 	position: absolute;
 }
+.img-list-mediateca h3{
+	width: 87%;
+}
 .img-list-mediateca .field-content h3, .img-list-mediateca .field-content p, .img-list-mediateca .field-content span{
 	display: none;
 }
