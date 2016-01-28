@@ -1,7 +1,11 @@
 <?php if(isset($fields['field_photography_photo'])) : ?>
-        <div class="mrc-list-mediateca img-list-mediateca">
+        <div class="mrc-list-mediateca img-list-mediateca photo-img-list">
 <?php elseif (isset($fields['field_multimedia_link']))  : ?>
-        <div class="mrc-list-mediateca img-list-mediateca">
+        <div class="mrc-list-mediateca img-list-mediateca video-img-list">
+<?php elseif (isset($fields['field_audio_link']))  : ?>
+        <div class="mrc-list-mediateca audio-img-list">
+<?php elseif (isset($fields['field_audio_upload']))  : ?>
+        <div class="mrc-list-mediateca audio-img-list">
 <?php else: ?>
         <div class="mrc-list-mediateca">
 <?php endif; ?>

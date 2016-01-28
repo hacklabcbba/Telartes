@@ -1412,12 +1412,15 @@ table.views-view-grid tr td {
 .view-library .views-row, .view-editorial .views-row, .view-call .views-row, .view-id-formacion_telartes .views-row, .view-fotografia .views-row, .view-documentos .views-row, .view-videos .views-row, .view-audios .views-row, .view-culture-calendar .views-row {
     width: 31%;/*30%;*/
 	float: left;
-	height: 215px;
+	height: 190px; /*215px;*/
     margin-bottom: 15px;
     overflow: hidden;    
 	margin-right: 15px;
 }
 /*************************************************************************************************************/
+.view-mediateca .views-row {
+	height: 165px;
+}
 .view-mediateca .views-row .mrc-list-mediateca .field-content a img{
 	overflow: hidden;
 	width: 100%;
@@ -1426,8 +1429,9 @@ table.views-view-grid tr td {
 	height:100%;
 }
 .view-mediateca .views-row .mrc-list-mediateca h3{
-	line-height: 14px;
+	line-height: 17px; /*14px;*/
     overflow: hidden;
+	clear: both;
 }
 .view-collaborative-economy .mrc-unformmatted-list .views-row .views-field-title{
 	height: 48px;
@@ -1444,6 +1448,110 @@ table.views-view-grid tr td {
 	line-height: 15px;
 	margin-bottom: 5px;
 }
+/* -------------------------------------------------------------------------------------  */
+.view-mediateca .views-row .mrc-list-mediateca{
+	border: 1px solid #ccc !important;
+	padding: 7px;
+}
+.view-mediateca .views-row .mrc-list-mediateca  .field-content{
+	width: auto;
+}
+.view-mediateca .views-row .img-list-mediateca{
+	border: 0px !important;
+	padding: 0px;
+}
+.img-list-mediateca{
+	position: relative;
+	
+}
+.img-list-mediateca .field-content{
+	position: absolute;
+}
+.img-list-mediateca .field-content h3, .img-list-mediateca .field-content p, .img-list-mediateca .field-content span{
+	display: none;
+}
+.img-list-mediateca:hover{
+	background-color: rgba(15, 14, 10, 0.5);	
+}
+.img-list-mediateca:after{ /* .img-list-mediateca  h3 a:before{ */
+	font-family: "FontAwesome";
+	font-size: 20px;
+	/*float: right;
+	position: relative;*/
+	
+	position: absolute;
+    right: 9px;
+    top: 0;
+	color: #fff;
+}
+.video-img-list:after{ /* .video-img-list  h3 a:before{ */
+	content: "\f03d";
+}
+.photo-img-list:after{ /*  .photo-img-list  h3 a:before{ */
+	content: "\f03e"; /*"\f030";*/
+}
+.img-list-mediateca:hover .field-content a img{
+	opacity: 0.3;
+}
+.img-list-mediateca:hover h3, .img-list-mediateca:hover .field-content p{
+	padding: 0px 10px;
+}
+.img-list-mediateca:hover h3{
+	padding-top: 10px;
+}
+.img-list-mediateca:hover h3, .img-list-mediateca:hover h3 a, .img-list-mediateca:hover .field-content p, .img-list-mediateca:hover .field-content p span{
+	display: block;
+	position: relative;
+	color: #fff !important;
+}
+.view-mediateca .views-row .audio-img-list{
+	border: 0px !important;
+	padding:0px;
+}/*f04b*/
+.audio-img-list  .audio-list_file{
+	background-color:#e6e7e7;
+	padding: 0px 10px;
+}
+.audio-img-list  .audio-list_file:before{
+	content: "\f04b";
+	color: #424243; /*inherit;*/
+    font-family: "FontAwesome";
+	padding-right: 5px;
+	font-weight: bold;
+}
+.audio-img-list  .audio-list_file span:before, .audio-img-list  .audio-list_file .field-content:before{
+	content: "AUDIO: ";
+	color: #424243; /*inherit;*/
+    font-family: "FontAwesome";
+	/*padding-right: 5px;*/
+	font-weight: bold;
+}
+.audio-img-list .field-content h3{
+	float: left;
+    overflow: hidden;
+    position: relative;
+    width: 81% !important;
+}
+.audio-img-list .field-content .file img{
+	display: none;
+}
+.audio-img-list .field-content .file a{
+	float: left;
+    line-height: 15px;
+    width: 80% !important;
+}
+.audio-img-list .field-content .file a:after{ 
+	content: "\f025";
+	color: #424243; /*inherit;*/
+    font-family: "FontAwesome";
+    font-size: 45px;
+    position: absolute;
+    right: 9px;
+    top: 45px;
+}
+
+
+
 .view-collaborative-economy .mrc-unformmatted-list .views-row .field-content img{
 	height: 100%;
     width: 100% !important;
