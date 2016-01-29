@@ -13,7 +13,9 @@
     <?php print $fields['field_photography_photo']->content; ?>
     <?php endif; ?>
     <?php if(isset($fields['field_audio_link'])) : ?>
+    <div class="audio-list_file">
     <?php print $fields['field_audio_link']->content; ?>
+    </div>
     <?php endif; ?>
     <?php if(isset($fields['field_multimedia_link'])) : ?>
     <?php print $fields['field_multimedia_link']->content; ?>
